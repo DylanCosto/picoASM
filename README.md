@@ -1,5 +1,8 @@
 # picoASM
 
+[![CI](https://github.com/DylanCosto/picoASM/actions/workflows/ci.yml/badge.svg)](https://github.com/DylanCosto/picoASM/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/DylanCosto/picoASM)](https://github.com/DylanCosto/picoASM/releases/latest)
+
 picoASM is a de novo assembler for bacterial isolate genomes sequenced with Oxford Nanopore
 (R10.4.1) or PacBio HiFi reads. It aims to give every replicon (the chromosome and each plasmid,
 small high-copy plasmids included) as one circular contig, without a separate polishing step,
@@ -24,7 +27,17 @@ times less CPU time.
 
 ## Installation
 
-picoASM is written in Rust and needs a Rust toolchain, 1.91 or later (https://rustup.rs):
+**Prebuilt binaries.** Each [release](https://github.com/DylanCosto/picoASM/releases) has binaries
+for Linux (x86-64) and macOS (Apple silicon):
+
+```bash
+curl -LO https://github.com/DylanCosto/picoASM/releases/download/v0.5.0/picoasm-v0.5.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf picoasm-v0.5.0-x86_64-unknown-linux-gnu.tar.gz
+./picoasm-v0.5.0-x86_64-unknown-linux-gnu/picoasm --version
+```
+
+**From source.** picoASM is written in Rust and needs a Rust toolchain, 1.91 or later
+(https://rustup.rs):
 
 ```bash
 git clone https://github.com/DylanCosto/picoASM.git
