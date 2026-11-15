@@ -18,6 +18,7 @@ times less CPU time.
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Library preparation and topology](#library-preparation-and-topology)
 - [Benchmark](#benchmark)
 - [Results](#results)
 - [Limitations](#limitations)
@@ -85,6 +86,27 @@ dorado aligner -t 8 contigs.fa reads.fastq.gz | samtools sort -o aligned.bam -
 samtools index aligned.bam
 dorado polish --bacteria -t 8 aligned.bam contigs.fa > polished.fa
 ```
+
+## Library preparation and topology
+
+How the DNA was extracted and the library prepared decides which molecules end up in the
+reads. Those molecules are all an assembler can see. Several common choices change the
+number, size and topology of the replicons in the result, with any assembler:
+
+| Library choice | Effect on the assembly | What to do |
+|---|---|---|
+| **Rapid (transposase) kits** | Each read of a small plasmid is usually the whole circle, cut once, so small plasmids are well represented. | The best choice when small plasmids matter. |
+| **Ligation kits** | Adapters attach only to linear ends, so an intact small circle is read only if it was broken during extraction, and bead clean-ups lose short fragments. Few reads hold a small plasmid whole. Plasmids of a few kb can be missed: in the validation set a 3.4 kb plasmid had only 5 whole reads and was left out. | Check for small plasmids by other means (short reads, or a rapid-kit run). |
+| **Size selection** (bead ratios, short-fragment removal) | Removes the reads of small plasmids along with other short fragments. | Avoid it if small plasmids matter. |
+| **Short fragments** (harsh extraction, old or degraded DNA; read N50 around 1-2 kb) | Repeats longer than the reads (rRNA operons, IS elements) cannot be crossed, so chromosomes come out in pieces and stay linear. | Use gentle extraction; aim for a read N50 well above the genome's longest repeats (more than 10 kb is comfortable). |
+| **Whole-genome amplification** (MDA and similar) | Amplification joins unrelated molecules into chimeric reads. Every assembler tested fails: on one amplified *E. coli* K-12 library, picoASM made 76 misassemblies and Flye 95. | Sequence native DNA. |
+| **Plasmid multimers** | Cells can carry a plasmid as a monomer, a dimer or a mix. Only reads longer than one copy can show which. picoASM gives the monomer; other assemblers often double small plasmids. | Read a reported plasmid length as one copy, not proof of the molecule's form. |
+| **Mixed populations** (excised elements, invertible segments, subclones) | Part of the cells can carry another arrangement: an element excised as its own circle, or a segment inverted. These appear as extra low-depth contigs, or as `check=stops:N` / `shallow:N` on the contig. | Read the `check=` field; an extra circle at low depth can be real biology. |
+| **Barcode bleed-through** in multiplexed runs | Reads from other samples on the flow cell form low-depth contigs. | picoASM leaves contigs below 10% of the chromosome's depth out (25% if linear); `--shallow` writes them. |
+| **Native DNA (all ONT kits without PCR)** | Base modifications (methylation motifs) cause systematic basecalling errors at their sites. picoASM learns and corrects most of them. | For the last few errors on heavily methylated genomes, use `dorado polish --bacteria` or short reads. |
+
+In short: a contig reported linear, a plasmid missing, or a plasmid of half or double the
+expected length is often a property of the library, not of the genome.
 
 ## Benchmark
 
