@@ -1,0 +1,379 @@
+dataset	set	reads	tool	threads	wall_s	cpu_s	rss_gb	contigs	total_mb	replicons	complete	chromosome_complete	errors	missing_bases	extra_contigs	extra_bases	misassemblies	qscore	perfect	per_replicon
+ehorm_1	subsets	ont	picoasm	8	54	362	1.34	4	5.385	4	4	True	0	0	0	0	0	67.31	True	chromosome:4958409:complete:0;plasmid_1:343098:complete:0;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+ehorm_1	subsets	ont	flye	16	189	1051	1.67	3	5.382	4	3	True	4	2495	0	0	0	33.33	False	chromosome:4958409:complete:2;plasmid_1:343098:complete:1;plasmid_2:80745:complete:1;plasmid_3:2495:missing:0
+ehorm_1	subsets	ont	flye_medaka	16	282	1340	8.17	3	5.382	4	3	True	2	2495	0	0	0	33.34	False	chromosome:4958409:complete:0;plasmid_1:343098:complete:1;plasmid_2:80745:complete:1;plasmid_3:2495:missing:0
+ehorm_1	subsets	ont	raven	16	44	543	2.31	3	5.348	4	2	True	29786	11541	0	0	1	21.15	False	chromosome:4958409:complete:785;plasmid_1:343098:wrong length (x0.902):28998;plasmid_2:80745:complete:3;plasmid_3:2495:missing:0
+ehorm_2	subsets	ont	picoasm	8	56	376	1.35	4	5.385	4	4	True	0	0	0	0	0	67.31	True	chromosome:4958409:complete:0;plasmid_1:343098:complete:0;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+ehorm_3	subsets	ont	picoasm	8	54	361	1.34	4	5.385	4	4	True	1	0	0	0	0	67.31	False	chromosome:4958409:complete:0;plasmid_1:343098:complete:0;plasmid_2:80745:complete:0;plasmid_3:2495:complete:1
+ehorm_4	subsets	ont	picoasm	8	56	370	1.35	4	5.385	4	4	True	0	0	0	0	0	67.31	True	chromosome:4958409:complete:0;plasmid_1:343098:complete:0;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+ehorm_5	subsets	ont	picoasm	8	56	367	1.37	4	5.385	4	4	True	1	0	0	0	0	67.31	False	chromosome:4958409:complete:0;plasmid_1:343098:complete:0;plasmid_2:80745:complete:0;plasmid_3:2495:complete:1
+ehorm_6	subsets	ont	picoasm	8	55	373	1.37	4	5.385	4	4	True	3	0	0	0	0	62.54	False	chromosome:4958409:complete:3;plasmid_1:343098:complete:0;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+kpneu_1	subsets	ont	picoasm	8	59	387	1.47	5	5.99	5	5	True	1	0	0	0	0	67.77	False	chromosome:5369557:complete:1;plasmid_1:330109:complete:0;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_1	subsets	ont	flye	16	179	1163	1.68	4	5.989	5	4	True	9	1240	0	0	0	36.81	False	chromosome:5369557:complete:6;plasmid_1:330109:complete:3;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:missing:0
+kpneu_1	subsets	ont	flye_medaka	16	292	1451	8.13	4	5.989	5	3	True	4	1240	0	0	0	36.83	False	chromosome:5369557:complete:4;plasmid_1:330109:complete:0;plasmid_2:285776:complete:0;plasmid_3:3514:wrong length (x1.075):0;plasmid_4:1240:missing:0
+kpneu_1	subsets	ont	raven	16	61	613	2.65	3	5.985	5	3	True	37	4754	0	0	0	30.97	False	chromosome:5369557:complete:27;plasmid_1:330109:complete:6;plasmid_2:285776:complete:4;plasmid_3:3514:missing:0;plasmid_4:1240:missing:0
+kpneu_2	subsets	ont	picoasm	8	59	392	1.46	5	5.99	5	5	True	7	0	0	0	0	59.32	False	chromosome:5369557:complete:7;plasmid_1:330109:complete:0;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_3	subsets	ont	picoasm	8	57	381	1.45	5	5.99	5	5	True	4	0	0	0	0	61.75	False	chromosome:5369557:complete:4;plasmid_1:330109:complete:0;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_4	subsets	ont	picoasm	8	59	389	1.48	5	5.99	5	5	True	6	0	0	0	0	59.99	False	chromosome:5369557:complete:5;plasmid_1:330109:complete:1;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_5	subsets	ont	picoasm	8	57	383	1.47	5	5.99	5	5	True	3	0	0	0	0	63.0	False	chromosome:5369557:complete:2;plasmid_1:330109:complete:0;plasmid_2:285776:complete:1;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_6	subsets	ont	picoasm	8	58	387	1.48	5	5.99	5	5	True	4	0	0	0	0	61.75	False	chromosome:5369557:complete:2;plasmid_1:330109:complete:2;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+linno_1	subsets	ont	picoasm	8	28	191	0.86	2	2.973	2	2	True	0	0	0	0	0	64.73	True	chromosome:2883001:complete:0;plasmid:89544:complete:0
+linno_1	subsets	ont	flye	16	148	584	1.23	3	2.979	2	2	True	1	0	1	6022	0	64.73	False	chromosome:2883001:complete:1;plasmid:89544:complete:0
+linno_1	subsets	ont	flye_medaka	16	240	773	7.6	3	2.979	2	2	True	0	0	1	6017	0	64.73	False	chromosome:2883001:complete:0;plasmid:89544:complete:0
+linno_1	subsets	ont	raven	16	24	299	1.38	2	2.973	2	2	True	8	0	0	0	0	55.7	False	chromosome:2883001:complete:4;plasmid:89544:complete:4
+linno_2	subsets	ont	picoasm	8	30	197	0.85	2	2.973	2	2	True	0	0	0	0	0	64.73	True	chromosome:2883001:complete:0;plasmid:89544:complete:0
+linno_3	subsets	ont	picoasm	8	30	194	0.84	2	2.973	2	2	True	0	0	0	0	0	64.73	True	chromosome:2883001:complete:0;plasmid:89544:complete:0
+linno_4	subsets	ont	picoasm	8	30	195	0.86	2	2.973	2	2	True	1	0	0	0	0	64.73	False	chromosome:2883001:complete:0;plasmid:89544:complete:1
+linno_5	subsets	ont	picoasm	8	29	197	0.85	2	2.973	2	2	True	1	0	0	0	0	64.73	False	chromosome:2883001:complete:0;plasmid:89544:complete:1
+linno_6	subsets	ont	picoasm	8	30	197	0.85	2	2.973	2	2	True	1	0	0	0	0	64.73	False	chromosome:2883001:complete:0;plasmid:89544:complete:1
+prett_1	subsets	ont	picoasm	8	46	320	1.28	2	4.466	2	2	True	2	0	0	0	0	63.49	False	chromosome:4318567:complete:2;plasmid:147239:complete:0
+prett_1	subsets	ont	flye	16	140	819	1.35	2	4.466	2	2	True	3	0	0	0	0	61.73	False	chromosome:4318567:complete:3;plasmid:147239:complete:0
+prett_1	subsets	ont	flye_medaka	16	294	1056	7.71	2	4.466	2	2	True	2	0	0	0	0	63.49	False	chromosome:4318567:complete:2;plasmid:147239:complete:0
+prett_1	subsets	ont	raven	16	48	452	1.83	2	4.465	2	2	True	995	0	0	0	0	36.52	False	chromosome:4318567:complete:993;plasmid:147239:complete:2
+prett_2	subsets	ont	picoasm	8	49	322	1.31	2	4.466	2	2	True	2	0	0	0	0	63.49	False	chromosome:4318567:complete:2;plasmid:147239:complete:0
+prett_3	subsets	ont	picoasm	8	49	323	1.29	2	4.466	2	2	True	2	0	0	0	0	63.49	False	chromosome:4318567:complete:2;plasmid:147239:complete:0
+prett_4	subsets	ont	picoasm	8	48	322	1.29	2	4.466	2	2	True	2	0	0	0	0	63.49	False	chromosome:4318567:complete:2;plasmid:147239:complete:0
+prett_5	subsets	ont	picoasm	8	48	327	1.28	2	4.466	2	2	True	2	0	0	0	0	63.49	False	chromosome:4318567:complete:2;plasmid:147239:complete:0
+prett_6	subsets	ont	picoasm	8	45	306	1.28	2	4.466	2	2	True	5	0	0	0	0	59.51	False	chromosome:4318567:complete:5;plasmid:147239:complete:0
+sflex_1	subsets	ont	picoasm	8	61	432	1.23	8	4.828	8	8	True	6	0	0	0	0	59.06	False	chromosome:4583932:complete:5;plasmid_1:222364:complete:1;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_1	subsets	ont	flye	16	185	1260	1.82	6	4.851	8	3	True	24	3328	0	0	0	31.59	False	chromosome:4583932:complete:11;plasmid_1:222364:complete:0;plasmid_2:6790:doubled (x3.00):6;plasmid_3:5057:doubled (x2.00):0;plasmid_4:3835:doubled (x3.00):6;plasmid_5:3181:complete:1;plasmid_6:2088:missing:0;plasmid_7:1240:missing:0
+sflex_1	subsets	ont	flye_medaka	16	284	1581	7.93	6	4.851	8	3	True	6	3328	0	0	0	31.61	False	chromosome:4583932:complete:4;plasmid_1:222364:complete:0;plasmid_2:6790:doubled (x3.00):1;plasmid_3:5057:doubled (x2.00):0;plasmid_4:3835:doubled (x3.00):1;plasmid_5:3181:complete:0;plasmid_6:2088:missing:0;plasmid_7:1240:missing:0
+sflex_1	subsets	ont	raven	16	62	494	2.22	3	4.833	8	1	True	21613	16884	0	0	1	20.98	False	chromosome:4583932:complete:616;plasmid_1:222364:wrong length (x1.094):20994;plasmid_2:6790:wrong length (x0.857):3;plasmid_3:5057:missing:0;plasmid_4:3835:missing:0;plasmid_5:3181:missing:0;plasmid_6:2088:missing:0;plasmid_7:1240:missing:0
+sflex_1	subsets	ont	autocycler	16	25366	303410	10.63	7	4.827	8	7	True	7	1240	0	0	0	35.88	False	chromosome:4583932:complete:7;plasmid_1:222364:complete:0;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:missing:0
+sflex_2	subsets	ont	picoasm	8	76	533	1.24	8	4.828	8	8	True	5	0	0	0	0	59.85	False	chromosome:4583932:complete:5;plasmid_1:222364:complete:0;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_3	subsets	ont	picoasm	8	64	441	1.22	8	4.828	8	8	True	6	0	0	0	0	59.06	False	chromosome:4583932:complete:5;plasmid_1:222364:complete:1;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_4	subsets	ont	picoasm	8	62	426	1.26	8	4.828	8	8	True	5	0	0	0	0	59.85	False	chromosome:4583932:complete:5;plasmid_1:222364:complete:0;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_5	subsets	ont	picoasm	8	65	445	1.22	8	4.828	8	8	True	7	0	0	0	0	58.39	False	chromosome:4583932:complete:7;plasmid_1:222364:complete:0;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_6	subsets	ont	picoasm	8	73	511	1.21	8	4.828	8	8	True	9	0	0	0	0	57.3	False	chromosome:4583932:complete:8;plasmid_1:222364:complete:1;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+ader_km1812	final	ont	picoasm	8	113	795	1.39	3	3.382	4	3	True	151	53362	0	0	0	18.08	False	CP176517.1:3280977:complete:140;CP176516.1:61190:complete:1;CP176515.1:53362:missing:0;CP176514.1:40172:complete:10
+ader_km1812	final	ont	flye_medaka	8	626	1979	7.22	6	3.437	4	3	True	5436	0	1	5335	0	28.01	False	CP176517.1:3280977:complete:5371;CP176516.1:61190:complete:1;CP176515.1:53362:complete:36;CP176514.1:40172:fragmented (2 contigs):28
+anae_jcm17239_hifi	final	hifi	picoasm	8	31	213	0.91	1	2.622	1	1	True	1	0	0	0	0	64.19	False	AP042468.1:2622249:complete:1
+anae_jcm17239_hifi	final	hifi	flye	8	378	1003	1.49	1	2.622	1	1	True	0	0	0	0	0	64.19	True	AP042468.1:2622249:complete:0
+anae_jcm17239_hifi	final	hifi	hifiasm	8	230	1366	17.37	1	2.631	1	1	True	8280	0	0	0	0	25.01	False	AP042468.1:2622249:complete:8280
+athe_ccm8960_hifi	final	hifi	picoasm	8	43	303	1.26	2	3.732	2	2	True	103	0	0	0	0	45.59	False	CP080764.1:3662904:complete:103;CP080765.1:69011:complete:0
+athe_ccm8960_hifi	final	hifi	flye	8	355	1247	1.44	2	3.732	2	2	True	1643	0	0	0	0	33.56	False	CP080764.1:3662904:complete:1643;CP080765.1:69011:complete:0
+athe_ccm8960_hifi	final	hifi	hifiasm	8	254	1171	17.42	2	3.753	2	1	True	103	0	0	0	0	45.59	False	CP080764.1:3662904:complete:103;CP080765.1:69011:wrong length (x1.300):0
+cpor_mei2o223	final	ont	picoasm	8	64	410	1.61	3	4.923	4	3	True	6	3376	0	0	0	31.63	False	CM149573.1:4801058:complete:6;JBRXAH010000002.1:63589:complete:0;JBRXAH010000003.1:57983:complete:0;JBRXAH010000004.1:3376:missing:0
+cpor_mei2o223	final	ont	flye_medaka	8	642	2292	7.68	4	4.926	4	4	True	2	0	0	0	0	63.91	False	CM149573.1:4801058:complete:2;JBRXAH010000002.1:63589:complete:0;JBRXAH010000003.1:57983:complete:0;JBRXAH010000004.1:3376:complete:0
+csph_dsm158	final	ont	picoasm	8	286	2155	2.11	6	4.519	6	6	True	1635	0	0	0	0	34.42	False	OZ484653.1:3188564:complete:18;OZ484654.1:944480:complete:1613;OZ484655.1:124318:complete:1;OZ484656.1:114178:complete:2;OZ484657.1:105281:complete:1;OZ484658.1:43536:complete:0
+csph_dsm158	final	ont	flye_medaka	8	712	2750	8.48	6	4.52	6	6	True	45	0	0	0	0	50.02	False	OZ484653.1:3188564:complete:28;OZ484654.1:944480:complete:7;OZ484655.1:124318:complete:2;OZ484656.1:114178:complete:1;OZ484657.1:105281:complete:7;OZ484658.1:43536:complete:0
+cthe_dsm15264_hifi	final	hifi	picoasm	8	52	365	1.62	1	4.031	1	1	True	12	0	0	0	0	55.26	False	CP110416.1:4030985:complete:12
+cthe_dsm15264_hifi	final	hifi	flye	8	515	2155	1.19	1	4.031	1	1	True	12	0	0	0	0	55.26	False	CP110416.1:4030985:complete:12
+cthe_dsm15264_hifi	final	hifi	hifiasm	8	333	1525	17.45	2	4.237	1	0	False	132469	0	0	0	0	14.83	False	CP110416.1:4030985:fragmented (2 contigs):132469
+fcer_lth5742_hifi	final	hifi	picoasm	8	131	916	1.47	9	2.829	3	2	False	42122	131347	0	0	0	12.38	False	CP185253.1:2898291:fragmented (7 contigs):42122;CP185254.1:88994:complete:0;CP185255.1:11008:complete:0
+fcer_lth5742_hifi	final	hifi	flye	8	528	2031	1.63	10	2.854	3	2	False	42107	108523	0	0	0	12.99	False	CP185253.1:2898291:fragmented (8 contigs):42107;CP185254.1:88994:complete:0;CP185255.1:11008:complete:0
+fcer_lth5742_hifi	final	hifi	hifiasm	8	401	2327	17.41	12	3.083	3	1	False	17487	42233	0	0	2	17.01	False	CP185253.1:2898291:fragmented (9 contigs):13205;CP185254.1:88994:fragmented (2 contigs):4282;CP185255.1:11008:complete:0
+kbal_lth7215_hifi	final	hifi	picoasm	8	32	216	1.04	5	3.361	6	4	True	6099	8418	0	0	1	23.63	False	CP158988.1:2893325:complete:6097;CP158991.1:208094:complete:0;CP158992.1:124118:complete:0;CP158993.1:65585:complete:2;CP158990.1:53127:wrong length (x1.193):0;CP158989.1:6096:missing:0
+kbal_lth7215_hifi	final	hifi	flye	8	451	1311	1.94	6	3.371	6	4	True	6	6096	0	0	0	27.4	False	CP158988.1:2893325:complete:0;CP158991.1:208094:complete:0;CP158992.1:124118:complete:0;CP158993.1:65585:complete:1;CP158990.1:53127:fragmented (2 contigs):5;CP158989.1:6096:missing:0
+kbal_lth7215_hifi	final	hifi	hifiasm	8	297	1582	17.4	5	3.559	6	1	True	6098	8822	0	0	4	23.51	False	CP158988.1:2893325:complete:6097;CP158991.1:208094:wrong length (x1.060):0;CP158992.1:124118:doubled (x2.11):0;CP158993.1:65585:wrong length (x1.305):1;CP158990.1:53127:wrong length (x1.707):0;CP158989.1:6096:missing:0
+llac_s11599	final	ont	picoasm	8	33	211	1.11	4	2.614	2	2	True	17	0	2	7309	1	51.86	False	CP170449.1:2590798:complete:16;CP170450.1:15601:complete:1
+llac_s11599	final	ont	flye_medaka	8	355	1094	7.43	4	2.616	2	1	True	9595	0	2	3856	0	24.34	False	CP170449.1:2590798:complete:9558;CP170450.1:15601:doubled (x2.00):37
+lsal_11254	final	ont	picoasm	8	67	464	1.38	4	2.056	2	1	False	28	85	0	0	0	42.57	False	CM204853.1:1807981:fragmented (3 contigs):28;JCERHY010000002.1:232777:complete:0
+lsal_11254	final	ont	flye_medaka	8	291	1050	7.41	6	2.045	2	1	False	1586	27	1	1535	0	31.02	False	CM204853.1:1807981:fragmented (4 contigs):22;JCERHY010000002.1:232777:complete:1564
+msol_sl370_hifi	final	hifi	picoasm	8	77	550	2.14	1	7.062	1	1	True	3228	0	0	0	0	33.4	False	CM128580.1:7058300:complete:3228
+msol_sl370_hifi	final	hifi	flye	8	523	1872	1.42	1	7.058	1	1	True	1	0	0	0	0	68.49	False	CM128580.1:7058300:complete:1
+msol_sl370_hifi	final	hifi	hifiasm	8	332	2083	17.45	1	7.063	1	1	True	4323	0	0	0	0	32.13	False	CM128580.1:7058300:complete:4323
+parth_whri8279	final	ont	picoasm	8	84	488	1.64	5	4.776	4	3	True	36	0	1	1162	1	51.2	False	CP168162.1:4344440:complete:2;CP168163.1:212795:wrong length (x1.129):34;CP168164.1:103360:complete:0;CP168165.1:86526:complete:0
+parth_whri8279	final	ont	flye_medaka	8	740	2452	7.68	4	4.747	4	4	True	4	0	0	0	0	60.74	False	CP168162.1:4344440:complete:3;CP168163.1:212795:complete:1;CP168164.1:103360:complete:0;CP168165.1:86526:complete:0
+pmeg_imgn6_hifi	final	hifi	picoasm	8	75	518	2.07	12	5.777	12	12	True	0	0	0	0	0	67.62	True	CP151780.1:5151962:complete:0;CP151781.1:170768:complete:0;CP151782.1:126529:complete:0;CP151783.1:107193:complete:0;CP151784.1:67669:complete:0;CP151785.1:64608:complete:0;CP151786.1:43577:complete:0;CP151787.1:12025:complete:0;CP151788.1:8557:complete:0;CP151789.1:8518:complete:0;CP151790.1:8463:complete:0;CP151791.1:7620:complete:0
+pmeg_imgn6_hifi	final	hifi	flye	8	490	2140	2.06	9	5.753	12	9	True	0	24640	0	0	0	23.7	False	CP151780.1:5151962:complete:0;CP151781.1:170768:complete:0;CP151782.1:126529:complete:0;CP151783.1:107193:complete:0;CP151784.1:67669:complete:0;CP151785.1:64608:complete:0;CP151786.1:43577:complete:0;CP151787.1:12025:complete:0;CP151788.1:8557:missing:0;CP151789.1:8518:complete:0;CP151790.1:8463:missing:0;CP151791.1:7620:missing:0
+pmeg_imgn6_hifi	final	hifi	hifiasm	8	408	2251	17.3	11	5.893	12	1	True	8	43577	0	0	2	21.22	False	CP151780.1:5151962:complete:3;CP151781.1:170768:wrong length (x1.068):0;CP151782.1:126529:wrong length (x1.090):0;CP151783.1:107193:wrong length (x1.103):0;CP151784.1:67669:doubled (x1.99):5;CP151785.1:64608:wrong length (x1.242):0;CP151786.1:43577:missing:0;CP151787.1:12025:doubled (x1.99):0;CP151788.1:8557:wrong length (x1.969):0;CP151789.1:8518:wrong length (x1.923):0;CP151790.1:8463:wrong length (x1.976):0;CP151791.1:7620:wrong length (x1.776):0
+ppsy_bc2	final	ont	picoasm	8	51	342	1.56	1	3.724	1	1	True	6	0	0	0	0	57.93	False	CP183885.1:3723914:complete:6
+ppsy_bc2	final	ont	flye_medaka	8	411	1559	7.28	1	3.724	1	1	True	1	0	0	0	0	65.71	False	CP183885.1:3723914:complete:1
+psep_tb5p01a	final	ont	picoasm	8	63	430	1.33	4	4.961	8	2	False	2815	41118	0	0	1	20.51	False	AP051584.1:4080261:wrong length (x1.011):1491;AP051585.1:535135:complete:1;AP051586.1:188309:complete:605;AP051587.1:112367:wrong length (x1.001):718;AP051588.1:19145:missing:0;AP051589.1:5899:missing:0;AP051590.1:2099:missing:0;AP051591.1:1381:missing:0
+psep_tb5p01a	final	ont	flye_medaka	8	499	1489	7.62	4	4.961	8	2	False	2810	41118	0	0	1	20.51	False	AP051584.1:4080261:wrong length (x1.011):1489;AP051585.1:535135:complete:1;AP051586.1:188309:complete:605;AP051587.1:112367:wrong length (x1.003):715;AP051588.1:19145:missing:0;AP051589.1:5899:missing:0;AP051590.1:2099:missing:0;AP051591.1:1381:missing:0
+psyc_ch211_hifi	final	hifi	picoasm	8	38	269	1.08	6	3.166	5	4	True	21	17	0	0	0	49.2	False	CP151283.2:3131504:complete:0;CP151284.2:9279:complete:0;CP151285.2:8710:complete:0;CP151286.2:5356:fragmented (2 contigs):21;CP151287.2:5008:complete:0
+psyc_ch211_hifi	final	hifi	flye	8	311	1192	1.15	6	3.191	5	1	True	27	0	0	0	0	50.68	False	CP151283.2:3131504:complete:1;CP151284.2:9279:doubled (x1.99):1;CP151285.2:8710:wrong length (x1.914):0;CP151286.2:5356:fragmented (2 contigs):25;CP151287.2:5008:wrong length (x1.330):0
+psyc_ch211_hifi	final	hifi	hifiasm	8	275	1283	17.31	6	3.202	5	1	True	42	0	0	0	0	48.76	False	CP151283.2:3131504:complete:0;CP151284.2:9279:wrong length (x1.969):0;CP151285.2:8710:doubled (x1.99):0;CP151286.2:5356:fragmented (2 contigs):42;CP151287.2:5008:doubled (x2.38):0
+rrub_dsm467_hifi	final	hifi	picoasm	8	54	372	1.61	2	4.403	2	2	True	3759	0	0	0	0	30.69	False	CP077803.1:4352570:complete:3656;CP077804.1:53835:complete:103
+rrub_dsm467_hifi	final	hifi	flye	8	394	1697	1.3	2	4.403	2	2	True	3760	0	0	0	0	30.69	False	CP077803.1:4352570:complete:3657;CP077804.1:53835:complete:103
+rrub_dsm467_hifi	final	hifi	hifiasm	8	337	1537	17.46	3	4.469	2	1	True	25354	0	1	25086	0	22.4	False	CP077803.1:4352570:complete:25148;CP077804.1:53835:wrong length (x1.366):206
+seon_abd4340	final	ont	picoasm	8	39	256	1.43	1	3.59	1	1	True	3	0	0	0	0	60.78	False	CM149981.1:3589951:complete:3
+seon_abd4340	final	ont	flye_medaka	8	414	1447	7.56	1	3.59	1	1	True	3	0	0	0	0	60.78	False	CM149981.1:3589951:complete:3
+tcar_atcc25418_hifi	final	hifi	picoasm	8	83	578	2.21	2	6.591	2	2	True	1904	0	0	0	0	35.39	False	CP131477.1:4294889:complete:1262;CP131478.1:2294360:complete:642
+tcar_atcc25418_hifi	final	hifi	flye	8	392	1897	1.14	2	6.591	2	2	True	2045	0	0	0	0	35.08	False	CP131477.1:4294889:complete:1359;CP131478.1:2294360:complete:686
+tcar_atcc25418_hifi	final	hifi	hifiasm	8	470	2140	17.46	4	6.65	2	2	True	1349	0	2	59831	0	36.89	False	CP131477.1:4294889:complete:887;CP131478.1:2294360:complete:462
+ypes_80	final	ont	picoasm	8	508	3805	3.44	4	4.826	4	4	True	2330	0	0	0	0	33.16	False	CP151607.1:4649224:complete:2256;CP151608.1:100910:complete:29;CP151609.1:68340:complete:32;CP151610.1:9609:complete:13
+ypes_80	final	ont	flye_medaka	8	926	3289	8.43	4	4.834	4	3	True	3585	0	0	0	0	31.29	False	CP151607.1:4649224:complete:3390;CP151608.1:100910:complete:47;CP151609.1:68340:complete:68;CP151610.1:9609:doubled (x1.99):80
+clari	unseen	ont	picoasm	8	49	145	0.57	4	1.523	1	1	True	12	0	3	9854	0	51.01	False	CP149498.1:1513368:complete:12
+clari	unseen	ont	flye	8	109	313	1.17	1	1.513	1	1	True	62	0	0	0	0	43.88	False	CP149498.1:1513368:complete:62
+clari	unseen	ont	flye_medaka	8	161	433	7.31	1	1.513	1	1	True	19	0	0	0	0	49.01	False	CP149498.1:1513368:complete:19
+clari	unseen	ont	flye_medaka_short	8	205	675	7.28	1	1.513	1	1	True	11	0	0	0	0	51.39	False	CP149498.1:1513368:complete:11
+livanovii	unseen	ont	picoasm	8	73	249	0.93	2	2.922	1	1	True	10	0	1	2559	0	54.65	False	CP149497.1:2919549:complete:10
+livanovii	unseen	ont	flye	8	167	580	1.54	2	2.925	1	1	True	21	0	1	5909	0	51.43	False	CP149497.1:2919549:complete:21
+livanovii	unseen	ont	flye_medaka	8	240	760	7.27	2	2.926	1	1	True	10	0	1	5971	0	54.65	False	CP149497.1:2919549:complete:10
+livanovii	unseen	ont	flye_medaka_short	8	340	1391	7.42	2	2.926	1	1	True	2	0	1	5969	0	61.64	False	CP149497.1:2919549:complete:2
+lwelshimeri	unseen	ont	picoasm	8	94	270	0.84	1	2.814	1	1	True	6	0	0	0	0	56.71	False	CP149496.1:2814137:complete:6
+lwelshimeri	unseen	ont	flye	8	169	589	1.47	2	2.82	1	1	True	12	0	1	6022	0	53.7	False	CP149496.1:2814137:complete:12
+lwelshimeri	unseen	ont	flye_medaka	8	237	768	7.36	2	2.82	1	1	True	7	0	1	6264	1	56.04	False	CP149496.1:2814137:complete:7
+lwelshimeri	unseen	ont	flye_medaka_short	8	265	875	7.55	2	2.82	1	1	True	0	0	1	6014	0	64.49	False	CP149496.1:2814137:complete:0
+sdysgalactiae	unseen	ont	picoasm	8	28	196	0.8	1	2.205	1	1	True	16	0	0	0	0	51.39	False	CP149485.1:2204985:complete:16
+sdysgalactiae	unseen	ont	flye	8	137	510	0.88	2	2.211	1	1	True	27	0	1	5943	0	49.12	False	CP149485.1:2204985:complete:27
+sdysgalactiae	unseen	ont	flye_medaka	8	200	666	7.37	2	2.211	1	1	True	9	0	1	5933	0	53.89	False	CP149485.1:2204985:complete:9
+sdysgalactiae	unseen	ont	flye_medaka_short	8	251	956	7.01	2	2.211	1	1	True	3	0	1	5933	0	58.66	False	CP149485.1:2204985:complete:3
+cjejuni	heldout	ont	picoasm	8	51	172	0.63	1	1.768	1	1	True	19	0	0	0	0	49.69	False	CP149499.1:1768448:complete:19
+cjejuni	heldout	ont	flye	8	154	405	1.29	1	1.768	1	1	True	74	0	0	0	0	43.78	False	CP149499.1:1768448:complete:74
+cjejuni	heldout	ont	flye_medaka	4	241	520	6.89	1	1.768	1	1	True	17	0	0	0	0	50.17	False	CP149499.1:1768448:complete:17
+ecoli	heldout	ont	picoasm	8	78	430	1.21	327	5.064	5	3	False	5815	226341	1	6004	6	13.51	False	CP149500.1:5132220:fragmented (322 contigs):5798;CP149501.1:48488:wrong length (x1.025):15;CP149502.1:24185:complete:0;CP149503.1:3173:complete:0;CP149504.1:1919:complete:2
+ecoli	heldout	ont	flye	8	205	1138	1.74	693	4.787	5	1	False	6057	805308	0	0	14	8.08	False	CP149500.1:5132220:fragmented (688 contigs):6040;CP149501.1:48488:fragmented (2 contigs):5;CP149502.1:24185:wrong length (x1.040):8;CP149503.1:3173:complete:1;CP149504.1:1919:wrong length (x1.394):3
+ecoli	heldout	ont	flye_medaka	4	713	1871	7.2	693	4.777	5	1	False	5897	804747	1	1001	15	8.08	False	CP149500.1:5132220:fragmented (687 contigs):5888;CP149501.1:48488:fragmented (2 contigs):4;CP149502.1:24185:wrong length (x1.040):3;CP149503.1:3173:complete:1;CP149504.1:1919:wrong length (x1.423):1
+kvari	heldout	ont	picoasm	8	64	403	1.45	1	5.445	1	1	True	2	0	0	0	0	64.35	False	CP149491.1:5445132:complete:2
+kvari	heldout	ont	flye	8	322	1397	1.15	1	5.445	1	1	True	4	0	0	0	0	61.34	False	CP149491.1:5445132:complete:4
+kvari	heldout	ont	flye_medaka	4	570	1564	7.65	1	5.445	1	1	True	2	0	0	0	0	64.35	False	CP149491.1:5445132:complete:2
+lmono	heldout	ont	picoasm	8	88	285	0.89	1	2.945	1	1	True	7	0	0	0	0	56.24	False	CP149495.1:2944530:complete:7
+lmono	heldout	ont	flye	8	178	614	1.65	2	2.951	1	1	True	13	0	1	6020	0	53.55	False	CP149495.1:2944530:complete:13
+lmono	heldout	ont	flye_medaka	4	305	789	7.37	2	2.951	1	1	True	1	0	1	6316	0	64.69	False	CP149495.1:2944530:complete:1
+saureus	heldout	ont	picoasm	8	35	240	1.02	3	3.08	3	3	True	1	0	0	0	0	64.89	False	CP149492.1:3049603:complete:1;CP149493.1:27319:complete:0;CP149494.1:3011:complete:0
+saureus	heldout	ont	flye	8	170	679	0.79	3	3.083	3	2	True	2	0	0	0	0	61.88	False	CP149492.1:3049603:complete:2;CP149493.1:27319:complete:0;CP149494.1:3011:doubled (x2.00):0
+saureus	heldout	ont	flye_medaka	4	312	870	7.18	3	3.083	3	2	True	2	0	0	0	0	61.88	False	CP149492.1:3049603:complete:1;CP149493.1:27319:complete:1;CP149494.1:3011:doubled (x2.00):0
+senterica	heldout	ont	picoasm	8	83	435	1.14	102	4.761	2	1	False	290	62297	0	0	5	18.85	False	CP149507.1:4752118:fragmented (101 contigs):290;CP149508.1:49586:complete:0
+senterica	heldout	ont	flye	8	189	1073	1.71	311	4.638	2	1	False	617	416375	0	0	17	10.61	False	CP149507.1:4752118:fragmented (310 contigs):610;CP149508.1:49586:complete:7
+senterica	heldout	ont	flye_medaka	4	522	1559	7.65	312	4.633	2	1	False	484	422065	0	0	17	10.56	False	CP149507.1:4752118:fragmented (311 contigs):482;CP149508.1:49586:complete:2
+spyogenes	heldout	ont	picoasm	8	44	321	0.73	2	1.797	1	1	True	3	0	1	3717	0	57.77	False	CP149486.1:1793507:complete:3
+spyogenes	heldout	ont	flye	8	381	699	1.31	3	1.803	1	1	True	7	0	2	9551	0	54.09	False	CP149486.1:1793507:complete:7
+spyogenes	heldout	ont	flye_medaka	4	460	814	7.26	3	1.803	1	1	True	4	0	2	9557	1	56.52	False	CP149486.1:1793507:complete:4
+hpyl_dsm1_a	truth	ont	picoasm	8	123	815	2.23	2	1.663	2	2	True	414	0	0	0	0	36.04	False	contig_1:1653007:complete:410;plasmid:10031:complete:4
+hpyl_dsm1_b	truth	ont	picoasm	8	118	798	2.19	2	1.663	2	2	True	410	0	0	0	0	36.08	False	contig_1:1653007:complete:409;plasmid:10031:complete:1
+hpyl_dsm2452_a	truth	ont	picoasm	8	157	1053	3.16	2	1.662	2	2	True	439	0	0	0	0	35.78	False	contig_1:1652098:complete:433;plasmid:10031:complete:6
+hpyl_dsm2452_b	truth	ont	picoasm	8	146	1003	2.95	2	1.662	2	2	True	461	0	0	0	0	35.57	False	contig_1:1652100:complete:455;plasmid:10031:complete:6
+xoo_a3842i5	truth	ont	picoasm	8	670	4937	3.8	1	4.967	1	1	True	3	0	0	0	0	62.19	False	contig_1:4966623:complete:3
+xoo_a3857i10	truth	ont	picoasm	8	513	3692	3.25	1	5.02	1	1	True	75	0	0	0	0	48.26	False	contig_1:5019586:complete:75
+xoo_m10	truth	ont	picoasm	8	412	3050	2.58	1	4.951	1	1	True	6	0	0	0	0	59.17	False	contig_1:4951401:complete:6
+xoo_m24	truth	ont	picoasm	8	453	3270	3.24	1	4.951	1	1	True	5	0	0	0	0	59.96	False	contig_1:4951401:complete:5
+abaum	wide	ont	picoasm	8	1181	8980	5.95	5	4.003	3	3	True	20242	0	2	10777	0	22.96	False	NZ_CP045110.1:3981941:complete:20218;NZ_CP045109.1:9540:complete:8;NZ_CP045108.1:7655:complete:16
+abaum	wide	ont	flye_medaka	12	665	3079	8.33	37	4.368	3	1	False	21235	318	4	10282	2	22.68	False	NZ_CP045110.1:3981941:fragmented (30 contigs):21133;NZ_CP045109.1:9540:fragmented (2 contigs):43;NZ_CP045108.1:7655:complete:59
+barboris	wide	ont	picoasm	8	193	1366	2.5	5	8.645	5	5	True	0	0	0	0	0	69.37	True	OZ480193.1:3656760:complete:0;OZ480194.1:3382556:complete:0;OZ480195.1:1282155:complete:0;OZ480196.1:170705:complete:0;OZ480197.1:152473:complete:0
+barboris	wide	ont	flye_medaka	12	523	2618	8.67	5	8.645	5	5	True	5	0	0	0	0	62.38	False	OZ480193.1:3656760:complete:1;OZ480194.1:3382556:complete:1;OZ480195.1:1282155:complete:2;OZ480196.1:170705:complete:1;OZ480197.1:152473:complete:0
+bmallei	wide	ont	picoasm	8	155	1081	1.86	2	5.835	2	2	True	352	0	0	0	0	42.19	False	NZ_CP124608.1:3510110:complete:234;NZ_CP124607.1:2324638:complete:118
+bmallei	wide	ont	flye_medaka	12	397	1961	7.83	2	5.835	2	2	True	385	0	0	0	0	41.81	False	NZ_CP124608.1:3510110:complete:261;NZ_CP124607.1:2324638:complete:124
+bsp33096	wide	ont	picoasm	8	149	1030	2.57	4	8.322	4	4	True	1	0	0	0	0	69.2	False	OZ480186.1:3609742:complete:0;OZ480187.1:3370433:complete:0;OZ480188.1:1271489:complete:1;OZ480189.1:70795:complete:0
+bsp33096	wide	ont	flye_medaka	12	456	2320	8.46	4	8.322	4	4	True	2	0	0	0	0	66.19	False	OZ480186.1:3609742:complete:1;OZ480187.1:3370433:complete:1;OZ480188.1:1271489:complete:0;OZ480189.1:70795:complete:0
+ecoli_cft073	wide	ont	picoasm	8	67	460	1.48	1	5.237	1	1	True	53	0	0	0	0	49.95	False	1:5236939:complete:53
+ecoli_cft073	wide	ont	flye_medaka	12	377	1605	7.46	1	5.237	1	1	True	52	0	0	0	0	50.03	False	1:5236939:complete:52
+efaecalis	wide	ont	picoasm	8	75	555	1.03	4	3.361	4	4	True	1216	0	0	0	0	34.41	False	NC_004668.1:3218031:complete:1187;NC_004669.1:66320:complete:16;NC_004671.1:57660:complete:6;NC_004670.1:17963:complete:7
+efaecalis	wide	ont	flye_medaka	8	265	1065	7.72	4	3.36	4	4	True	1143	0	0	0	0	34.68	False	NC_004668.1:3218031:complete:1096;NC_004669.1:66320:complete:25;NC_004671.1:57660:complete:10;NC_004670.1:17963:complete:12
+kpneu_mgh	wide	ont	picoasm	8	72	492	1.57	6	5.694	6	6	True	308	0	0	0	0	42.67	False	1:5314201:complete:293;2:175881:complete:8;3:107577:complete:1;4:88582:complete:6;5:4259:complete:0;6:3478:complete:0
+kpneu_mgh	wide	ont	flye_medaka	12	402	1962	7.88	9	5.664	6	2	True	437	60510	0	0	2	19.7	False	1:5314201:complete:292;2:175881:wrong length (x0.656):0;3:107577:fragmented (4 contigs):129;4:88582:complete:16;5:4259:doubled (x2.00):0;6:3478:doubled (x2.00):0
+mrsa252	wide	ont	picoasm	8	30	203	0.91	1	2.903	1	1	True	29	0	0	0	0	50.0	False	1:2902596:complete:29
+mrsa252	wide	ont	flye_medaka	12	332	1023	7.02	1	2.903	1	1	True	29	0	0	0	0	50.0	False	1:2902596:complete:29
+paeru	wide	ont	picoasm	8	66	432	1.65	1	6.275	1	1	True	142	0	0	0	0	46.45	False	1:6275257:complete:142
+paeru	wide	ont	flye_medaka	12	415	1896	7.73	1	6.275	1	1	True	138	0	0	0	0	46.58	False	1:6275257:complete:138
+paeru_lig	wide	ont	picoasm	8	93	640	1.53	2	6.283	1	1	True	167	0	1	7202	0	45.75	False	1:6275257:complete:167
+paeru_lig	wide	ont	flye_medaka	12	493	2568	7.67	2	6.279	1	1	True	132	0	1	3566	0	46.77	False	1:6275257:complete:132
+paeru_r9	wide	ont	picoasm	8	131	921	1.65	1	6.275	1	1	True	334	0	0	0	0	42.74	False	1:6275257:complete:334
+paeru_r9	wide	ont	flye_medaka	12	511	2420	7.91	1	6.275	1	1	True	513	0	0	0	0	40.88	False	1:6275257:complete:513
+seuropae	wide	ont	picoasm	8	357	1132	2.44	5	10.602	4	0	False	643	6309748	1	3553	6	2.22	False	NZ_JBPJFK010000001.1:4373157:missing:0;NZ_JBPJFK010000002.1:4162400:fragmented (2 contigs):577;NZ_JBPJFK010000003.1:1983206:fragmented (2 contigs):66;NZ_JBPJFK010000004.1:12751:missing:0
+seuropae	wide	ont	flye_medaka	12	638	3836	8.2	7	10.538	4	0	False	22501	1978589	1	3486	3	7.21	False	NZ_JBPJFK010000001.1:4373157:fragmented (4 contigs):476;NZ_JBPJFK010000002.1:4162400:wrong length (x1.352):22025;NZ_JBPJFK010000003.1:1983206:wrong length (x0.009):0;NZ_JBPJFK010000004.1:12751:missing:0
+sturgid	wide	ont	picoasm	8	882	6253	7.39	6	10.753	4	1	False	12526	231113	1	3564	3	16.43	False	NZ_JBPJFR010000001.1:10438753:fragmented (4 contigs):12487;NZ_JBPJFR010000002.1:213783:missing:0;NZ_JBPJFR010000003.1:48318:complete:39;NZ_JBPJFR010000004.1:16768:missing:0
+sturgid	wide	ont	flye_medaka	12	463	2118	8.83	4	10.705	4	2	True	18080	18114	1	3404	2	24.71	False	NZ_JBPJFR010000001.1:10438753:complete:17741;NZ_JBPJFR010000002.1:213783:wrong length (x1.028):304;NZ_JBPJFR010000003.1:48318:complete:35;NZ_JBPJFR010000004.1:16768:missing:0
+vpara	wide	hifi	picoasm	8	31	202	0.8	2	5.147	2	2	True	117	0	0	0	0	46.43	False	CP149505.1:3281443:complete:117;CP149506.1:1865648:complete:0
+vpara	wide	hifi	flye	16	135	694	1.1	2	5.144	2	2	True	2973	0	0	0	0	32.38	False	CP149505.1:3281443:complete:2973;CP149506.1:1865648:complete:0
+vpara	wide	hifi	hifiasm	16	38	295	17.38	2	5.289	2	1	False	13387	0	0	0	1	25.85	False	CP149505.1:3281443:wrong length (x1.039):127;CP149506.1:1865648:complete:13260
+vpara	wide	ont	picoasm	8	560	4177	4.1	2	5.146	2	2	True	1613	0	0	0	0	35.04	False	CP149505.1:3281443:complete:1178;CP149506.1:1865648:complete:435
+vpara	wide	ont	flye_medaka	12	315	1315	8.29	3	5.143	2	1	False	1659	2909	0	0	0	30.52	False	CP149505.1:3281443:fragmented (2 contigs):1104;CP149506.1:1865648:complete:555
+barb_24066	wide2	ont	picoasm	8	179	1259	2.32	4	8.368	5	4	True	8	40662	0	0	0	23.15	False	OZ480169.1:3630971:complete:8;OZ480170.1:3532587:complete:0;OZ480171.1:1190410:complete:0;OZ480172.1:40662:missing:0;OZ480173.1:13701:complete:0
+barb_24066	wide2	ont	flye_medaka	8	9865	3292	8.08	5	8.421	5	4	True	17822	40662	1	40662	0	21.58	False	OZ480169.1:3630971:complete:1;OZ480170.1:3532587:complete:17821;OZ480171.1:1190410:complete:0;OZ480172.1:40662:missing:0;OZ480173.1:13701:complete:0
+barb_r132	wide2	ont	picoasm	8	152	1059	2.16	3	7.062	3	3	True	3	0	0	0	0	63.72	False	OZ480214.1:3614124:complete:3;OZ480215.1:3423854:complete:0;OZ480216.1:24407:complete:0
+barb_r132	wide2	ont	flye_medaka	8	604	2317	8.03	3	7.062	3	3	True	22	0	0	0	0	55.07	False	OZ480214.1:3614124:complete:1;OZ480215.1:3423854:complete:0;OZ480216.1:24407:complete:21
+bsp34232	wide2	ont	picoasm	8	130	911	1.63	3	7.964	3	3	True	17	0	0	0	0	56.71	False	OZ480211.1:3512147:complete:15;OZ480212.1:3197900:complete:2;OZ480213.1:1253739:complete:0
+bsp34232	wide2	ont	flye_medaka	8	446	1836	8.58	3	7.964	3	3	True	8	0	0	0	0	59.98	False	OZ480211.1:3512147:complete:7;OZ480212.1:3197900:complete:1;OZ480213.1:1253739:complete:0
+bsp_r72673	wide2	ont	picoasm	8	154	1083	2.02	3	7.051	3	3	True	0	0	0	0	0	68.48	True	OZ480220.1:3609742:complete:0;OZ480221.1:3370433:complete:0;OZ480222.1:70795:complete:0
+bsp_r72673	wide2	ont	flye_medaka	8	535	2329	8.15	3	7.051	3	3	True	1	0	0	0	0	68.48	False	OZ480220.1:3609742:complete:1;OZ480221.1:3370433:complete:0;OZ480222.1:70795:complete:0
+ecoli_25922	wide2	ont	picoasm	8	1579	11800	9.74	7	5.227	5	5	True	300	0	2	16849	0	42.4	False	CP149500.1:5132220:complete:295;CP149501.1:48488:complete:0;CP149502.1:24185:complete:4;CP149503.1:3173:complete:1;CP149504.1:1919:complete:0
+ecoli_25922	wide2	ont	flye_medaka	8	975	4812	8.78	9	5.263	5	3	True	5780	2202	3	56605	0	28.15	False	CP149500.1:5132220:complete:5693;CP149501.1:48488:complete:13;CP149502.1:24185:complete:53;CP149503.1:3173:fragmented (2 contigs):20;CP149504.1:1919:wrong length (x0.394):1
+senterica_b	wide2	ont	picoasm	8	81	561	1.46	2	4.802	2	2	True	10	0	0	0	0	56.81	False	CP149507.1:4752118:complete:7;CP149508.1:49586:complete:3
+senterica_b	wide2	ont	flye_medaka	8	601	1465	7.2	2	4.802	2	2	True	13	0	0	0	0	55.67	False	CP149507.1:4752118:complete:9;CP149508.1:49586:complete:4
+strep_puni	wide2	ont	picoasm	8	217	1462	2.72	3	9.205	3	0	False	5972	933065	1	3545	3	9.9	False	JBPJFI010000001.1:8082017:wrong length (x1.119):5954;JBPJFI010000002.1:932876:missing:0;JBPJFI010000003.1:156297:wrong length (x1.017):18
+strep_puni	wide2	ont	flye_medaka	8	846	3008	8.32	5	9.189	3	0	False	7543	933043	1	3536	2	9.89	False	JBPJFI010000001.1:8082017:fragmented (3 contigs):7483;JBPJFI010000002.1:932876:missing:0;JBPJFI010000003.1:156297:wrong length (x1.017):60
+strep_stell	wide2	ont	picoasm	8	914	6677	7.73	14	10.531	4	0	False	26831	516861	1	3568	3	12.8	False	JBPJFJ010000001.1:6791917:fragmented (8 contigs):19475;JBPJFJ010000002.1:2347630:fragmented (3 contigs):4073;JBPJFJ010000003.1:1132004:wrong length (x1.218):3190;JBPJFJ010000004.1:80356:wrong length (x1.393):93
+strep_stell	wide2	ont	flye_medaka	8	861	2665	8.63	14	10.557	4	0	False	19699	1098292	4	30428	3	9.67	False	JBPJFJ010000001.1:6791917:fragmented (6 contigs):14601;JBPJFJ010000002.1:2347630:fragmented (2 contigs):2813;JBPJFJ010000003.1:1132004:wrong length (x1.682):2178;JBPJFJ010000004.1:80356:wrong length (x1.394):107
+psph	extra	ont	picoasm	8	62	415	1.81	3	6.11	3	2	True	NA	51711	1	41171	3	NA	False	NC_005773.3:5928787:complete:NA;NC_007274.1:131950:complete:NA;NC_007275.1:51711:missing:NA
+psph	extra	ont	flye	8	326	1526	1.39	4	6.114	3	2	True	70321	51711	2	45296	3	17.0	False	NC_005773.3:5928787:complete:69820;NC_007274.1:131950:complete:501;NC_007275.1:51711:missing:0
+psph	extra	ont	flye_medaka	8	504	1906	7.9	4	6.114	3	2	True	70090	51711	2	45300	3	17.01	False	NC_005773.3:5928787:complete:69587;NC_007274.1:131950:complete:503;NC_007275.1:51711:missing:0
+pst	extra	ont	picoasm	8	77	512	2.1	3	6.538	3	2	False	3939	0	0	0	2	32.2	False	NC_004578.1:6397126:wrong length (x1.000):3938;NC_004633.1:73661:complete:1;NC_004632.1:67473:complete:0
+pst	extra	ont	flye	8	263	1371	1.1	7	6.558	3	0	False	3939	48095	0	0	3	20.99	False	NC_004578.1:6397126:wrong length (x1.000):3930;NC_004633.1:73661:fragmented (3 contigs):1;NC_004632.1:67473:fragmented (3 contigs):8
+pst	extra	ont	flye_medaka	8	397	1760	7.89	7	6.557	3	0	False	3923	48096	0	0	3	20.99	False	NC_004578.1:6397126:wrong length (x1.000):3922;NC_004633.1:73661:fragmented (3 contigs):0;NC_004632.1:67473:fragmented (3 contigs):1
+bmul_atcc17616_hifi	fresh	hifi	picoasm	8	42	285	1.04	4	7.009	4	4	True	58	0	0	0	0	50.82	False	AP009385.1:3448421:complete:47;AP009386.1:2473162:complete:9;AP009387.1:919805:complete:2;AP009388.1:167422:complete:0
+bmul_atcc17616_hifi	fresh	hifi	flye	8	208	850	0.77	4	7.009	4	4	True	59	0	0	0	0	50.75	False	AP009385.1:3448421:complete:47;AP009386.1:2473162:complete:9;AP009387.1:919805:complete:3;AP009388.1:167422:complete:0
+bmul_atcc17616_hifi	fresh	hifi	hifiasm	8	90	424	17.42	5	7.038	4	4	True	9843	0	1	19054	0	28.53	False	AP009385.1:3448421:complete:47;AP009386.1:2473162:complete:9794;AP009387.1:919805:complete:2;AP009388.1:167422:complete:0
+bsub_dsm10	fresh	ont	picoasm	8	49	310	1.44	2	4.3	2	2	True	4438	0	0	0	0	29.86	False	CP149576.1:4211264:complete:4437;CP149577.1:84215:complete:1
+bsub_dsm10	fresh	ont	flye_medaka	8	356	1219	7.61	3	4.305	2	2	True	4438	0	1	4893	0	29.86	False	CP149576.1:4211264:complete:4437;CP149577.1:84215:complete:1
+cbei_dsm105335	fresh	ont	picoasm	8	67	464	1.53	1	5.793	1	1	True	63	0	0	0	0	49.64	False	CP199770.1:5792971:complete:63
+cbei_dsm105335	fresh	ont	flye_medaka	8	627	1935	7.68	1	5.793	1	1	True	62	0	0	0	0	49.71	False	CP199770.1:5792971:complete:62
+cdiff_nctc12727	fresh	ont	picoasm	8	71	485	1.3	4	4.409	1	0	False	222	18426	0	0	0	23.7	False	CM172486.1:4371963:fragmented (4 contigs):222
+cdiff_nctc12727	fresh	ont	flye_medaka	8	434	1526	7.65	7	4.524	1	0	False	635	0	0	0	0	38.38	False	CM172486.1:4371963:fragmented (7 contigs):635
+cnec_atcc25207	fresh	ont	picoasm	8	111	780	1.98	3	7.416	2	2	True	101	0	1	452156	3	48.39	False	CP196462.1:4051258:complete:80;CP196463.1:2912554:complete:21
+cnec_atcc25207	fresh	ont	flye_medaka	8	1551	2287	8.3	3	7.416	2	2	True	62	0	1	452157	3	50.5	False	CP196462.1:4051258:complete:54;CP196463.1:2912554:complete:8
+lpla_atcc14917	fresh	ont	picoasm	8	176	1293	1.99	2	3.251	2	2	True	1239	0	0	0	0	34.19	False	CM205712.1:3243159:complete:1239;JBPZPM010000002.1:7221:complete:0
+lpla_atcc14917	fresh	ont	flye_medaka	8	668	1617	7.66	2	3.257	2	1	True	1603	0	0	0	0	33.07	False	CM205712.1:3243159:complete:1558;JBPZPM010000002.1:7221:wrong length (x1.850):45
+mrub_dsm1279	fresh	ont	picoasm	8	41	285	0.93	1	3.097	1	1	True	23	0	0	0	0	51.29	False	CP001743.1:3097457:complete:23
+mrub_dsm1279	fresh	ont	flye_medaka	8	432	1081	7.02	1	3.097	1	1	True	19	0	0	0	0	52.12	False	CP001743.1:3097457:complete:19
+nmen_fam18_hifi	fresh	hifi	picoasm	8	15	98	0.6	1	2.195	1	1	True	13	0	0	0	0	52.27	False	AM421808.1:2194961:complete:13
+nmen_fam18_hifi	fresh	hifi	flye	8	115	306	0.59	1	2.195	1	1	True	14	0	0	0	0	51.95	False	AM421808.1:2194961:complete:14
+nmen_fam18_hifi	fresh	hifi	hifiasm	8	37	176	17.2	1	2.195	1	1	True	13	0	0	0	0	52.27	False	AM421808.1:2194961:complete:13
+psia_lmg24279	fresh	ont	picoasm	8	52	358	0.89	3	2.3	3	3	True	933	0	0	0	0	33.92	False	CP178375.1:2249876:complete:933;CP178376.1:37879:complete:0;CP178377.1:11066:complete:0
+psia_lmg24279	fresh	ont	flye_medaka	8	360	1019	7.38	3	2.299	3	3	True	72	0	0	0	0	45.04	False	CP178375.1:2249876:complete:72;CP178376.1:37879:complete:0;CP178377.1:11066:complete:0
+rpal_cga009_hifi	fresh	hifi	picoasm	8	30	193	1.05	2	5.468	2	2	True	2	0	0	0	0	64.37	False	CP116810.1:5459214:complete:2;CP116811.1:8427:complete:0
+rpal_cga009_hifi	fresh	hifi	flye	8	152	603	0.74	1	5.459	2	1	True	2	8427	0	0	0	28.12	False	CP116810.1:5459214:complete:2;CP116811.1:8427:missing:0
+rpal_cga009_hifi	fresh	hifi	hifiasm	8	51	248	17.39	2	5.474	2	1	True	2	0	0	0	0	64.37	False	CP116810.1:5459214:complete:2;CP116811.1:8427:wrong length (x1.696):0
+scap_dsm20326	fresh	ont	picoasm	8	20	132	0.67	4	2.477	4	4	True	24	0	0	0	0	50.14	False	CP145263.1:2443792:complete:24;CP145261.1:21426:complete:0;CP145264.1:9275:complete:0;CP145262.1:2329:complete:0
+scap_dsm20326	fresh	ont	flye_medaka	8	184	439	7.29	4	2.477	4	4	True	9	0	0	0	0	54.4	False	CP145263.1:2443792:complete:9;CP145261.1:21426:complete:0;CP145264.1:9275:complete:0;CP145262.1:2329:complete:0
+sone_mr1	fresh	ont	picoasm	8	52	339	1.47	3	5.135	2	1	True	6797	3631	0	0	2	26.92	False	AE014299.2:4969811:complete:3813;AE014300.1:161613:fragmented (2 contigs):2984
+sone_mr1	fresh	ont	flye_medaka	8	840	2029	7.99	6	5.131	2	1	True	3848	8623	0	0	1	26.14	False	AE014299.2:4969811:complete:3807;AE014300.1:161613:fragmented (5 contigs):41
+sthe_dsm20745	fresh	ont	picoasm	8	38	255	1.1	2	3.994	2	2	True	472	0	0	0	0	39.27	False	CP001823.1:2741033:complete:4;CP001824.1:1252731:complete:468
+sthe_dsm20745	fresh	ont	flye_medaka	8	510	1276	7.62	2	3.994	2	2	True	473	0	0	0	0	39.27	False	CP001823.1:2741033:complete:4;CP001824.1:1252731:complete:469
+sxyl_cskr35	fresh	ont	picoasm	8	77	447	0.9	6	2.919	6	6	True	999	0	0	0	0	34.66	False	CP199550.1:2849982:complete:182;CP199552.1:34668:complete:686;CP199551.1:17593:complete:122;CP199553.1:7907:complete:4;CP199554.1:4634:complete:2;CP199555.1:4059:complete:3
+sxyl_cskr35	fresh	ont	flye_medaka	8	557	1508	7.44	4	2.91	6	4	True	1154	8693	0	0	0	24.72	False	CP199550.1:2849982:complete:320;CP199552.1:34668:complete:702;CP199551.1:17593:complete:124;CP199553.1:7907:complete:8;CP199554.1:4634:missing:0;CP199555.1:4059:missing:0
+xoo_m10_hifi	fresh	hifi	picoasm	8	72	503	1.55	1	4.951	1	1	True	54	0	0	0	0	49.62	False	CP162573.1:4951440:complete:54
+xoo_m10_hifi	fresh	hifi	flye	8	405	1710	2.43	3	4.971	1	0	False	71	0	0	0	0	48.43	False	CP162573.1:4951440:fragmented (3 contigs):71
+xoo_m10_hifi	fresh	hifi	hifiasm	8	206	1310	17.44	1	4.951	1	1	True	54	0	0	0	0	49.62	False	CP162573.1:4951440:complete:54
+xoo_whri5233	fresh	ont	picoasm	8	0	0	0.01	0	0.0	1	0	False	0	4995842	0	0	0	-0.0	False	CP167997.1:4995842:missing:0
+xsp_ncppb1131	fresh	ont	picoasm	8	133	771	1.5	1	4.87	1	1	True	15	0	0	0	0	55.11	False	CP102594.1:4869984:complete:15
+xsp_ncppb1131	fresh	ont	flye_medaka	8	556	1535	7.47	2	4.902	1	1	True	2695	0	1	32151	0	32.57	False	CP102594.1:4869984:complete:2695
+abaumannii_aye_hifi	more	hifi	picoasm	8	23	146	0.96	1	3.942	1	1	True	1725	0	0	0	1	33.59	False	ctg.s1.000000F:3943308:complete:1725
+abaumannii_aye_hifi	more	hifi	flye	8	141	554	0.94	1	3.939	1	1	True	5333	0	0	0	1	28.69	False	ctg.s1.000000F:3943308:complete:5333
+abaumannii_aye_hifi	more	hifi	hifiasm	8	37	212	17.22	1	3.994	1	0	False	52509	1328	0	0	1	18.65	False	ctg.s1.000000F:3943308:wrong length (x1.013):52509
+aloyolae_tsd300	more	ont	picoasm	8	142	984	1.34	22	2.033	1	0	False	250	16505	0	0	3	20.84	False	CP126958.1:2034560:fragmented (22 contigs):250
+aloyolae_tsd300	more	ont	flye_medaka	8	482	2088	7.4	154	2.048	1	0	False	788	80770	0	0	3	13.97	False	CP126958.1:2034560:fragmented (154 contigs):788
+amictus_tsd301	more	ont	picoasm	8	378	2400	2.0	2	2.126	2	1	True	7844	138	0	0	1	24.25	False	CP132985.1:2117296:complete:7841;CP132986.1:7768:wrong length (x1.180):3
+amictus_tsd301	more	ont	flye_medaka	8	849	3475	8.37	7	2.132	2	0	False	455	4466	0	0	0	26.35	False	CP132985.1:2117296:fragmented (5 contigs):428;CP132986.1:7768:fragmented (2 contigs):27
+atenax_tsd302	more	ont	picoasm	8	138	971	1.62	5	2.104	2	1	False	182	13175	0	0	0	21.96	False	CP127382.2:2087453:fragmented (4 contigs):180;CP127383.2:9244:complete:2
+atenax_tsd302	more	ont	flye_medaka	8	479	1731	7.86	3	2.079	2	1	False	21305	0	0	0	0	19.93	False	CP127382.2:2087453:fragmented (2 contigs):21287;CP127383.2:9244:complete:18
+bcepacia_ucb717_hifi	more	hifi	picoasm	8	65	448	1.62	4	8.571	4	4	True	2375	0	0	0	0	35.57	False	ctg.s1.000000F:3779004:complete:2257;ctg.s1.000001F:3397684:complete:111;ctg.s1.2:1187978:complete:6;ctg.s2.1:204169:complete:1
+bcepacia_ucb717_hifi	more	hifi	flye	8	228	1195	0.93	4	8.571	4	4	True	2389	0	0	0	0	35.55	False	ctg.s1.000000F:3779004:complete:2271;ctg.s1.000001F:3397684:complete:111;ctg.s1.2:1187978:complete:6;ctg.s2.1:204169:complete:1
+bcepacia_ucb717_hifi	more	hifi	hifiasm	8	122	767	17.52	4	8.662	4	2	False	65819	0	0	0	0	21.15	False	ctg.s1.000000F:3779004:wrong length (x1.018):52917;ctg.s1.000001F:3397684:complete:12895;ctg.s1.2:1187978:complete:6;ctg.s2.1:204169:wrong length (x1.049):1
+bcereus_971_hifi	more	hifi	picoasm	8	27	168	1.0	2	5.432	2	2	True	11633	0	0	0	1	26.7	False	ctg.s1.000000F:5428102:complete:11610;ctg.s2.000000F:15271:complete:23
+bcereus_971_hifi	more	hifi	flye	8	112	536	1.14	2	5.431	2	1	True	11611	1211	0	0	1	26.28	False	ctg.s1.000000F:5428102:complete:11611;ctg.s2.000000F:15271:wrong length (x0.921):0
+bcereus_971_hifi	more	hifi	hifiasm	8	40	229	17.33	2	5.432	2	2	True	11854	0	0	0	1	26.62	False	ctg.s1.000000F:5428102:complete:11852;ctg.s2.000000F:15271:complete:2
+blongum_bl020	more	ont	picoasm	8	79	458	1.89	2	2.435	1	1	True	2	0	1	21906	0	60.82	False	JBWDMS010000001.1:2413342:complete:2
+blongum_bl020	more	ont	flye_medaka	8	867	3430	8.0	2	2.435	1	1	True	7	0	1	21906	0	55.38	False	JBWDMS010000001.1:2413342:complete:7
+bpumilus	more	ont	picoasm	8	63	418	1.85	1	3.776	1	1	True	12	0	0	0	0	54.98	False	NZ_OZ346049.1:3775567:complete:12
+bpumilus	more	ont	flye_medaka	8	372	1351	7.65	1	3.776	1	1	True	8	0	0	0	0	56.74	False	NZ_OZ346049.1:3775567:complete:8
+bsubtilis_w23_hifi	more	hifi	picoasm	8	28	186	1.03	1	4.046	1	1	True	54	0	0	0	0	48.75	False	ctg.s1.000000F:4045654:complete:54
+bsubtilis_w23_hifi	more	hifi	flye	8	154	630	0.96	1	4.046	1	1	True	54	0	0	0	0	48.75	False	ctg.s1.000000F:4045654:complete:54
+bsubtilis_w23_hifi	more	hifi	hifiasm	8	47	291	17.34	1	4.046	1	1	True	54	0	0	0	0	48.75	False	ctg.s1.000000F:4045654:complete:54
+chitinophagaceae_r92579	more	ont	picoasm	8	61	391	2.02	1	4.206	1	1	True	170	0	0	0	0	43.93	False	NZ_OZ344884.1:4205908:complete:170
+chitinophagaceae_r92579	more	ont	flye_medaka	8	461	2011	7.45	1	4.206	1	1	True	170	0	0	0	0	43.93	False	NZ_OZ344884.1:4205908:complete:170
+dsonorensis_kr87	more	ont	picoasm	8	165	1073	4.15	7	4.801	6	6	True	128	0	1	15932	0	45.73	False	CP158299.1:3027404:complete:78;CP158297.1:484959:complete:23;CP158300.1:449785:complete:8;CP158298.1:437185:complete:15;CP158296.1:309287:complete:3;CP158301.1:76496:complete:1
+dsonorensis_kr87	more	ont	flye_medaka	8	1605	8667	7.44	7	4.789	6	6	True	112	0	1	3569	0	46.31	False	CP158299.1:3027404:complete:68;CP158297.1:484959:complete:20;CP158300.1:449785:complete:4;CP158298.1:437185:complete:16;CP158296.1:309287:complete:3;CP158301.1:76496:complete:1
+ecoli_h10407_hifi	more	hifi	picoasm	8	50	350	1.25	5	5.388	6	5	True	3852	5803	0	0	0	27.47	False	ctg.s1.000000F:5153403:complete:3840;ctg.s2.000000F:94795:complete:3;ctg.s2.000001F:67899:complete:0;ctg.s2.000002F:66672:complete:9;ctg.s2.3:5803:missing:0;ctg.s2.5:5538:complete:0
+ecoli_h10407_hifi	more	hifi	flye	8	156	762	0.74	4	5.383	6	4	True	3851	11341	0	0	0	25.5	False	ctg.s1.000000F:5153403:complete:3840;ctg.s2.000000F:94795:complete:2;ctg.s2.000001F:67899:complete:0;ctg.s2.000002F:66672:complete:9;ctg.s2.3:5803:missing:0;ctg.s2.5:5538:missing:0
+ecoli_h10407_hifi	more	hifi	hifiasm	8	81	493	17.27	5	5.425	6	1	True	4423	5803	0	0	0	27.22	False	ctg.s1.000000F:5153403:complete:4412;ctg.s2.000000F:94795:wrong length (x1.107):2;ctg.s2.000001F:67899:wrong length (x1.184):0;ctg.s2.000002F:66672:wrong length (x1.183):9;ctg.s2.3:5803:missing:0;ctg.s2.5:5538:wrong length (x1.361):0
+ecoli_k12_hifi	more	hifi	picoasm	8	22	144	0.92	1	4.639	1	1	True	3612	0	0	0	0	31.09	False	ctg.s1.000000F:4638952:complete:3612
+ecoli_k12_hifi	more	hifi	flye	8	107	434	0.78	2	4.683	1	1	True	18	0	1	43715	0	54.11	False	ctg.s1.000000F:4638952:complete:18
+ecoli_k12_hifi	more	hifi	hifiasm	8	35	199	17.37	1	4.639	1	1	True	3612	0	0	0	0	31.09	False	ctg.s1.000000F:4638952:complete:3612
+efaecalis_og1rf_hifi	more	hifi	picoasm	8	17	112	0.61	1	2.74	1	1	True	10	0	0	0	0	54.38	False	ctg.s1.000000F:2739520:complete:10
+efaecalis_og1rf_hifi	more	hifi	flye	8	126	367	0.89	1	2.74	1	1	True	11	0	0	0	0	53.96	False	ctg.s1.000000F:2739520:complete:11
+efaecalis_og1rf_hifi	more	hifi	hifiasm	8	32	168	17.29	1	2.751	1	1	True	10997	0	0	0	0	23.96	False	ctg.s1.000000F:2739520:complete:10997
+hpylori_j99_hifi	more	hifi	picoasm	8	9	57	0.4	1	1.646	1	1	True	4201	0	0	0	0	25.92	False	ctg.s1.000000F:1641626:complete:4201
+hpylori_j99_hifi	more	hifi	flye	8	87	200	0.79	1	1.646	1	1	True	4199	0	0	0	0	25.92	False	ctg.s1.000000F:1641626:complete:4199
+hpylori_j99_hifi	more	hifi	hifiasm	8	20	88	17.14	1	1.646	1	1	True	4200	0	0	0	0	25.92	False	ctg.s1.000000F:1641626:complete:4200
+kcowanii	more	ont	picoasm	8	259	1854	2.59	1	4.796	1	1	True	6072	0	0	0	0	28.97	False	NZ_CP168529.1:4795088:complete:6072
+kcowanii	more	ont	flye_medaka	8	937	3642	8.36	1	4.796	1	1	True	7100	0	0	0	0	28.3	False	NZ_CP168529.1:4795088:complete:7100
+kpneu_baa2146_hifi	more	hifi	picoasm	8	31	206	1.1	5	5.782	4	4	True	2068	0	1	2014	0	34.46	False	ctg.s1.000000F:5435758:complete:1985;ctg.s2.3:140745:complete:80;ctg.s2.000000F:117753:complete:3;ctg.s2.1:85161:complete:0
+kpneu_baa2146_hifi	more	hifi	flye	8	125	620	0.71	4	5.779	4	4	True	2067	0	0	0	0	34.47	False	ctg.s1.000000F:5435758:complete:1985;ctg.s2.3:140745:complete:80;ctg.s2.000000F:117753:complete:2;ctg.s2.1:85161:complete:0
+kpneu_baa2146_hifi	more	hifi	hifiasm	8	48	291	17.3	5	5.807	4	1	True	2104	0	1	3788	0	34.39	False	ctg.s1.000000F:5435758:complete:2022;ctg.s2.3:140745:wrong length (x1.063):80;ctg.s2.000000F:117753:wrong length (x1.051):2;ctg.s2.1:85161:wrong length (x1.105):0
+lmono_li23_hifi	more	hifi	picoasm	8	18	116	0.64	1	2.98	1	1	True	11	0	0	0	0	54.33	False	ctg.s1.000000F:2979703:complete:11
+lmono_li23_hifi	more	hifi	flye	8	109	390	0.99	1	2.98	1	1	True	11	0	0	0	0	54.33	False	ctg.s1.000000F:2979703:complete:11
+lmono_li23_hifi	more	hifi	hifiasm	8	32	177	17.08	1	2.992	1	1	True	12261	0	0	0	0	23.86	False	ctg.s1.000000F:2979703:complete:12261
+lmono_li2_hifi	more	hifi	picoasm	8	9	53	0.53	1	2.951	1	1	True	11	0	0	0	0	54.29	False	ctg.s1.000000F:2950972:complete:11
+lmono_li2_hifi	more	hifi	flye	8	70	201	0.85	1	2.951	1	1	True	11	0	0	0	0	54.29	False	ctg.s1.000000F:2950972:complete:11
+lmono_li2_hifi	more	hifi	hifiasm	8	17	71	17.23	1	2.951	1	1	True	11	0	0	0	0	54.29	False	ctg.s1.000000F:2950972:complete:11
+mglycogenes	more	ont	picoasm	8	196	1429	1.79	1	3.397	1	1	True	279	0	0	0	0	40.86	False	NZ_AP046527.1:3397625:complete:279
+mglycogenes	more	ont	flye_medaka	8	806	2840	7.6	1	3.397	1	1	True	488	0	0	0	0	38.43	False	NZ_AP046527.1:3397625:complete:488
+mlabreanum_hifi	more	hifi	picoasm	8	8	49	0.36	1	1.805	1	1	True	407	0	0	0	0	36.47	False	ctg.s1.000000F:1804556:complete:407
+mlabreanum_hifi	more	hifi	flye	8	339	1158	0.84	1	1.805	1	1	True	407	0	0	0	0	36.47	False	ctg.s1.000000F:1804556:complete:407
+mlabreanum_hifi	more	hifi	hifiasm	8	17	68	17.15	1	1.805	1	1	True	408	0	0	0	0	36.46	False	ctg.s1.000000F:1804556:complete:408
+mresinovorans	more	ont	picoasm	8	89	624	1.9	1	6.894	1	1	True	2	0	0	0	0	65.37	False	NZ_OZ486268.1:6893711:complete:2
+mresinovorans	more	ont	flye_medaka	8	522	2145	8.05	1	6.894	1	1	True	5	0	0	0	0	61.39	False	NZ_OZ486268.1:6893711:complete:5
+mrhizoxinica	more	ont	picoasm	8	82	529	1.4	3	3.462	2	2	True	1	0	1	7744	0	65.38	False	NZ_CP184791.1:2530141:complete:1;NZ_CP184792.1:924298:complete:0
+mrhizoxinica	more	ont	flye_medaka	8	444	1686	7.59	3	3.462	2	2	True	4	0	1	7744	0	59.36	False	NZ_CP184791.1:2530141:complete:4;NZ_CP184792.1:924298:complete:0
+nmen_b_hifi	more	hifi	picoasm	8	16	110	0.61	1	2.306	1	1	True	5589	0	0	0	0	26.15	False	ctg.s1.000000F:2304631:complete:5589
+nmen_b_hifi	more	hifi	flye	8	113	395	0.65	1	2.306	1	1	True	5588	0	0	0	0	26.15	False	ctg.s1.000000F:2304631:complete:5588
+nmen_b_hifi	more	hifi	hifiasm	8	35	204	17.28	1	2.306	1	1	True	5726	0	0	0	0	26.05	False	ctg.s1.000000F:2304631:complete:5726
+phisticola_t0504	more	ont	picoasm	8	187	1289	2.39	5	3.01	3	2	True	1465	0	2	14473	0	33.11	False	CP181052.1:2176075:complete:1046;CP181053.1:812616:complete:406;CP181054.1:6399:wrong length (x1.026):13
+phisticola_t0504	more	ont	flye_medaka	8	653	2599	7.77	3	3.002	3	2	True	1314	0	0	0	1	33.58	False	CP181052.1:2176075:complete:908;CP181053.1:812616:complete:384;CP181054.1:6399:doubled (x2.05):22
+pkielensis_ze23	more	ont	picoasm	8	717	4701	8.48	2	11.452	1	1	True	160	0	1	5594874	0	45.64	False	CP130043.1:5857139:complete:160
+pkielensis_ze23	more	ont	flye_medaka	8	2694	14607	9.26	26	7.935	1	0	False	264	37406	13	2108820	0	21.92	False	CP130043.1:5857139:fragmented (13 contigs):264
+pmarchantiae	more	ont	picoasm	8	304	2191	3.17	1	6.975	1	1	True	293	0	0	0	0	43.77	False	NZ_OZ405147.1:6975373:complete:293
+pmarchantiae	more	ont	flye_medaka	8	791	3835	8.14	1	6.975	1	1	True	5294	0	0	0	0	31.2	False	NZ_OZ405147.1:6975373:complete:5294
+rpseudosolanacearum	more	ont	picoasm	8	173	1214	1.76	2	5.613	2	2	True	452	0	0	0	0	40.94	False	NZ_CP191334.1:3623679:complete:274;NZ_CP191335.1:1989042:complete:178
+rpseudosolanacearum	more	ont	flye_medaka	8	685	3072	8.01	2	5.613	2	2	True	493	0	0	0	0	40.56	False	NZ_CP191334.1:3623679:complete:306;NZ_CP191335.1:1989042:complete:187
+rsoli_dsd51w	more	ont	picoasm	8	96	665	1.62	1	5.476	1	1	True	601	0	0	0	0	39.6	False	CP157276.1:5475811:complete:601
+rsoli_dsd51w	more	ont	flye_medaka	8	558	1858	7.65	1	5.476	1	1	True	601	0	0	0	0	39.6	False	CP157276.1:5475811:complete:601
+saureus_seattle_hifi	more	hifi	picoasm	8	9	53	0.48	2	2.806	2	2	True	595	0	0	0	0	36.74	False	ctg.s1.000000F:2778386:complete:594;ctg.s2.0:27489:complete:1
+saureus_seattle_hifi	more	hifi	flye	8	68	209	0.79	2	2.806	2	2	True	596	0	0	0	0	36.73	False	ctg.s1.000000F:2778386:complete:595;ctg.s2.0:27489:complete:1
+saureus_seattle_hifi	more	hifi	hifiasm	8	17	65	17.17	2	2.819	2	1	True	594	0	0	0	0	36.74	False	ctg.s1.000000F:2778386:complete:594;ctg.s2.0:27489:wrong length (x1.450):0
+saureus_usa300_hifi	more	hifi	picoasm	8	21	133	0.65	3	2.909	5	2	True	30	22411	0	0	0	21.16	False	ctg.s1.000000F:2878907:complete:7;ctg.s2.2:27068:complete:0;ctg.s2.000001F:11487:missing:0;ctg.s2.000000F:9067:missing:0;ctg.s2.4:3328:wrong length (x0.939):23
+saureus_usa300_hifi	more	hifi	flye	8	122	404	1.05	2	2.906	5	2	True	8	23882	0	0	0	20.89	False	ctg.s1.000000F:2878907:complete:8;ctg.s2.2:27068:complete:0;ctg.s2.000001F:11487:missing:0;ctg.s2.000000F:9067:missing:0;ctg.s2.4:3328:missing:0
+saureus_usa300_hifi	more	hifi	hifiasm	8	35	201	17.3	6	3.009	5	1	True	14028	22017	3	69169	0	19.1	False	ctg.s1.000000F:2878907:complete:13964;ctg.s2.2:27068:wrong length (x1.491):0;ctg.s2.000001F:11487:missing:0;ctg.s2.000000F:9067:missing:0;ctg.s2.4:3328:wrong length (x1.873):64
+senterica_lt2_hifi	more	hifi	picoasm	8	32	214	1.09	2	4.951	2	2	True	7189	0	0	0	0	28.38	False	ctg.s1.000000F:4857146:complete:7188;ctg.s2.0:93932:complete:1
+senterica_lt2_hifi	more	hifi	flye	8	155	672	1.0	2	4.951	2	2	True	7189	0	0	0	0	28.38	False	ctg.s1.000000F:4857146:complete:7188;ctg.s2.0:93932:complete:1
+senterica_lt2_hifi	more	hifi	hifiasm	8	52	328	17.43	2	4.963	2	1	True	7188	0	0	0	0	28.38	False	ctg.s1.000000F:4857146:complete:7187;ctg.s2.0:93932:wrong length (x1.121):1
+senterica_ty2_hifi	more	hifi	picoasm	8	33	211	1.06	1	4.792	1	1	True	4379	0	0	0	0	30.39	False	ctg.s1.000000F:4791183:complete:4379
+senterica_ty2_hifi	more	hifi	flye	8	138	581	0.96	1	4.792	1	1	True	3366	0	0	0	0	31.53	False	ctg.s1.000000F:4791183:complete:3366
+senterica_ty2_hifi	more	hifi	hifiasm	8	49	298	17.36	1	4.792	1	1	True	6863	0	0	0	0	28.44	False	ctg.s1.000000F:4791183:complete:6863
+smarcescens_d1_6	more	ont	picoasm	8	630	4517	7.79	2	4.995	2	2	True	1563	0	0	0	0	35.05	False	CP133645.1:4991506:complete:1563;CP133646.1:4645:complete:0
+smarcescens_d1_6	more	ont	flye_medaka	8	1053	4367	8.19	2	4.999	2	1	True	3050	0	0	0	0	32.14	False	CP133645.1:4991506:complete:3032;CP133646.1:4645:doubled (x2.00):18
+smicroflavus	more	ont	picoasm	8	428	3013	3.52	2	8.018	14	0	False	835	4059618	0	0	8	2.9	False	NZ_OZ489387.1:3798516:doubled (x2.09):556;NZ_OZ489388.1:2555223:wrong length (x0.029):279;NZ_OZ489389.1:972192:missing:0;NZ_OZ489390.1:201322:missing:0;NZ_OZ489391.1:145009:missing:0;NZ_OZ489392.1:118500:missing:0;NZ_OZ489393.1:104191:missing:0;NZ_OZ489394.1:19766:missing:0;NZ_OZ489395.1:657:missing:0;NZ_OZ489396.1:598:missing:0;NZ_OZ489397.1:318:missing:0;NZ_OZ489398.1:178:missing:0;NZ_OZ489399.1:174:missing:0;NZ_OZ489400.1:130:missing:0
+smicroflavus	more	ont	flye_medaka	8	1092	5686	8.22	2	7.954	14	0	False	451	4098890	0	0	8	2.86	False	NZ_OZ489387.1:3798516:doubled (x2.09):448;NZ_OZ489388.1:2555223:wrong length (x0.008):3;NZ_OZ489389.1:972192:missing:0;NZ_OZ489390.1:201322:missing:0;NZ_OZ489391.1:145009:missing:0;NZ_OZ489392.1:118500:missing:0;NZ_OZ489393.1:104191:missing:0;NZ_OZ489394.1:19766:missing:0;NZ_OZ489395.1:657:missing:0;NZ_OZ489396.1:598:missing:0;NZ_OZ489397.1:318:missing:0;NZ_OZ489398.1:178:missing:0;NZ_OZ489399.1:174:missing:0;NZ_OZ489400.1:130:missing:0
+smuris	more	ont	picoasm	8	169	1261	1.43	3	4.654	3	2	True	30	0	0	0	0	51.91	False	NZ_OZ539610.1:4627129:complete:30;NZ_OZ539611.1:22304:wrong length (x1.036):0;NZ_OZ539612.1:3488:complete:0
+smuris	more	ont	flye_medaka	8	497	2095	7.81	5	4.656	3	1	True	23	0	0	0	0	53.06	False	NZ_OZ539610.1:4627129:complete:23;NZ_OZ539611.1:22304:fragmented (2 contigs):0;NZ_OZ539612.1:3488:fragmented (2 contigs):0
+spyogenes_bruno_hifi	more	hifi	picoasm	8	15	103	0.4	1	1.845	1	1	True	5	0	0	0	0	55.67	False	ctg.s1.000000F:1845036:complete:5
+spyogenes_bruno_hifi	more	hifi	flye	8	99	252	1.01	1	1.839	1	1	True	6007	0	0	0	0	24.87	False	ctg.s1.000000F:1845036:complete:6007
+spyogenes_bruno_hifi	more	hifi	hifiasm	8	26	133	17.15	1	1.845	1	1	True	6	0	0	0	0	54.88	False	ctg.s1.000000F:1845036:complete:6
+symbiont_lampromicra	more	ont	picoasm	8	265	1898	2.95	3	5.052	3	3	True	202	0	0	0	0	43.98	False	NZ_AP035932.1:4147949:complete:167;NZ_AP035933.1:699865:complete:21;NZ_AP035934.1:203991:complete:14
+symbiont_lampromicra	more	ont	flye_medaka	8	1034	4295	8.02	3	5.052	3	3	True	260	0	0	0	0	42.88	False	NZ_AP035932.1:4147949:complete:206;NZ_AP035933.1:699865:complete:35;NZ_AP035934.1:203991:complete:19
+tacid_dsm6589_hifi	more	hifi	picoasm	8	9	55	0.36	1	1.853	1	1	True	6	0	0	0	0	54.9	False	ctg.s1.000000F:1853054:complete:6
+tacid_dsm6589_hifi	more	hifi	flye	8	62	171	0.83	1	1.851	1	1	True	1824	0	0	0	0	30.07	False	ctg.s1.000000F:1853054:complete:1824
+tacid_dsm6589_hifi	more	hifi	hifiasm	8	19	75	17.19	1	1.853	1	1	True	7	0	0	0	0	54.23	False	ctg.s1.000000F:1853054:complete:7
+tbrockianus	more	ont	picoasm	8	46	308	1.22	4	2.498	4	3	True	22	20969	0	0	0	20.79	False	NZ_AP046146.1:2139201:complete:21;NZ_AP046147.1:328879:complete:1;NZ_AP046148.1:41989:wrong length (x0.501):0;NZ_AP046149.1:9055:complete:0
+tbrockianus	more	ont	flye_medaka	8	321	1198	6.97	4	2.519	4	4	True	101	0	0	0	0	43.97	False	NZ_AP046146.1:2139201:complete:19;NZ_AP046147.1:328879:complete:2;NZ_AP046148.1:41989:complete:80;NZ_AP046149.1:9055:complete:0
+tdenticola_a_hifi	more	hifi	picoasm	8	21	140	0.69	1	2.843	2	0	False	630	57564	0	0	2	16.91	False	ctg.s1.000000F:2803651:wrong length (x1.014):630;ctg.s2.000000F:53916:missing:0
+tdenticola_a_hifi	more	hifi	flye	8	125	415	0.99	1	2.843	2	0	False	629	57564	0	0	2	16.91	False	ctg.s1.000000F:2803651:wrong length (x1.014):629;ctg.s2.000000F:53916:missing:0
+tdenticola_a_hifi	more	hifi	hifiasm	8	36	208	17.24	1	2.878	2	0	False	632	57564	0	0	3	16.91	False	ctg.s1.000000F:2803651:wrong length (x1.027):632;ctg.s2.000000F:53916:missing:0
+vboronicumulans	more	ont	picoasm	8	114	784	2.4	1	6.715	1	1	True	181	0	0	0	0	45.69	False	NZ_OZ344929.1:6715061:complete:181
+vboronicumulans	more	ont	flye_medaka	8	656	2848	8.0	1	6.715	1	1	True	207	0	0	0	0	45.11	False	NZ_OZ344929.1:6715061:complete:207
+vibrio16_vdt1	more	ont	picoasm	8	327	1659	10.24	3	4.658	3	3	True	27	0	0	0	0	52.37	False	NZ_OY808997.1:3080496:complete:22;NZ_OY808998.1:1531398:complete:3;NZ_OY808999.1:46185:complete:2
+xoryzae_ird	more	ont	picoasm	8	265	1962	2.05	1	4.685	1	1	True	5492	0	0	0	0	29.31	False	NZ_OZ502508.1:4685536:complete:5492
+xoryzae_ird	more	ont	flye_medaka	8	901	3525	8.51	1	4.687	1	1	True	6476	0	0	0	0	28.59	False	NZ_OZ502508.1:4685536:complete:6476
+ehorm_half	lowdepth	ont	picoasm	8	27	164	1.09	4	5.385	4	4	True	6	0	0	0	0	59.53	False	chromosome:4958409:complete:3;plasmid_1:343098:complete:3;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+ehorm_half	lowdepth	ont	flye	8	230	834	0.86	4	5.385	4	4	True	4	0	0	0	0	61.29	False	chromosome:4958409:complete:2;plasmid_1:343098:complete:1;plasmid_2:80745:complete:0;plasmid_3:2495:complete:1
+ehorm_half	lowdepth	ont	flye_medaka	8	297	1041	8.05	4	5.385	4	4	True	2	0	0	0	0	64.3	False	chromosome:4958409:complete:1;plasmid_1:343098:complete:1;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+kpneu_half	lowdepth	ont	picoasm	8	31	187	1.09	5	5.99	5	5	True	6	0	0	0	0	59.99	False	chromosome:5369557:complete:3;plasmid_1:330109:complete:3;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_half	lowdepth	ont	flye	8	137	602	0.75	4	5.99	5	3	True	27	1240	0	0	0	36.75	False	chromosome:5369557:complete:18;plasmid_1:330109:complete:8;plasmid_2:285776:complete:1;plasmid_3:3514:wrong length (x1.394):0;plasmid_4:1240:missing:0
+kpneu_half	lowdepth	ont	flye_medaka	8	241	852	8.17	4	5.99	5	3	True	11	1240	0	0	0	36.8	False	chromosome:5369557:complete:9;plasmid_1:330109:complete:2;plasmid_2:285776:complete:0;plasmid_3:3514:wrong length (x1.394):0;plasmid_4:1240:missing:0
+linno_half	lowdepth	ont	picoasm	8	15	90	0.68	2	2.973	2	2	True	5	0	0	0	0	57.74	False	chromosome:2883001:complete:0;plasmid:89544:complete:5
+linno_half	lowdepth	ont	flye	8	96	295	0.91	3	2.978	2	2	True	5	0	1	5097	0	57.74	False	chromosome:2883001:complete:2;plasmid:89544:complete:3
+linno_half	lowdepth	ont	flye_medaka	8	169	428	7.6	3	2.978	2	2	True	4	0	1	5097	0	58.71	False	chromosome:2883001:complete:0;plasmid:89544:complete:4
+prett_half	lowdepth	ont	picoasm	8	24	140	1.01	2	4.466	2	2	True	11	0	0	0	0	56.09	False	chromosome:4318567:complete:11;plasmid:147239:complete:0
+prett_half	lowdepth	ont	flye	8	105	423	0.73	2	4.466	2	2	True	10	0	0	0	0	56.5	False	chromosome:4318567:complete:10;plasmid:147239:complete:0
+prett_half	lowdepth	ont	flye_medaka	8	191	605	7.79	2	4.466	2	2	True	6	0	0	0	0	58.72	False	chromosome:4318567:complete:6;plasmid:147239:complete:0
+sflex_half	lowdepth	ont	picoasm	8	35	213	0.94	8	4.828	8	8	True	30	0	0	0	0	52.07	False	chromosome:4583932:complete:28;plasmid_1:222364:complete:2;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_half	lowdepth	ont	flye	8	155	761	1.08	9	4.857	8	2	True	3073	1240	0	0	0	30.49	False	chromosome:4583932:complete:2751;plasmid_1:222364:complete:2;plasmid_2:6790:doubled (x3.00):56;plasmid_3:5057:doubled (x3.01):8;plasmid_4:3835:doubled (x2.62):0;plasmid_5:3181:fragmented (3 contigs):256;plasmid_6:2088:wrong length (x1.188):0;plasmid_7:1240:missing:0
+sflex_half	lowdepth	ont	flye_medaka	8	311	1039	7.69	9	4.858	8	3	True	2812	1240	2	2702	1	30.76	False	chromosome:4583932:complete:2741;plasmid_1:222364:complete:1;plasmid_2:6790:doubled (x2.99):31;plasmid_3:5057:doubled (x3.01):19;plasmid_4:3835:doubled (x2.62):19;plasmid_5:3181:complete:1;plasmid_6:2088:wrong length (x1.188):0;plasmid_7:1240:missing:0
+ehorm_15x	verylow	ont	picoasm	8	18	100	0.83	6	5.371	4	3	False	184	13788	0	0	0	25.86	False	chromosome:4958409:fragmented (3 contigs):169;plasmid_1:343098:complete:15;plasmid_2:80745:complete:0;plasmid_3:2495:complete:0
+ehorm_15x	verylow	ont	flye_medaka	12	156	485	7.28	4	5.378	4	2	False	134	6691	0	0	0	28.97	False	chromosome:4958409:fragmented (2 contigs):126;plasmid_1:343098:complete:8;plasmid_2:80745:complete:0;plasmid_3:2495:missing:0
+kpneu_20x	verylow	ont	picoasm	8	24	141	0.96	5	5.99	5	5	True	26	0	0	0	0	53.62	False	chromosome:5369557:complete:25;plasmid_1:330109:complete:1;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+kpneu_20x	verylow	ont	flye_medaka	12	190	706	7.9	5	5.989	5	3	True	32	1243	0	0	0	36.72	False	chromosome:5369557:complete:24;plasmid_1:330109:complete:7;plasmid_2:285776:complete:1;plasmid_3:3514:fragmented (2 contigs):0;plasmid_4:1240:missing:0
+linno_12x	verylow	ont	picoasm	8	9	48	0.42	4	2.968	2	0	False	409	5921	0	0	0	26.72	False	chromosome:2883001:fragmented (2 contigs):266;plasmid:89544:fragmented (2 contigs):143
+linno_12x	verylow	ont	flye_medaka	12	136	367	7.56	5	3.003	2	1	False	406	2150	0	0	1	30.66	False	chromosome:2883001:fragmented (4 contigs):338;plasmid:89544:complete:68
+prett_12x	verylow	ont	picoasm	8	15	74	0.61	7	4.456	2	1	False	450	10069	0	0	0	26.28	False	chromosome:4318567:fragmented (6 contigs):450;plasmid:147239:complete:0
+prett_12x	verylow	ont	flye_medaka	12	148	422	7.83	5	4.478	2	1	False	324	2399	0	0	0	32.15	False	chromosome:4318567:fragmented (4 contigs):322;plasmid:147239:complete:2
+sflex_20x	verylow	ont	picoasm	8	28	173	0.64	10	4.83	8	7	False	108	0	0	0	0	46.5	False	chromosome:4583932:fragmented (3 contigs):107;plasmid_1:222364:complete:1;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+sflex_20x	verylow	ont	flye_medaka	12	369	968	7.87	10	4.887	8	1	False	229	3623	0	0	1	30.98	False	chromosome:4583932:fragmented (3 contigs):36;plasmid_1:222364:fragmented (2 contigs):154;plasmid_2:6790:doubled (x2.00):0;plasmid_3:5057:doubled (x3.03):6;plasmid_4:3835:complete:33;plasmid_5:3181:doubled (x2.00):0;plasmid_6:2088:wrong length (x1.783):0;plasmid_7:1240:missing:0
+kpneu_x4	highdepth	ont	picoasm	8	128	866	3.23	5	5.99	5	5	True	3	0	0	0	0	63.0	False	chromosome:5369557:complete:3;plasmid_1:330109:complete:0;plasmid_2:285776:complete:0;plasmid_3:3514:complete:0;plasmid_4:1240:complete:0
+sflex_x4	highdepth	ont	picoasm	8	184	1325	2.77	8	4.828	8	8	True	4	0	0	0	0	60.82	False	chromosome:4583932:complete:3;plasmid_1:222364:complete:1;plasmid_2:6790:complete:0;plasmid_3:5057:complete:0;plasmid_4:3835:complete:0;plasmid_5:3181:complete:0;plasmid_6:2088:complete:0;plasmid_7:1240:complete:0
+aloy_tsd300	aerococcus	ont	picoasm	8	140	979	1.29	22	2.033	1	0	False	250	16505	0	0	3	20.84	False	CP126958.1:2034560:fragmented (22 contigs):250
+amic_tsd301	aerococcus	ont	picoasm	8	374	2400	2.05	2	2.126	2	1	True	7844	138	0	0	1	24.25	False	CP132985.1:2117296:complete:7841;CP132986.1:7768:wrong length (x1.180):3
+kpc2	dev	ont	picoasm	8	113	691	1.94	4	5.664	4	4	True	2	0	0	0	0	64.52	False	CP149487.1:5399985:complete:2;CP149488.1:207198:complete:0;CP149489.1:43380:complete:0;CP149490.1:13841:complete:0
+kpc2	dev	ont	flye	16	441	2288	1.67	5	5.679	4	2	True	31	0	0	0	0	52.62	False	CP149487.1:5399985:complete:6;CP149488.1:207198:fragmented (2 contigs):2;CP149489.1:43380:complete:1;CP149490.1:13841:doubled (x2.00):22
+kpc2	dev	ont	flye_medaka	16	572	2666	7.87	5	5.679	4	2	True	2	0	0	0	0	64.52	False	CP149487.1:5399985:complete:0;CP149488.1:207198:fragmented (2 contigs):0;CP149489.1:43380:complete:0;CP149490.1:13841:doubled (x2.00):2
+kpc2	dev	ont	raven	16	104	954	3.89	2	5.605	4	2	True	2593	57221	0	0	0	19.76	False	CP149487.1:5399985:complete:1049;CP149488.1:207198:complete:1544;CP149489.1:43380:missing:0;CP149490.1:13841:missing:0
+kpc2	dev	ont	flye_medaka_short	8	796	2919	7.97	5	5.679	4	2	True	11	0	0	0	0	57.12	False	CP149487.1:5399985:complete:0;CP149488.1:207198:fragmented (2 contigs):0;CP149489.1:43380:complete:0;CP149490.1:13841:doubled (x2.00):11
+mtb	dev	ont	picoasm	8	98	618	2.18	1	4.405	1	1	True	0	0	0	0	0	66.44	True	CP149484.1:4405449:complete:0
+mtb	dev	ont	flye	16	431	2697	2.08	1	4.405	1	1	True	12	0	0	0	0	55.65	False	CP149484.1:4405449:complete:12
+mtb	dev	ont	flye_medaka	16	653	3259	7.71	1	4.405	1	1	True	1	0	0	0	0	66.44	False	CP149484.1:4405449:complete:1
+mtb	dev	ont	raven	16	153	1687	8.61	1	4.401	1	1	True	24208	0	0	0	3	22.6	False	CP149484.1:4405449:complete:24208
+mtb	dev	ont	flye_medaka_short	8	791	3722	7.69	1	4.405	1	1	True	1	0	0	0	0	66.44	False	CP149484.1:4405449:complete:1
+bburg_gmt0122	core	ont	picoasm	8	125	884	1.1	19	1.431	19	19	True	3387	0	0	0	1	26.25	False	NZ_CP161144.1:908738:complete:3295;NZ_CP161145.1:53878:complete:10;NZ_CP161146.1:30321:complete:1;NZ_CP161147.1:30305:complete:4;NZ_CP161148.1:30031:complete:25;NZ_CP161149.1:29966:complete:3;NZ_CP161150.1:29345:complete:21;NZ_CP161151.1:28813:complete:1;NZ_CP161152.1:27454:complete:1;NZ_CP161153.1:27233:complete:18;NZ_CP161154.1:26519:complete:0;NZ_CP161155.1:24972:complete:3;NZ_CP161156.1:23677:complete:1;NZ_CP161157.1:17907:complete:4;GMT-0122_lp28-1:25898:complete:0;GMT-0122_cp32-new1:20998:complete:0;GMT-0122_cp32-new2:30654:complete:0;GMT-0122_cp32-new3:30400:complete:0;GMT-0122_cp32-new4:30902:complete:0

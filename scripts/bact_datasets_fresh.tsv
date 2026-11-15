@@ -1,0 +1,22 @@
+# Fresh isolates, chosen after development and run once: R10.4.1 isolates, the first ~60x of each run
+# against an independent or hybrid complete genome; HiFi rows: barcodes of PacBio's
+# 2021-11-Microbial-96plex (~35x) and X. oryzae M10. cdiff_nctc12727, psia_lmg24279, nmen_fam18_hifi
+# and xoo_m10_hifi were later used to find fixes.
+# name	ONT reads	HiFi reads	reference (first record the chromosome)
+bsub_dsm10	data/bacteria/fresh/bsub_dsm10/reads.fastq		data/bacteria/fresh/bsub_dsm10/reference.fasta
+cdiff_nctc12727	data/bacteria/fresh/cdiff_nctc12727/reads.fastq		data/bacteria/fresh/cdiff_nctc12727/reference.fasta
+scap_dsm20326	data/bacteria/fresh/scap_dsm20326/reads.fastq		data/bacteria/fresh/scap_dsm20326/reference.fasta
+sxyl_cskr35	data/bacteria/fresh/sxyl_cskr35/reads.fastq		data/bacteria/fresh/sxyl_cskr35/reference.fasta
+psia_lmg24279	data/bacteria/fresh/psia_lmg24279/reads.fastq		data/bacteria/fresh/psia_lmg24279/reference.fasta
+cbei_dsm105335	data/bacteria/fresh/cbei_dsm105335/reads.fastq		data/bacteria/fresh/cbei_dsm105335/reference.fasta
+lpla_atcc14917	data/bacteria/fresh/lpla_atcc14917/reads.fastq		data/bacteria/fresh/lpla_atcc14917/reference.fasta
+xoo_whri5233	data/bacteria/fresh/xoo_whri5233/reads.fastq		data/bacteria/fresh/xoo_whri5233/reference.fasta
+xsp_ncppb1131	data/bacteria/fresh/xsp_ncppb1131/reads.fastq		data/bacteria/fresh/xsp_ncppb1131/reference.fasta
+cnec_atcc25207	data/bacteria/fresh/cnec_atcc25207/reads.fastq		data/bacteria/fresh/cnec_atcc25207/reference.fasta
+sthe_dsm20745	data/bacteria/fresh/sthe_dsm20745/reads.fastq		data/bacteria/fresh/sthe_dsm20745/reference.fasta
+mrub_dsm1279	data/bacteria/fresh/mrub_dsm1279/reads.fastq		data/bacteria/fresh/mrub_dsm1279/reference.fasta
+sone_mr1	data/bacteria/fresh/sone_mr1/reads.fastq		data/bacteria/fresh/sone_mr1/reference.fasta
+bmul_atcc17616_hifi		data/bacteria/fresh_hifi/bmul_atcc17616/reads.fastq	data/bacteria/fresh_hifi/bmul_atcc17616/reference.fasta
+rpal_cga009_hifi		data/bacteria/fresh_hifi/rpal_cga009/reads.fastq	data/bacteria/fresh_hifi/rpal_cga009/reference.fasta
+nmen_fam18_hifi		data/bacteria/fresh_hifi/nmen_fam18/reads.fastq	data/bacteria/fresh_hifi/nmen_fam18/reference.fasta
+xoo_m10_hifi		data/bacteria/fresh_hifi/xoo_m10/reads.fastq	data/bacteria/fresh_hifi/xoo_m10/reference.fasta

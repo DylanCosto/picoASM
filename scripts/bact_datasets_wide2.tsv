@@ -1,0 +1,10 @@
+# Wider validation, second batch, not tuned on (failures here exposed general bugs that were fixed).
+# name	ONT reads	HiFi reads	reference
+barb_r132	data/bacteria/wide/barb_r132/reads.fastq		data/bacteria/wide/barb_r132/reference.fasta
+barb_24066	data/bacteria/wide/barb_24066/reads.fastq		data/bacteria/wide/barb_24066/reference.fasta
+bsp_r72673	data/bacteria/wide/bsp_r72673/reads.fastq		data/bacteria/wide/bsp_r72673/reference.fasta
+bsp34232	data/bacteria/wide/bsp34232/reads.fastq		data/bacteria/wide/bsp34232/reference.fasta
+strep_stell	data/bacteria/wide/strep_stell/reads.fastq		data/bacteria/wide/strep_stell/reference.fasta
+strep_puni	data/bacteria/wide/strep_puni/reads.fastq		data/bacteria/wide/strep_puni/reference.fasta
+ecoli_25922	data/bacteria/wide/ecoli_25922/reads.fastq		data/bacteria/wide/ecoli_25922/reference.fasta
+senterica_b	data/bacteria/wide/senterica_b/reads.fastq		data/bacteria/wide/senterica_b/reference.fasta

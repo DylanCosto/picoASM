@@ -1,0 +1,541 @@
+genome	tool	subset	contigs	replicons	complete	chromosome_complete	errors	missing_bases	extra_contigs	extra_bases	misassemblies	qscore	perfect	per_replicon
+Enterobacter_hormaechei	autocycler	1	3	4	3	True	4	2495	0	0	0	33.33	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler	2	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler	3	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler	4	3	4	3	True	1	2495	0	0	0	33.34	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler	5	3	4	3	True	1	2495	0	0	0	33.34	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler	6	4	4	4	True	2	0	0	0	0	64.3	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	autocycler_manual	1	4	4	4	True	4	0	0	0	0	61.29	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0
+Enterobacter_hormaechei	autocycler_manual	2	4	4	4	True	1	0	0	0	0	67.31	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	autocycler_manual	3	4	4	4	True	0	0	0	0	0	67.31	True	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0
+Enterobacter_hormaechei	autocycler_manual	4	4	4	4	True	2	0	0	0	0	64.3	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	autocycler_manual	5	4	4	4	True	2	0	0	0	0	64.3	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	autocycler_manual	6	4	4	4	True	2	0	0	0	0	64.3	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	canu	1	4	4	3	True	6	2495	1	35254	0	33.33	False	chromosome:complete:6;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	canu	2	3	4	3	True	5	2495	0	0	0	33.33	False	chromosome:complete:5;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	canu	3	5	4	3	True	6	0	1	65977	0	59.53	False	chromosome:complete:3;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:doubled (x2.00):3
+Enterobacter_hormaechei	canu	4	3	4	3	True	3	2495	0	0	0	33.34	False	chromosome:complete:3;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	canu	5	5	4	3	True	7	0	1	42443	0	58.86	False	chromosome:complete:2;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:doubled (x3.27):4
+Enterobacter_hormaechei	canu	6	5	4	3	True	7	0	1	45753	0	58.86	False	chromosome:complete:5;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:doubled (x2.00):2
+Enterobacter_hormaechei	dragonflye	1	4	4	3	True	16982	2495	1	7992	0	24.42	False	chromosome:complete:16957;plasmid_1:complete:15;plasmid_2:complete:10;plasmid_3:missing:0
+Enterobacter_hormaechei	dragonflye	2	4	4	1	True	35022	2495	0	0	1	21.57	False	chromosome:complete:223;plasmid_1:fragmented (2 contigs):33817;plasmid_2:wrong length (x0.988):982;plasmid_3:missing:0
+Enterobacter_hormaechei	dragonflye	3	3	4	3	True	47	2495	0	0	0	33.26	False	chromosome:complete:22;plasmid_1:complete:17;plasmid_2:complete:8;plasmid_3:missing:0
+Enterobacter_hormaechei	dragonflye	4	3	4	3	True	29	2495	0	0	0	33.29	False	chromosome:complete:12;plasmid_1:complete:8;plasmid_2:complete:9;plasmid_3:missing:0
+Enterobacter_hormaechei	dragonflye	5	3	4	3	True	35	2495	0	0	0	33.28	False	chromosome:complete:12;plasmid_1:complete:13;plasmid_2:complete:10;plasmid_3:missing:0
+Enterobacter_hormaechei	dragonflye	6	4	4	4	True	66	0	0	0	0	49.12	False	chromosome:complete:31;plasmid_1:complete:14;plasmid_2:complete:10;plasmid_3:complete:11
+Enterobacter_hormaechei	flye	1	3	4	3	True	3	2495	0	0	0	33.34	False	chromosome:complete:1;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	flye	2	4	4	2	True	1	2662	0	0	0	33.06	False	chromosome:complete:1;plasmid_1:fragmented (2 contigs):0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	flye	3	3	4	3	True	2	2495	0	0	0	33.34	False	chromosome:complete:2;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	flye	4	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	flye	5	3	4	3	True	3	2495	0	0	0	33.34	False	chromosome:complete:1;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	flye	6	4	4	3	True	3	0	0	0	0	62.54	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:doubled (x2.00):2
+Enterobacter_hormaechei	hifiasm	1	70	4	1	True	200	0	0	0	0	44.3	False	chromosome:complete:3;plasmid_1:wrong length (x1.092):0;plasmid_2:doubled (x1.67):0;plasmid_3:doubled (x3.59):197
+Enterobacter_hormaechei	hifiasm	2	81	4	1	True	41607	0	0	0	0	21.12	False	chromosome:complete:41399;plasmid_1:wrong length (x1.035):0;plasmid_2:doubled (x1.79):0;plasmid_3:doubled (x2.56):208
+Enterobacter_hormaechei	hifiasm	3	94	4	1	True	28602	0	0	0	0	22.75	False	chromosome:complete:28349;plasmid_1:wrong length (x1.075):0;plasmid_2:doubled (x1.97):0;plasmid_3:doubled (x3.94):253
+Enterobacter_hormaechei	hifiasm	4	87	4	1	True	41601	0	0	0	0	21.12	False	chromosome:complete:41401;plasmid_1:wrong length (x1.081):1;plasmid_2:doubled (x1.81):0;plasmid_3:doubled (x3.76):199
+Enterobacter_hormaechei	hifiasm	5	85	4	2	True	264	0	0	0	0	43.1	False	chromosome:complete:2;plasmid_1:complete:1;plasmid_2:doubled (x1.91):0;plasmid_3:doubled (x2.65):261
+Enterobacter_hormaechei	hifiasm	6	75	4	1	True	53230	0	0	0	0	20.05	False	chromosome:complete:19821;plasmid_1:wrong length (x1.097):33184;plasmid_2:doubled (x1.89):0;plasmid_3:doubled (x4.90):225
+Enterobacter_hormaechei	hybracter	1	4	4	4	True	36	0	0	0	0	51.75	False	chromosome:complete:0;plasmid_1:complete:35;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	hybracter	2	4	4	4	True	35	0	0	0	0	51.87	False	chromosome:complete:0;plasmid_1:complete:34;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	hybracter	3	4	4	4	True	30	0	0	0	0	52.54	False	chromosome:complete:0;plasmid_1:complete:29;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	hybracter	4	4	4	4	True	32	0	0	0	0	52.26	False	chromosome:complete:0;plasmid_1:complete:31;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	hybracter	5	4	4	4	True	34	0	0	0	0	52.0	False	chromosome:complete:1;plasmid_1:complete:32;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	hybracter	6	4	4	4	True	31	0	0	0	0	52.4	False	chromosome:complete:0;plasmid_1:complete:30;plasmid_2:complete:0;plasmid_3:complete:1
+Enterobacter_hormaechei	lja	1	4	4	2	True	991	13558	0	0	0	25.68	False	chromosome:complete:194;plasmid_1:fragmented (2 contigs):797;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	lja	2	3	4	2	True	73	38766	0	0	0	21.42	False	chromosome:complete:54;plasmid_1:wrong length (x0.902):19;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	lja	3	4	4	2	True	77	13713	0	0	0	25.92	False	chromosome:complete:45;plasmid_1:fragmented (2 contigs):31;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	lja	4	3	4	3	True	31	2495	0	0	0	33.29	False	chromosome:complete:16;plasmid_1:complete:15;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	lja	5	3	4	3	True	58	2495	0	0	0	33.24	False	chromosome:complete:42;plasmid_1:complete:16;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	lja	6	3	4	3	True	58	2495	0	0	0	33.24	False	chromosome:complete:48;plasmid_1:complete:10;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	maeci	1	4	4	3	True	18699	2495	1	7994	0	24.05	False	chromosome:complete:16894;plasmid_1:complete:1805;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	maeci	2	4	4	2	True	18	2498	0	0	0	33.3	False	chromosome:complete:18;plasmid_1:fragmented (2 contigs):0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	maeci	3	3	4	3	True	6	2495	0	0	0	33.33	False	chromosome:complete:6;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	maeci	4	3	4	3	True	270	2495	0	0	0	32.89	False	chromosome:complete:270;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	maeci	5	3	4	3	True	245	2495	0	0	0	32.93	False	chromosome:complete:1;plasmid_1:complete:244;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	maeci	6	4	4	4	True	5	0	0	0	0	60.32	False	chromosome:complete:4;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0
+Enterobacter_hormaechei	metamdbg	1	5	4	3	True	525	0	1	39853	0	40.11	False	chromosome:complete:51;plasmid_1:complete:12;plasmid_2:complete:3;plasmid_3:doubled (x4.51):459
+Enterobacter_hormaechei	metamdbg	2	4	4	3	True	272	0	0	0	0	42.97	False	chromosome:complete:241;plasmid_1:complete:17;plasmid_2:complete:13;plasmid_3:doubled (x4.22):1
+Enterobacter_hormaechei	metamdbg	3	4	4	3	True	1848	0	0	0	0	34.64	False	chromosome:complete:89;plasmid_1:complete:4;plasmid_2:complete:12;plasmid_3:doubled (x3.87):1743
+Enterobacter_hormaechei	metamdbg	4	4	4	3	True	364	0	0	0	0	41.7	False	chromosome:complete:110;plasmid_1:complete:8;plasmid_2:complete:14;plasmid_3:doubled (x4.77):232
+Enterobacter_hormaechei	metamdbg	5	3	4	3	True	92	2495	0	0	0	33.18	False	chromosome:complete:80;plasmid_1:complete:6;plasmid_2:complete:6;plasmid_3:missing:0
+Enterobacter_hormaechei	metamdbg	6	3	4	3	True	80	2495	0	0	0	33.2	False	chromosome:complete:65;plasmid_1:complete:6;plasmid_2:complete:9;plasmid_3:missing:0
+Enterobacter_hormaechei	miniasm	1	3	4	3	True	20	2495	0	0	0	33.31	False	chromosome:complete:20;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	miniasm	2	3	4	2	True	33942	2495	0	0	0	21.7	False	chromosome:complete:121;plasmid_1:wrong length (x1.092):33821;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	miniasm	3	3	4	3	True	7	2495	0	0	0	33.33	False	chromosome:complete:7;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	miniasm	4	3	4	3	True	50	2495	0	0	0	33.25	False	chromosome:complete:26;plasmid_1:complete:2;plasmid_2:complete:22;plasmid_3:missing:0
+Enterobacter_hormaechei	miniasm	5	3	4	3	True	7	2495	0	0	0	33.33	False	chromosome:complete:6;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	miniasm	6	3	4	3	True	13	2495	0	0	0	33.32	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:9;plasmid_3:missing:0
+Enterobacter_hormaechei	myloasm	1	11	4	2	True	33213	0	5	22148	0	22.1	False	chromosome:complete:18;plasmid_1:wrong length (x1.097):33182;plasmid_2:complete:0;plasmid_3:doubled (x2.00):13
+Enterobacter_hormaechei	myloasm	2	4	4	2	True	75146	2495	1	2493	0	18.41	False	chromosome:complete:41964;plasmid_1:wrong length (x1.097):33182;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	myloasm	3	8	4	3	True	1697	0	4	111897	0	35.01	False	chromosome:complete:1696;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0
+Enterobacter_hormaechei	myloasm	4	8	4	2	True	1230	0	4	11241	0	36.41	False	chromosome:complete:367;plasmid_1:complete:0;plasmid_2:doubled (x1.99):863;plasmid_3:doubled (x2.00):0
+Enterobacter_hormaechei	myloasm	5	7	4	2	True	77354	0	1	3156	1	18.43	False	chromosome:complete:41607;plasmid_1:fragmented (3 contigs):35747;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0
+Enterobacter_hormaechei	myloasm	6	7	4	2	True	75199	0	3	12008	0	18.55	False	chromosome:complete:42017;plasmid_1:wrong length (x1.097):33182;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0
+Enterobacter_hormaechei	necat	1	3	4	3	True	613	2495	0	0	0	32.39	False	chromosome:complete:605;plasmid_1:complete:8;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	necat	2	3	4	3	True	41447	2495	0	0	0	20.88	False	chromosome:complete:41441;plasmid_1:complete:5;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	necat	3	3	4	3	True	111	2495	0	0	0	33.15	False	chromosome:complete:98;plasmid_1:complete:12;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	necat	4	3	4	3	True	381	2495	0	0	0	32.72	False	chromosome:complete:379;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	necat	5	3	4	2	True	33647	2496	0	0	0	21.73	False	chromosome:complete:459;plasmid_1:wrong length (x0.903):33183;plasmid_2:complete:5;plasmid_3:missing:0
+Enterobacter_hormaechei	necat	6	4	4	3	True	196	2495	1	37836	0	33.01	False	chromosome:complete:194;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	nextdenovo	1	3	4	1	True	4557	2495	0	0	0	28.83	False	chromosome:complete:4411;plasmid_1:wrong length (x1.108):108;plasmid_2:doubled (x1.72):38;plasmid_3:missing:0
+Enterobacter_hormaechei	nextdenovo	2	3	4	1	True	18932	2495	0	0	0	24.0	False	chromosome:complete:18793;plasmid_1:wrong length (x1.164):93;plasmid_2:doubled (x1.99):46;plasmid_3:missing:0
+Enterobacter_hormaechei	nextdenovo	3	3	4	1	True	23051	2495	0	0	0	23.24	False	chromosome:complete:22898;plasmid_1:wrong length (x1.093):135;plasmid_2:doubled (x1.60):18;plasmid_3:missing:0
+Enterobacter_hormaechei	nextdenovo	4	3	4	1	True	21348	2495	0	0	0	23.54	False	chromosome:complete:21284;plasmid_1:wrong length (x1.084):39;plasmid_2:doubled (x1.83):25;plasmid_3:missing:0
+Enterobacter_hormaechei	nextdenovo	5	3	4	1	True	20547	2495	0	0	0	23.69	False	chromosome:complete:20460;plasmid_1:wrong length (x1.077):32;plasmid_2:doubled (x1.91):55;plasmid_3:missing:0
+Enterobacter_hormaechei	nextdenovo	6	3	4	1	True	19920	2495	0	0	0	23.81	False	chromosome:complete:19798;plasmid_1:wrong length (x1.099):69;plasmid_2:doubled (x1.89):53;plasmid_3:missing:0
+Enterobacter_hormaechei	raven	1	3	4	2	True	29786	11541	0	0	1	21.15	False	chromosome:complete:785;plasmid_1:wrong length (x0.902):28998;plasmid_2:complete:3;plasmid_3:missing:0
+Enterobacter_hormaechei	raven	2	3	4	2	True	33185	2495	0	0	0	21.79	False	chromosome:complete:4;plasmid_1:wrong length (x1.097):33179;plasmid_2:complete:2;plasmid_3:missing:0
+Enterobacter_hormaechei	raven	3	4	4	2	True	33295	2495	0	0	1	21.77	False	chromosome:complete:6;plasmid_1:fragmented (2 contigs):33286;plasmid_2:complete:3;plasmid_3:missing:0
+Enterobacter_hormaechei	raven	4	3	4	2	True	33203	2495	0	0	0	21.79	False	chromosome:complete:11;plasmid_1:wrong length (x1.097):33187;plasmid_2:complete:5;plasmid_3:missing:0
+Enterobacter_hormaechei	raven	5	3	4	3	True	1465	2495	0	0	0	31.33	False	chromosome:complete:1460;plasmid_1:complete:5;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	raven	6	3	4	2	True	34146	2495	0	0	0	21.67	False	chromosome:complete:835;plasmid_1:wrong length (x1.097):33189;plasmid_2:complete:122;plasmid_3:missing:0
+Enterobacter_hormaechei	redbean	1	7	4	0	False	33359	104935	0	0	3	15.9	False	chromosome:fragmented (5 contigs):93;plasmid_1:wrong length (x0.904):33182;plasmid_2:wrong length (x0.335):84;plasmid_3:missing:0
+Enterobacter_hormaechei	redbean	2	8	4	1	False	17154	295651	0	0	2	12.36	False	chromosome:fragmented (6 contigs):16904;plasmid_1:complete:250;plasmid_2:wrong length (x0.362):0;plasmid_3:missing:0
+Enterobacter_hormaechei	redbean	3	7	4	0	False	33532	88704	0	0	1	16.44	False	chromosome:fragmented (5 contigs):340;plasmid_1:wrong length (x0.904):33192;plasmid_2:wrong length (x0.405):0;plasmid_3:missing:0
+Enterobacter_hormaechei	redbean	4	7	4	0	False	50054	37021	0	0	2	17.91	False	chromosome:fragmented (5 contigs):16904;plasmid_1:wrong length (x0.904):33068;plasmid_2:wrong length (x1.002):82;plasmid_3:missing:0
+Enterobacter_hormaechei	redbean	5	6	4	0	False	17335	67388	0	0	1	18.03	False	chromosome:fragmented (4 contigs):16945;plasmid_1:wrong length (x0.914):2;plasmid_2:doubled (x1.57):388;plasmid_3:missing:0
+Enterobacter_hormaechei	redbean	6	7	4	1	False	565	98875	0	0	2	17.34	False	chromosome:fragmented (5 contigs):265;plasmid_1:wrong length (x0.900):0;plasmid_2:complete:300;plasmid_3:missing:0
+Klebsiella_pneumoniae	autocycler	1	5	5	5	True	4	0	0	0	0	61.75	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler	2	5	5	5	True	6	0	0	0	0	59.99	False	chromosome:complete:6;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler	3	5	5	5	True	11	0	0	0	0	57.36	False	chromosome:complete:9;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler	4	5	5	5	True	9	0	0	0	0	58.23	False	chromosome:complete:9;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler	5	5	5	5	True	8	0	0	0	0	58.74	False	chromosome:complete:8;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler	6	5	5	5	True	11	0	0	0	0	57.36	False	chromosome:complete:10;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_manual	1	5	5	5	True	4	0	0	0	0	61.75	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_manual	2	5	5	5	True	6	0	0	0	0	59.99	False	chromosome:complete:6;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_manual	3	5	5	5	True	11	0	0	0	0	57.36	False	chromosome:complete:9;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_manual	4	5	5	5	True	9	0	0	0	0	58.23	False	chromosome:complete:9;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_manual	5	5	5	5	True	8	0	0	0	0	58.74	False	chromosome:complete:8;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_manual	6	5	5	5	True	11	0	0	0	0	57.36	False	chromosome:complete:10;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	canu	1	5	5	5	True	10	0	0	0	0	57.77	False	chromosome:complete:9;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	canu	2	5	5	5	True	15	0	0	0	0	56.01	False	chromosome:complete:13;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	canu	3	5	5	5	True	15	0	0	0	0	56.01	False	chromosome:complete:13;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	canu	4	5	5	5	True	12	0	0	0	0	56.98	False	chromosome:complete:11;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	canu	5	5	5	5	True	14	0	0	0	0	56.31	False	chromosome:complete:12;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	canu	6	5	5	5	True	16	0	0	0	0	55.73	False	chromosome:complete:14;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	dragonflye	1	4	5	3	True	54	1277	0	0	0	36.53	False	chromosome:complete:25;plasmid_1:complete:13;plasmid_2:complete:16;plasmid_3:wrong length (x0.989):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	dragonflye	2	4	5	4	True	86	1240	0	0	0	36.55	False	chromosome:complete:55;plasmid_1:complete:14;plasmid_2:complete:15;plasmid_3:complete:2;plasmid_4:missing:0
+Klebsiella_pneumoniae	dragonflye	3	5	5	4	True	18170	1240	1	12245	0	24.89	False	chromosome:complete:18150;plasmid_1:complete:7;plasmid_2:complete:9;plasmid_3:complete:4;plasmid_4:missing:0
+Klebsiella_pneumoniae	dragonflye	4	4	5	4	True	69	1240	0	0	0	36.61	False	chromosome:complete:25;plasmid_1:complete:16;plasmid_2:complete:17;plasmid_3:complete:11;plasmid_4:missing:0
+Klebsiella_pneumoniae	dragonflye	5	4	5	4	True	72	1240	0	0	0	36.6	False	chromosome:complete:41;plasmid_1:complete:17;plasmid_2:complete:12;plasmid_3:complete:2;plasmid_4:missing:0
+Klebsiella_pneumoniae	dragonflye	6	4	5	3	True	65	1240	0	0	0	36.62	False	chromosome:complete:19;plasmid_1:complete:13;plasmid_2:complete:5;plasmid_3:doubled (x1.84):28;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye	1	4	5	3	True	9	1240	0	0	0	36.81	False	chromosome:complete:5;plasmid_1:complete:3;plasmid_2:complete:1;plasmid_3:wrong length (x1.460):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye	2	4	5	4	True	16	1240	0	0	0	36.78	False	chromosome:complete:13;plasmid_1:complete:3;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye	3	4	5	3	True	15	1240	0	0	0	36.79	False	chromosome:complete:14;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye	4	4	5	4	True	12	1240	0	0	0	36.8	False	chromosome:complete:8;plasmid_1:complete:3;plasmid_2:complete:1;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye	5	4	5	4	True	22	1240	0	0	0	36.76	False	chromosome:complete:14;plasmid_1:complete:7;plasmid_2:complete:1;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye	6	4	5	3	True	14	1240	0	0	0	36.79	False	chromosome:complete:9;plasmid_1:complete:5;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	hifiasm	1	5	5	2	True	642	0	0	0	0	39.7	False	chromosome:complete:8;plasmid_1:wrong length (x1.056):1;plasmid_2:complete:632;plasmid_3:doubled (x3.01):1;plasmid_4:doubled (x3.00):0
+Klebsiella_pneumoniae	hifiasm	2	5	5	1	True	20	0	0	0	0	54.76	False	chromosome:complete:10;plasmid_1:wrong length (x1.133):4;plasmid_2:wrong length (x1.132):0;plasmid_3:doubled (x2.88):6;plasmid_4:doubled (x3.63):0
+Klebsiella_pneumoniae	hifiasm	3	5	5	1	True	25670	0	0	0	0	23.68	False	chromosome:complete:25667;plasmid_1:wrong length (x1.087):1;plasmid_2:wrong length (x1.093):0;plasmid_3:doubled (x3.29):2;plasmid_4:doubled (x1.98):0
+Klebsiella_pneumoniae	hifiasm	4	9	5	2	True	14	0	0	0	0	56.31	False	chromosome:complete:11;plasmid_1:wrong length (x1.084):1;plasmid_2:complete:2;plasmid_3:doubled (x2.64):0;plasmid_4:doubled (x1.79):0
+Klebsiella_pneumoniae	hifiasm	5	6	5	1	True	11	0	0	0	0	57.36	False	chromosome:complete:8;plasmid_1:wrong length (x1.128):3;plasmid_2:wrong length (x1.099):0;plasmid_3:doubled (x2.94):0;plasmid_4:doubled (x2.00):0
+Klebsiella_pneumoniae	hifiasm	6	5	5	2	True	13015	0	0	0	0	26.63	False	chromosome:complete:13014;plasmid_1:wrong length (x1.092):1;plasmid_2:wrong length (x1.080):0;plasmid_3:complete:0;plasmid_4:doubled (x2.00):0
+Klebsiella_pneumoniae	hybracter	1	5	5	5	True	59	0	0	0	0	50.07	False	chromosome:complete:12;plasmid_1:complete:43;plasmid_2:complete:4;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	hybracter	2	5	5	5	True	16	0	0	0	0	55.73	False	chromosome:complete:7;plasmid_1:complete:6;plasmid_2:complete:3;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	hybracter	3	5	5	5	True	1699	0	0	0	0	35.47	False	chromosome:complete:1692;plasmid_1:complete:5;plasmid_2:complete:2;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	hybracter	4	5	5	5	True	14	0	0	0	0	56.31	False	chromosome:complete:5;plasmid_1:complete:4;plasmid_2:complete:5;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	hybracter	5	5	5	5	True	25	0	0	0	0	53.8	False	chromosome:complete:14;plasmid_1:complete:6;plasmid_2:complete:5;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	hybracter	6	5	5	5	True	18	0	0	0	0	55.22	False	chromosome:complete:8;plasmid_1:complete:5;plasmid_2:complete:5;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	lja	1	3	5	3	True	233	4754	0	0	0	30.8	False	chromosome:complete:210;plasmid_1:complete:17;plasmid_2:complete:6;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	lja	2	3	5	3	True	380	4754	0	0	0	30.67	False	chromosome:complete:335;plasmid_1:complete:35;plasmid_2:complete:10;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	lja	3	3	5	3	True	396	4754	0	0	0	30.66	False	chromosome:complete:360;plasmid_1:complete:29;plasmid_2:complete:7;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	lja	4	3	5	2	True	1238	8041	0	0	0	28.1	False	chromosome:complete:182;plasmid_1:complete:1025;plasmid_2:wrong length (x0.988):31;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	lja	5	3	5	3	True	193	4754	0	0	0	30.83	False	chromosome:complete:148;plasmid_1:complete:41;plasmid_2:complete:4;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	lja	6	3	5	3	True	4165	4754	0	0	0	28.27	False	chromosome:complete:4122;plasmid_1:complete:25;plasmid_2:complete:18;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	maeci	1	4	5	4	True	42	1240	0	0	0	36.7	False	chromosome:complete:40;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	maeci	2	3	5	2	True	9530	13479	0	0	1	24.16	False	chromosome:complete:7170;plasmid_1:complete:2358;plasmid_2:wrong length (x0.969):2;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	maeci	3	3	5	1	False	2801	369679	0	0	1	12.06	False	chromosome:wrong length (x0.934):288;plasmid_1:complete:2513;plasmid_2:wrong length (x0.971):0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	maeci	4	4	5	4	True	23	1240	0	0	0	36.76	False	chromosome:complete:22;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	maeci	5	4	5	4	True	29	1240	0	0	0	36.74	False	chromosome:complete:26;plasmid_1:complete:2;plasmid_2:complete:0;plasmid_3:complete:1;plasmid_4:missing:0
+Klebsiella_pneumoniae	maeci	6	4	5	4	True	27	1240	0	0	0	36.75	False	chromosome:complete:21;plasmid_1:complete:4;plasmid_2:complete:2;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	metamdbg	1	4	5	3	True	661	1240	0	0	1	34.98	False	chromosome:complete:137;plasmid_1:complete:7;plasmid_2:complete:17;plasmid_3:doubled (x4.41):500;plasmid_4:missing:0
+Klebsiella_pneumoniae	metamdbg	2	5	5	3	True	2144	0	0	0	0	34.46	False	chromosome:complete:572;plasmid_1:complete:9;plasmid_2:complete:10;plasmid_3:doubled (x5.12):1553;plasmid_4:doubled (x2.49):0
+Klebsiella_pneumoniae	metamdbg	3	4	5	2	True	15657	1240	0	0	1	25.5	False	chromosome:complete:73;plasmid_1:complete:11;plasmid_2:wrong length (x1.081):14554;plasmid_3:doubled (x4.99):1019;plasmid_4:missing:0
+Klebsiella_pneumoniae	metamdbg	4	4	5	3	True	652	1240	0	0	1	35.01	False	chromosome:complete:89;plasmid_1:complete:9;plasmid_2:complete:8;plasmid_3:doubled (x4.96):546;plasmid_4:missing:0
+Klebsiella_pneumoniae	metamdbg	5	5	5	3	True	1120	0	0	0	1	37.28	False	chromosome:complete:673;plasmid_1:complete:7;plasmid_2:complete:7;plasmid_3:doubled (x5.00):433;plasmid_4:doubled (x2.61):0
+Klebsiella_pneumoniae	metamdbg	6	4	5	2	True	17111	1240	0	0	0	25.14	False	chromosome:complete:94;plasmid_1:complete:1016;plasmid_2:wrong length (x1.136):14344;plasmid_3:doubled (x4.90):1657;plasmid_4:missing:0
+Klebsiella_pneumoniae	miniasm	1	3	5	3	True	21	4754	0	0	0	30.98	False	chromosome:complete:18;plasmid_1:complete:3;plasmid_2:complete:0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	miniasm	2	3	5	3	True	49	4754	0	0	0	30.96	False	chromosome:complete:45;plasmid_1:complete:3;plasmid_2:complete:1;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	miniasm	3	3	5	3	True	17	4754	0	0	0	30.99	False	chromosome:complete:12;plasmid_1:complete:5;plasmid_2:complete:0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	miniasm	4	3	5	3	True	59	4754	0	0	0	30.95	False	chromosome:complete:59;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	miniasm	5	3	5	3	True	26	4754	0	0	0	30.98	False	chromosome:complete:22;plasmid_1:complete:4;plasmid_2:complete:0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	miniasm	6	4	5	3	True	27	4754	1	13007	1	30.98	False	chromosome:complete:24;plasmid_1:complete:0;plasmid_2:complete:3;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	myloasm	1	9	5	3	True	2583	15	2	10937	0	33.63	False	chromosome:complete:173;plasmid_1:complete:366;plasmid_2:complete:1703;plasmid_3:doubled (x2.00):341;plasmid_4:wrong length (x0.988):0
+Klebsiella_pneumoniae	myloasm	2	9	5	4	True	801	0	3	11567	0	38.74	False	chromosome:complete:797;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:doubled (x2.00):3;plasmid_4:complete:0
+Klebsiella_pneumoniae	myloasm	3	10	5	4	True	4422	0	4	73040	0	31.32	False	chromosome:complete:4418;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:doubled (x2.00):4;plasmid_4:complete:0
+Klebsiella_pneumoniae	myloasm	4	11	5	4	True	4208	0	3	6919	0	31.53	False	chromosome:complete:2358;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:doubled (x2.00):1850;plasmid_4:complete:0
+Klebsiella_pneumoniae	myloasm	5	7	5	2	True	716	4420	1	2719	0	30.67	False	chromosome:complete:378;plasmid_1:complete:3;plasmid_2:fragmented (2 contigs):335;plasmid_3:doubled (x2.00):0;plasmid_4:doubled (x2.19):0
+Klebsiella_pneumoniae	myloasm	6	8	5	4	True	1645	0	3	9274	0	35.61	False	chromosome:complete:1411;plasmid_1:complete:234;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0;plasmid_4:complete:0
+Klebsiella_pneumoniae	necat	1	3	5	3	True	108	4754	0	0	0	30.91	False	chromosome:complete:97;plasmid_1:complete:10;plasmid_2:complete:1;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	necat	2	3	5	3	True	253	4754	0	0	0	30.78	False	chromosome:complete:246;plasmid_1:complete:4;plasmid_2:complete:3;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	necat	3	3	5	3	True	63	4754	0	0	0	30.95	False	chromosome:complete:55;plasmid_1:complete:5;plasmid_2:complete:3;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	necat	4	3	5	3	True	81	4754	0	0	0	30.93	False	chromosome:complete:49;plasmid_1:complete:27;plasmid_2:complete:5;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	necat	5	3	5	3	True	37138	4754	0	0	0	21.55	False	chromosome:complete:37092;plasmid_1:complete:44;plasmid_2:complete:2;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	necat	6	3	5	3	True	90	4754	0	0	0	30.92	False	chromosome:complete:85;plasmid_1:complete:4;plasmid_2:complete:1;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	nextdenovo	1	4	5	1	True	18737	4754	0	0	0	24.07	False	chromosome:complete:18627;plasmid_1:fragmented (2 contigs):72;plasmid_2:wrong length (x1.113):38;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	nextdenovo	2	3	5	1	True	18741	4754	0	0	0	24.06	False	chromosome:complete:18620;plasmid_1:wrong length (x1.052):93;plasmid_2:wrong length (x1.097):28;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	nextdenovo	3	3	5	1	True	1766	4754	0	0	0	29.63	False	chromosome:complete:1675;plasmid_1:wrong length (x1.079):25;plasmid_2:wrong length (x1.091):66;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	nextdenovo	4	3	5	1	True	19268	4754	0	0	0	23.97	False	chromosome:complete:19162;plasmid_1:wrong length (x1.068):37;plasmid_2:wrong length (x1.061):69;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	nextdenovo	5	3	5	1	True	22509	4754	0	0	0	23.42	False	chromosome:complete:22405;plasmid_1:wrong length (x1.092):41;plasmid_2:wrong length (x1.074):63;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	nextdenovo	6	3	5	1	True	21557	4754	0	0	0	23.57	False	chromosome:complete:21482;plasmid_1:wrong length (x1.074):50;plasmid_2:wrong length (x1.079):25;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	raven	1	3	5	3	True	37	4754	0	0	0	30.97	False	chromosome:complete:27;plasmid_1:complete:6;plasmid_2:complete:4;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	raven	2	4	5	4	True	8230	1240	0	0	0	28.01	False	chromosome:complete:8213;plasmid_1:complete:8;plasmid_2:complete:5;plasmid_3:complete:4;plasmid_4:missing:0
+Klebsiella_pneumoniae	raven	3	3	5	3	True	678	4754	0	0	0	30.42	False	chromosome:complete:666;plasmid_1:complete:6;plasmid_2:complete:6;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	raven	4	4	5	4	True	1469	1240	0	0	0	33.45	False	chromosome:complete:1451;plasmid_1:complete:7;plasmid_2:complete:10;plasmid_3:complete:1;plasmid_4:missing:0
+Klebsiella_pneumoniae	raven	5	3	5	3	True	79	4754	0	0	0	30.93	False	chromosome:complete:66;plasmid_1:complete:5;plasmid_2:complete:8;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	raven	6	3	5	3	True	37	4754	0	0	0	30.97	False	chromosome:complete:19;plasmid_1:complete:6;plasmid_2:complete:12;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	redbean	1	3	5	2	True	28546	220022	0	0	1	13.82	False	chromosome:complete:28301;plasmid_1:complete:245;plasmid_2:wrong length (x0.247):0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	redbean	2	3	5	2	True	8285	13478	0	0	0	24.4	False	chromosome:complete:7921;plasmid_1:complete:364;plasmid_2:wrong length (x0.969):0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	redbean	3	4	5	1	False	5753	657137	0	0	1	9.56	False	chromosome:fragmented (2 contigs):5440;plasmid_1:complete:313;plasmid_2:missing:0;plasmid_3:doubled (x2.11):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	redbean	4	4	5	0	False	178	400221	1	11181	0	11.75	False	chromosome:wrong length (x0.934):168;plasmid_1:wrong length (x0.901):10;plasmid_2:wrong length (x0.972):0;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	redbean	5	4	5	2	True	7320	9844	0	0	0	25.43	False	chromosome:complete:6846;plasmid_1:complete:75;plasmid_2:fragmented (2 contigs):399;plasmid_3:missing:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	redbean	6	6	5	1	False	725	38830	0	0	0	21.8	False	chromosome:fragmented (3 contigs):652;plasmid_1:complete:71;plasmid_2:wrong length (x0.974):2;plasmid_3:doubled (x1.98):0;plasmid_4:missing:0
+Listeria_innocua	autocycler	1	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	autocycler	2	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	autocycler	3	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:0;plasmid:complete:1
+Listeria_innocua	autocycler	4	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:0;plasmid:complete:1
+Listeria_innocua	autocycler	5	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	autocycler	6	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	autocycler_manual	1	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	autocycler_manual	2	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	autocycler_manual	3	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:0;plasmid:complete:1
+Listeria_innocua	autocycler_manual	4	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:0;plasmid:complete:1
+Listeria_innocua	autocycler_manual	5	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	autocycler_manual	6	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	canu	1	2	2	2	True	4	0	0	0	0	58.71	False	chromosome:complete:3;plasmid:complete:1
+Listeria_innocua	canu	2	2	2	2	True	3	0	0	0	0	59.96	False	chromosome:complete:2;plasmid:complete:1
+Listeria_innocua	canu	3	2	2	2	True	25288	0	0	0	0	20.7	False	chromosome:complete:25286;plasmid:complete:2
+Listeria_innocua	canu	4	2	2	2	True	6	0	0	0	0	56.95	False	chromosome:complete:5;plasmid:complete:1
+Listeria_innocua	canu	5	2	2	2	True	5	0	0	0	0	57.74	False	chromosome:complete:4;plasmid:complete:1
+Listeria_innocua	canu	6	3	2	2	True	2	0	1	38675	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	dragonflye	1	3	2	2	True	60	0	1	5840	0	46.95	False	chromosome:complete:50;plasmid:complete:10
+Listeria_innocua	dragonflye	2	3	2	2	True	16	0	1	6025	0	52.69	False	chromosome:complete:12;plasmid:complete:4
+Listeria_innocua	dragonflye	3	3	2	2	True	44	0	1	5762	0	48.3	False	chromosome:complete:41;plasmid:complete:3
+Listeria_innocua	dragonflye	4	3	2	2	True	60	0	1	5962	0	46.95	False	chromosome:complete:56;plasmid:complete:4
+Listeria_innocua	dragonflye	5	3	2	2	True	504	0	1	6084	1	37.71	False	chromosome:complete:60;plasmid:complete:444
+Listeria_innocua	dragonflye	6	3	2	2	True	1514	0	1	6060	0	32.93	False	chromosome:complete:1511;plasmid:complete:3
+Listeria_innocua	flye	1	3	2	2	True	2	0	1	6022	0	61.72	False	chromosome:complete:2;plasmid:complete:0
+Listeria_innocua	flye	2	3	2	2	True	2	0	1	6002	0	61.72	False	chromosome:complete:2;plasmid:complete:0
+Listeria_innocua	flye	3	3	2	2	True	0	0	1	6021	0	64.73	False	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	flye	4	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	flye	5	3	2	2	True	4	0	1	6037	0	58.71	False	chromosome:complete:3;plasmid:complete:1
+Listeria_innocua	flye	6	3	2	2	True	2	0	1	6021	0	61.72	False	chromosome:complete:2;plasmid:complete:0
+Listeria_innocua	hifiasm	1	2	2	1	True	21602	0	0	0	0	21.39	False	chromosome:complete:21590;plasmid:wrong length (x1.272):12
+Listeria_innocua	hifiasm	2	2	2	1	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:wrong length (x1.279):1
+Listeria_innocua	hifiasm	3	2	2	1	True	505	0	0	0	0	37.7	False	chromosome:complete:504;plasmid:wrong length (x1.404):1
+Listeria_innocua	hifiasm	4	2	2	1	True	3	0	0	0	0	59.96	False	chromosome:complete:2;plasmid:wrong length (x1.227):1
+Listeria_innocua	hifiasm	5	2	2	1	True	695	0	0	0	0	36.31	False	chromosome:complete:687;plasmid:doubled (x1.53):8
+Listeria_innocua	hifiasm	6	2	2	1	True	26568	0	0	0	0	20.49	False	chromosome:complete:26566;plasmid:wrong length (x1.158):2
+Listeria_innocua	hybracter	1	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	hybracter	2	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	hybracter	3	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	hybracter	4	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:0;plasmid:complete:1
+Listeria_innocua	hybracter	5	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	hybracter	6	2	2	2	True	2	0	0	0	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	lja	1	2	2	1	True	193	6972	0	0	0	26.18	False	chromosome:complete:108;plasmid:wrong length (x0.922):85
+Listeria_innocua	lja	2	2	2	2	True	39	0	0	0	0	48.82	False	chromosome:complete:21;plasmid:complete:18
+Listeria_innocua	lja	3	2	2	2	True	244	0	0	0	0	40.86	False	chromosome:complete:218;plasmid:complete:26
+Listeria_innocua	lja	4	3	2	1	False	747	9003	0	0	0	24.84	False	chromosome:fragmented (2 contigs):152;plasmid:complete:595
+Listeria_innocua	lja	5	2	2	1	True	67	36610	0	0	0	19.09	False	chromosome:complete:40;plasmid:wrong length (x0.633):27
+Listeria_innocua	lja	6	2	2	1	True	151	14656	0	0	0	23.03	False	chromosome:complete:49;plasmid:wrong length (x0.838):102
+Listeria_innocua	maeci	1	2	2	2	True	2662	0	0	0	0	30.48	False	chromosome:complete:2256;plasmid:complete:406
+Listeria_innocua	maeci	2	2	2	2	True	1595	0	0	0	0	32.7	False	chromosome:complete:1514;plasmid:complete:81
+Listeria_innocua	maeci	3	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	maeci	4	2	2	2	True	6	0	0	0	0	56.95	False	chromosome:complete:5;plasmid:complete:1
+Listeria_innocua	maeci	5	2	2	2	True	3	0	0	0	0	59.96	False	chromosome:complete:2;plasmid:complete:1
+Listeria_innocua	maeci	6	2	2	2	True	1494	0	0	0	0	32.99	False	chromosome:complete:1493;plasmid:complete:1
+Listeria_innocua	metamdbg	1	2	2	2	True	498	0	0	0	0	37.76	False	chromosome:complete:490;plasmid:complete:8
+Listeria_innocua	metamdbg	2	2	2	2	True	236	0	0	0	0	41.0	False	chromosome:complete:231;plasmid:complete:5
+Listeria_innocua	metamdbg	3	2	2	2	True	30	0	0	0	0	49.96	False	chromosome:complete:22;plasmid:complete:8
+Listeria_innocua	metamdbg	4	2	2	2	True	3234	0	0	0	0	29.63	False	chromosome:complete:3227;plasmid:complete:7
+Listeria_innocua	metamdbg	5	2	2	2	True	3230	0	0	0	0	29.64	False	chromosome:complete:3223;plasmid:complete:7
+Listeria_innocua	metamdbg	6	2	2	2	True	45	0	0	0	0	48.2	False	chromosome:complete:39;plasmid:complete:6
+Listeria_innocua	miniasm	1	2	2	2	True	19	0	0	0	0	51.94	False	chromosome:complete:19;plasmid:complete:0
+Listeria_innocua	miniasm	2	2	2	2	True	15	0	0	0	0	52.97	False	chromosome:complete:15;plasmid:complete:0
+Listeria_innocua	miniasm	3	2	2	2	True	7	0	0	0	0	56.28	False	chromosome:complete:6;plasmid:complete:1
+Listeria_innocua	miniasm	4	2	2	2	True	20	0	0	0	0	51.72	False	chromosome:complete:18;plasmid:complete:2
+Listeria_innocua	miniasm	5	2	2	2	True	24	0	0	0	0	50.93	False	chromosome:complete:23;plasmid:complete:1
+Listeria_innocua	miniasm	6	2	2	2	True	7002	0	0	0	0	26.28	False	chromosome:complete:7001;plasmid:complete:1
+Listeria_innocua	myloasm	1	6	2	2	True	219	0	4	16572	0	41.33	False	chromosome:complete:219;plasmid:complete:0
+Listeria_innocua	myloasm	2	7	2	1	True	190	2317	5	21875	0	30.74	False	chromosome:complete:170;plasmid:wrong length (x0.998):20
+Listeria_innocua	myloasm	3	4	2	2	True	29	0	2	73280	0	50.11	False	chromosome:complete:29;plasmid:complete:0
+Listeria_innocua	myloasm	4	4	2	2	True	486	0	2	12163	0	37.86	False	chromosome:complete:485;plasmid:complete:1
+Listeria_innocua	myloasm	5	6	2	2	True	1087	0	4	19301	0	34.37	False	chromosome:complete:1086;plasmid:complete:1
+Listeria_innocua	myloasm	6	5	2	2	True	4330	0	3	15388	0	28.37	False	chromosome:complete:4329;plasmid:complete:1
+Listeria_innocua	necat	1	2	2	2	True	33	0	0	0	0	49.55	False	chromosome:complete:32;plasmid:complete:1
+Listeria_innocua	necat	2	2	2	2	True	54	0	0	0	0	47.41	False	chromosome:complete:53;plasmid:complete:1
+Listeria_innocua	necat	3	2	2	1	True	347	0	0	0	0	39.33	False	chromosome:complete:344;plasmid:wrong length (x1.404):3
+Listeria_innocua	necat	4	2	2	2	True	401	0	0	0	0	38.7	False	chromosome:complete:47;plasmid:complete:354
+Listeria_innocua	necat	5	2	2	2	True	573	0	0	0	0	37.15	False	chromosome:complete:571;plasmid:complete:2
+Listeria_innocua	necat	6	2	2	1	True	92	7203	0	0	0	26.1	False	chromosome:complete:75;plasmid:wrong length (x0.920):17
+Listeria_innocua	nextdenovo	1	2	2	1	True	27183	0	0	0	0	20.39	False	chromosome:complete:27149;plasmid:wrong length (x1.145):34
+Listeria_innocua	nextdenovo	2	2	2	1	True	17539	0	0	0	1	22.29	False	chromosome:complete:17374;plasmid:wrong length (x1.338):165
+Listeria_innocua	nextdenovo	3	1	2	1	True	677	89544	0	0	0	15.18	False	chromosome:complete:677;plasmid:missing:0
+Listeria_innocua	nextdenovo	4	2	2	1	True	11956	0	0	0	0	23.96	False	chromosome:complete:11940;plasmid:wrong length (x1.248):16
+Listeria_innocua	nextdenovo	5	2	2	1	True	20650	0	0	0	0	21.58	False	chromosome:complete:20563;plasmid:wrong length (x1.275):87
+Listeria_innocua	nextdenovo	6	2	2	1	True	15180	0	0	0	0	22.92	False	chromosome:complete:15022;plasmid:wrong length (x1.340):158
+Listeria_innocua	raven	1	2	2	2	True	8	0	0	0	0	55.7	False	chromosome:complete:4;plasmid:complete:4
+Listeria_innocua	raven	2	2	2	2	True	560	0	0	0	0	37.25	False	chromosome:complete:556;plasmid:complete:4
+Listeria_innocua	raven	3	2	2	2	True	954	0	0	0	0	34.94	False	chromosome:complete:948;plasmid:complete:6
+Listeria_innocua	raven	4	2	2	2	True	9	0	0	0	0	55.19	False	chromosome:complete:4;plasmid:complete:5
+Listeria_innocua	raven	5	2	2	2	True	1343	0	0	0	0	33.45	False	chromosome:complete:1335;plasmid:complete:8
+Listeria_innocua	raven	6	2	2	2	True	12	0	0	0	0	53.94	False	chromosome:complete:4;plasmid:complete:8
+Listeria_innocua	redbean	1	2	2	2	True	2904	0	0	0	0	30.1	False	chromosome:complete:2809;plasmid:complete:95
+Listeria_innocua	redbean	2	2	2	2	True	1674	0	0	0	0	32.49	False	chromosome:complete:1609;plasmid:complete:65
+Listeria_innocua	redbean	3	2	2	2	True	3464	0	0	0	0	29.34	False	chromosome:complete:3038;plasmid:complete:426
+Listeria_innocua	redbean	4	2	2	1	False	256	9429	0	0	1	24.87	False	chromosome:wrong length (x0.996):28;plasmid:complete:228
+Listeria_innocua	redbean	5	2	2	1	True	1204	3156	0	0	0	28.34	False	chromosome:complete:1193;plasmid:wrong length (x0.965):11
+Listeria_innocua	redbean	6	2	2	2	True	5254	0	0	0	0	27.53	False	chromosome:complete:5210;plasmid:complete:44
+Providencia_rettgeri	autocycler	1	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler	2	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	autocycler	3	2	2	2	True	5	0	0	0	0	59.51	False	chromosome:complete:5;plasmid:complete:0
+Providencia_rettgeri	autocycler	4	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	autocycler	5	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler	6	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	autocycler_manual	1	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler_manual	2	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	autocycler_manual	3	2	2	2	True	5	0	0	0	0	59.51	False	chromosome:complete:5;plasmid:complete:0
+Providencia_rettgeri	autocycler_manual	4	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	autocycler_manual	5	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler_manual	6	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	canu	1	3	2	2	True	2	0	1	34735	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	canu	2	3	2	1	True	28	0	0	0	0	52.03	False	chromosome:complete:27;plasmid:fragmented (2 contigs):1
+Providencia_rettgeri	canu	3	2	2	2	True	35714	0	0	0	0	20.97	False	chromosome:complete:35714;plasmid:complete:0
+Providencia_rettgeri	canu	4	2	2	2	True	41615	0	0	0	0	20.31	False	chromosome:complete:41615;plasmid:complete:0
+Providencia_rettgeri	canu	5	2	2	2	True	6	0	0	0	0	58.72	False	chromosome:complete:6;plasmid:complete:0
+Providencia_rettgeri	canu	6	3	2	2	True	4	0	1	18452	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	dragonflye	1	3	2	2	True	39	0	1	7274	1	50.59	False	chromosome:complete:14;plasmid:complete:25
+Providencia_rettgeri	dragonflye	2	2	2	2	True	35	0	0	0	0	51.06	False	chromosome:complete:33;plasmid:complete:2
+Providencia_rettgeri	dragonflye	3	2	2	2	True	778	0	0	0	0	37.59	False	chromosome:complete:762;plasmid:complete:16
+Providencia_rettgeri	dragonflye	4	2	2	2	True	787	0	0	0	0	37.54	False	chromosome:complete:774;plasmid:complete:13
+Providencia_rettgeri	dragonflye	5	2	2	2	True	163	0	0	0	0	44.38	False	chromosome:complete:36;plasmid:complete:127
+Providencia_rettgeri	dragonflye	6	2	2	2	True	61	0	0	0	0	48.65	False	chromosome:complete:46;plasmid:complete:15
+Providencia_rettgeri	flye	1	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	flye	2	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	flye	3	2	2	2	True	6	0	0	0	0	58.72	False	chromosome:complete:6;plasmid:complete:0
+Providencia_rettgeri	flye	4	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	flye	5	3	2	2	True	13	0	1	8883	0	55.36	False	chromosome:complete:13;plasmid:complete:0
+Providencia_rettgeri	flye	6	2	2	2	True	5	0	0	0	0	59.51	False	chromosome:complete:5;plasmid:complete:0
+Providencia_rettgeri	hifiasm	1	2	2	1	True	8	0	0	0	0	57.47	False	chromosome:complete:8;plasmid:wrong length (x1.190):0
+Providencia_rettgeri	hifiasm	2	2	2	1	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:wrong length (x1.137):0
+Providencia_rettgeri	hifiasm	3	2	2	1	True	30398	0	0	0	0	21.67	False	chromosome:complete:30398;plasmid:wrong length (x1.236):0
+Providencia_rettgeri	hifiasm	4	2	2	1	True	69	0	0	0	0	48.11	False	chromosome:complete:69;plasmid:wrong length (x1.173):0
+Providencia_rettgeri	hifiasm	5	2	2	1	True	159	0	0	0	0	44.49	False	chromosome:complete:159;plasmid:wrong length (x1.220):0
+Providencia_rettgeri	hifiasm	6	2	2	1	True	167	0	0	0	0	44.27	False	chromosome:complete:167;plasmid:wrong length (x1.164):0
+Providencia_rettgeri	hybracter	1	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	hybracter	2	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	hybracter	3	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	hybracter	4	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	hybracter	5	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:2;plasmid:complete:1
+Providencia_rettgeri	hybracter	6	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	lja	1	2	2	2	True	76	0	0	0	0	47.69	False	chromosome:complete:76;plasmid:complete:0
+Providencia_rettgeri	lja	2	3	2	1	False	199	4442	0	0	0	29.83	False	chromosome:fragmented (2 contigs):198;plasmid:complete:1
+Providencia_rettgeri	lja	3	2	2	2	True	120	0	0	0	0	45.71	False	chromosome:complete:120;plasmid:complete:0
+Providencia_rettgeri	lja	4	2	2	2	True	146	0	0	0	0	44.86	False	chromosome:complete:144;plasmid:complete:2
+Providencia_rettgeri	lja	5	2	2	2	True	95	0	0	0	0	46.72	False	chromosome:complete:87;plasmid:complete:8
+Providencia_rettgeri	lja	6	2	2	2	True	65	0	0	0	0	48.37	False	chromosome:complete:65;plasmid:complete:0
+Providencia_rettgeri	maeci	1	2	2	2	True	4	0	0	0	0	60.48	False	chromosome:complete:4;plasmid:complete:0
+Providencia_rettgeri	maeci	2	2	2	2	True	8	0	0	0	0	57.47	False	chromosome:complete:8;plasmid:complete:0
+Providencia_rettgeri	maeci	3	2	2	2	True	726	0	0	0	0	37.89	False	chromosome:complete:598;plasmid:complete:128
+Providencia_rettgeri	maeci	4	2	2	2	True	311	0	0	0	0	41.57	False	chromosome:complete:311;plasmid:complete:0
+Providencia_rettgeri	maeci	5	2	2	2	True	8	0	0	0	0	57.47	False	chromosome:complete:8;plasmid:complete:0
+Providencia_rettgeri	maeci	6	2	2	2	True	8	0	0	0	0	57.47	False	chromosome:complete:8;plasmid:complete:0
+Providencia_rettgeri	metamdbg	1	2	2	2	True	60	0	0	0	0	48.72	False	chromosome:complete:52;plasmid:complete:8
+Providencia_rettgeri	metamdbg	2	2	2	2	True	483	0	0	0	0	39.66	False	chromosome:complete:475;plasmid:complete:8
+Providencia_rettgeri	metamdbg	3	2	2	2	True	993	0	0	0	0	36.53	False	chromosome:complete:981;plasmid:complete:12
+Providencia_rettgeri	metamdbg	4	2	2	2	True	1137	0	0	0	0	35.94	False	chromosome:complete:1126;plasmid:complete:11
+Providencia_rettgeri	metamdbg	5	2	2	2	True	62	0	0	0	0	48.58	False	chromosome:complete:50;plasmid:complete:12
+Providencia_rettgeri	metamdbg	6	2	2	2	True	98	0	0	0	0	46.59	False	chromosome:complete:88;plasmid:complete:10
+Providencia_rettgeri	miniasm	1	2	2	2	True	1613	0	0	0	0	34.42	False	chromosome:complete:1611;plasmid:complete:2
+Providencia_rettgeri	miniasm	2	2	2	2	True	47	0	0	0	0	49.78	False	chromosome:complete:43;plasmid:complete:4
+Providencia_rettgeri	miniasm	3	2	2	2	True	103	0	0	0	0	46.37	False	chromosome:complete:100;plasmid:complete:3
+Providencia_rettgeri	miniasm	4	2	2	2	True	58	0	0	0	0	48.86	False	chromosome:complete:11;plasmid:complete:47
+Providencia_rettgeri	miniasm	5	2	2	1	False	1032	0	0	0	0	36.36	False	chromosome:wrong length (x1.011):1031;plasmid:complete:1
+Providencia_rettgeri	miniasm	6	2	2	2	True	35	0	0	0	0	51.06	False	chromosome:complete:34;plasmid:complete:1
+Providencia_rettgeri	myloasm	1	3	2	2	True	588	0	1	3582	0	38.81	False	chromosome:complete:588;plasmid:complete:0
+Providencia_rettgeri	myloasm	2	7	2	2	True	617	0	5	34361	0	38.6	False	chromosome:complete:617;plasmid:complete:0
+Providencia_rettgeri	myloasm	3	5	2	2	True	485	0	3	18557	0	39.64	False	chromosome:complete:485;plasmid:complete:0
+Providencia_rettgeri	myloasm	4	8	2	2	True	191	0	6	30130	0	43.69	False	chromosome:complete:191;plasmid:complete:0
+Providencia_rettgeri	myloasm	5	5	2	2	True	40976	0	3	20954	0	20.37	False	chromosome:complete:40976;plasmid:complete:0
+Providencia_rettgeri	myloasm	6	2	2	2	True	1345	0	0	0	0	35.21	False	chromosome:complete:1345;plasmid:complete:0
+Providencia_rettgeri	necat	1	2	2	2	True	208	0	0	0	0	43.32	False	chromosome:complete:207;plasmid:complete:1
+Providencia_rettgeri	necat	2	2	2	2	True	883	0	0	0	0	37.04	False	chromosome:complete:882;plasmid:complete:1
+Providencia_rettgeri	necat	3	2	2	2	True	71	0	0	0	0	47.99	False	chromosome:complete:71;plasmid:complete:0
+Providencia_rettgeri	necat	4	2	2	2	True	613	0	0	0	0	38.62	False	chromosome:complete:613;plasmid:complete:0
+Providencia_rettgeri	necat	5	2	2	2	True	400	0	0	0	0	40.48	False	chromosome:complete:396;plasmid:complete:4
+Providencia_rettgeri	necat	6	2	2	2	True	55	0	0	0	0	49.1	False	chromosome:complete:55;plasmid:complete:0
+Providencia_rettgeri	nextdenovo	1	2	2	1	True	16616	0	0	0	0	24.29	False	chromosome:complete:16576;plasmid:wrong length (x1.190):40
+Providencia_rettgeri	nextdenovo	2	2	2	1	True	14654	0	0	0	0	24.84	False	chromosome:complete:14607;plasmid:wrong length (x1.161):47
+Providencia_rettgeri	nextdenovo	3	2	2	1	True	22316	0	0	0	0	23.01	False	chromosome:complete:22292;plasmid:wrong length (x1.128):24
+Providencia_rettgeri	nextdenovo	4	2	2	1	True	30223	0	0	0	0	21.7	False	chromosome:complete:30191;plasmid:wrong length (x1.047):32
+Providencia_rettgeri	nextdenovo	5	2	2	1	True	37987	0	0	0	0	20.7	False	chromosome:complete:37966;plasmid:wrong length (x1.115):21
+Providencia_rettgeri	nextdenovo	6	2	2	1	True	20149	0	0	0	0	23.46	False	chromosome:complete:20063;plasmid:wrong length (x1.207):86
+Providencia_rettgeri	raven	1	2	2	2	True	995	0	0	0	0	36.52	False	chromosome:complete:993;plasmid:complete:2
+Providencia_rettgeri	raven	2	2	2	2	True	559	0	0	0	0	39.02	False	chromosome:complete:392;plasmid:complete:167
+Providencia_rettgeri	raven	3	2	2	1	False	74	0	0	0	1	47.81	False	chromosome:wrong length (x1.002):71;plasmid:complete:3
+Providencia_rettgeri	raven	4	2	2	2	True	1197	0	0	0	0	35.72	False	chromosome:complete:1195;plasmid:complete:2
+Providencia_rettgeri	raven	5	2	2	2	True	24164	0	0	0	0	22.67	False	chromosome:complete:24161;plasmid:complete:3
+Providencia_rettgeri	raven	6	2	2	1	False	47	0	0	0	1	49.78	False	chromosome:wrong length (x1.003):40;plasmid:complete:7
+Providencia_rettgeri	redbean	1	5	2	0	False	706	66703	0	0	0	18.21	False	chromosome:fragmented (4 contigs):706;plasmid:wrong length (x0.970):0
+Providencia_rettgeri	redbean	2	4	2	0	False	867	186422	0	0	4	13.77	False	chromosome:fragmented (4 contigs):867;plasmid:missing:0
+Providencia_rettgeri	redbean	3	6	2	0	False	188	60256	0	0	2	18.69	False	chromosome:fragmented (5 contigs):188;plasmid:wrong length (x0.980):0
+Providencia_rettgeri	redbean	4	7	2	1	False	696	48607	0	0	0	19.57	False	chromosome:fragmented (6 contigs):555;plasmid:complete:141
+Providencia_rettgeri	redbean	5	3	2	0	False	973	184338	0	0	4	13.82	False	chromosome:fragmented (3 contigs):973;plasmid:missing:0
+Providencia_rettgeri	redbean	6	9	2	1	False	746	358639	0	0	0	10.94	False	chromosome:fragmented (8 contigs):567;plasmid:complete:179
+Shigella_flexneri	autocycler	1	8	8	8	True	11	0	0	0	0	56.42	False	chromosome:complete:11;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler	2	8	8	8	True	6	0	0	0	0	59.06	False	chromosome:complete:6;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler	3	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:7;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler	4	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:6;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:1;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler	5	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:8;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler	6	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:8;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_manual	1	8	8	8	True	11	0	0	0	0	56.42	False	chromosome:complete:11;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_manual	2	8	8	8	True	6	0	0	0	0	59.06	False	chromosome:complete:6;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_manual	3	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:7;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_manual	4	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:6;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:1;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_manual	5	8	8	8	True	7	0	0	0	0	58.39	False	chromosome:complete:7;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_manual	6	8	8	8	True	8	0	0	0	0	57.81	False	chromosome:complete:8;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	canu	1	8	8	7	True	15	0	0	0	0	55.08	False	chromosome:complete:15;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:doubled (x1.97):0
+Shigella_flexneri	canu	2	7	8	2	True	18	3181	0	0	0	31.79	False	chromosome:complete:14;plasmid_1:wrong length (x1.190):2;plasmid_2:doubled (x2.00):1;plasmid_3:complete:0;plasmid_4:doubled (x2.00):0;plasmid_5:missing:0;plasmid_6:doubled (x2.43):0;plasmid_7:doubled (x1.98):1
+Shigella_flexneri	canu	3	7	8	5	True	10	5075	1	36151	0	29.78	False	chromosome:complete:9;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:missing:0;plasmid_5:doubled (x2.00):0;plasmid_6:complete:0;plasmid_7:missing:0
+Shigella_flexneri	canu	4	8	8	7	True	10	0	0	0	0	56.84	False	chromosome:complete:9;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:doubled (x2.02):0
+Shigella_flexneri	canu	5	9	8	5	True	2147	6790	1	2088	1	27.33	False	chromosome:complete:2146;plasmid_1:complete:1;plasmid_2:missing:0;plasmid_3:complete:0;plasmid_4:fragmented (2 contigs):0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:doubled (x2.02):0
+Shigella_flexneri	canu	6	5	8	3	True	14	13806	0	0	0	25.43	False	chromosome:complete:12;plasmid_1:wrong length (x1.071):2;plasmid_2:missing:0;plasmid_3:doubled (x3.71):0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	dragonflye	1	10	8	3	False	530	10662	0	0	4	26.35	False	chromosome:fragmented (5 contigs):495;plasmid_1:complete:7;plasmid_2:complete:9;plasmid_3:wrong length (x1.105):3;plasmid_4:wrong length (x0.975):1;plasmid_5:complete:15;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	dragonflye	2	15	8	3	False	641	18068	0	0	6	24.12	False	chromosome:fragmented (7 contigs):607;plasmid_1:complete:9;plasmid_2:complete:10;plasmid_3:wrong length (x0.705):1;plasmid_4:fragmented (4 contigs):1;plasmid_5:complete:13;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	dragonflye	3	13	8	1	False	1027	7280	0	0	3	27.64	False	chromosome:fragmented (3 contigs):724;plasmid_1:complete:17;plasmid_2:doubled (x1.89):1;plasmid_3:fragmented (4 contigs):0;plasmid_4:fragmented (3 contigs):6;plasmid_5:doubled (x2.00):279;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	dragonflye	4	6	8	1	False	1454	11533	0	0	3	25.7	False	chromosome:fragmented (2 contigs):472;plasmid_1:complete:8;plasmid_2:doubled (x2.86):3;plasmid_3:missing:0;plasmid_4:doubled (x2.93):65;plasmid_5:doubled (x1.85):906;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	dragonflye	5	15	8	1	False	268	5087	0	0	4	29.55	False	chromosome:fragmented (4 contigs):23;plasmid_1:complete:18;plasmid_2:fragmented (4 contigs):1;plasmid_3:doubled (x1.91):204;plasmid_4:doubled (x2.03):19;plasmid_5:wrong length (x1.455):3;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	dragonflye	6	16	8	2	False	3189	52997	1	3491	9	19.34	False	chromosome:fragmented (8 contigs):3158;plasmid_1:complete:17;plasmid_2:fragmented (3 contigs):0;plasmid_3:complete:11;plasmid_4:wrong length (x0.647):0;plasmid_5:wrong length (x1.463):3;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	flye	1	7	8	4	True	24	1240	0	0	0	35.82	False	chromosome:complete:11;plasmid_1:complete:0;plasmid_2:doubled (x3.00):6;plasmid_3:doubled (x2.00):0;plasmid_4:doubled (x3.00):6;plasmid_5:complete:1;plasmid_6:complete:0;plasmid_7:missing:0
+Shigella_flexneri	flye	2	8	8	3	True	15	1240	0	0	0	35.85	False	chromosome:complete:5;plasmid_1:fragmented (2 contigs):5;plasmid_2:complete:4;plasmid_3:doubled (x1.91):0;plasmid_4:complete:0;plasmid_5:doubled (x1.99):1;plasmid_6:doubled (x1.99):0;plasmid_7:missing:0
+Shigella_flexneri	flye	3	7	8	2	True	1846	1240	0	0	1	31.94	False	chromosome:complete:1829;plasmid_1:complete:1;plasmid_2:wrong length (x1.011):0;plasmid_3:doubled (x2.00):0;plasmid_4:doubled (x4.99):15;plasmid_5:doubled (x2.00):1;plasmid_6:wrong length (x1.070):0;plasmid_7:missing:0
+Shigella_flexneri	flye	4	7	8	3	True	2313	3711	0	0	0	29.04	False	chromosome:complete:2233;plasmid_1:complete:1;plasmid_2:fragmented (2 contigs):0;plasmid_3:doubled (x3.97):79;plasmid_4:doubled (x2.00):0;plasmid_5:complete:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	flye	5	7	8	3	True	97	1240	0	0	0	35.58	False	chromosome:complete:9;plasmid_1:complete:1;plasmid_2:doubled (x3.92):83;plasmid_3:doubled (x1.87):0;plasmid_4:doubled (x2.00):0;plasmid_5:complete:4;plasmid_6:doubled (x2.00):0;plasmid_7:missing:0
+Shigella_flexneri	flye	6	9	8	4	True	12	1240	2	4222	0	35.86	False	chromosome:complete:10;plasmid_1:complete:1;plasmid_2:doubled (x2.00):0;plasmid_3:complete:0;plasmid_4:doubled (x2.00):0;plasmid_5:complete:1;plasmid_6:wrong length (x1.037):0;plasmid_7:missing:0
+Shigella_flexneri	hifiasm	1	110	8	3	True	237	0	0	0	0	43.09	False	chromosome:complete:22;plasmid_1:wrong length (x1.208):1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:doubled (x4.11):193;plasmid_5:doubled (x1.50):11;plasmid_6:doubled (x4.70):1;plasmid_7:doubled (x1.94):9
+Shigella_flexneri	hifiasm	2	131	8	3	True	302	0	0	0	0	42.04	False	chromosome:complete:6;plasmid_1:wrong length (x1.111):0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:doubled (x4.61):181;plasmid_5:doubled (x1.58):2;plasmid_6:doubled (x4.60):105;plasmid_7:doubled (x3.97):8
+Shigella_flexneri	hifiasm	3	100	8	1	True	251	0	0	0	0	42.84	False	chromosome:complete:11;plasmid_1:wrong length (x1.102):1;plasmid_2:doubled (x3.99):0;plasmid_3:doubled (x2.22):0;plasmid_4:doubled (x3.81):203;plasmid_5:doubled (x2.31):15;plasmid_6:doubled (x2.89):14;plasmid_7:doubled (x3.13):7
+Shigella_flexneri	hifiasm	4	93	8	3	True	301	0	0	0	0	42.05	False	chromosome:complete:8;plasmid_1:wrong length (x1.075):2;plasmid_2:complete:0;plasmid_3:doubled (x1.99):0;plasmid_4:doubled (x2.87):283;plasmid_5:complete:0;plasmid_6:doubled (x2.00):1;plasmid_7:doubled (x3.93):7
+Shigella_flexneri	hifiasm	5	107	8	4	True	254	0	0	0	0	42.79	False	chromosome:complete:9;plasmid_1:wrong length (x1.090):0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:doubled (x3.83):209;plasmid_5:complete:0;plasmid_6:doubled (x2.77):15;plasmid_7:doubled (x3.62):21
+Shigella_flexneri	hifiasm	6	117	8	2	True	376	71	0	0	0	40.34	False	chromosome:complete:14;plasmid_1:wrong length (x1.117):2;plasmid_2:complete:0;plasmid_3:wrong length (x1.132):0;plasmid_4:doubled (x4.46):351;plasmid_5:wrong length (x1.000):0;plasmid_6:doubled (x4.18):4;plasmid_7:doubled (x2.13):5
+Shigella_flexneri	hybracter	1	8	8	8	True	5	0	0	0	0	59.85	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:1;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	hybracter	2	8	8	8	True	1281	0	0	0	0	35.76	False	chromosome:complete:1281;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	hybracter	3	8	8	8	True	1827	0	0	0	0	34.22	False	chromosome:complete:1825;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:1;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	hybracter	4	8	8	8	True	2228	0	0	0	0	33.36	False	chromosome:complete:2228;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	hybracter	5	8	8	7	True	7	310	0	0	0	41.83	False	chromosome:complete:5;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:wrong length (x0.998):1;plasmid_4:complete:0;plasmid_5:complete:1;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	hybracter	6	7	8	7	True	8	2088	0	0	0	33.62	False	chromosome:complete:6;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:1;plasmid_6:missing:0;plasmid_7:complete:0
+Shigella_flexneri	lja	1	4	8	1	False	657	41807	0	0	0	20.56	False	chromosome:fragmented (3 contigs):636;plasmid_1:complete:21;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	lja	2	2	8	2	True	9501	22191	0	0	0	21.83	False	chromosome:complete:9498;plasmid_1:complete:3;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	lja	3	2	8	2	True	18680	22191	0	0	0	20.72	False	chromosome:complete:18634;plasmid_1:complete:46;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	lja	4	2	8	2	True	8318	22191	0	0	0	21.99	False	chromosome:complete:8306;plasmid_1:complete:12;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	lja	5	4	8	1	False	458	38053	0	0	0	20.98	False	chromosome:fragmented (3 contigs):411;plasmid_1:complete:47;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	lja	6	2	8	2	True	1414	22191	0	0	0	23.11	False	chromosome:complete:1343;plasmid_1:complete:71;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	maeci	1	3	8	2	True	14416	20686	0	0	0	21.38	False	chromosome:complete:12876;plasmid_1:complete:1535;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:wrong length (x0.749):5;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	maeci	2	3	8	2	True	6648	18356	0	0	0	22.86	False	chromosome:complete:6027;plasmid_1:complete:347;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:wrong length (x1.161):274;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	maeci	3	3	8	2	True	3669	19901	0	0	0	23.11	False	chromosome:complete:2044;plasmid_1:complete:1620;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:wrong length (x0.601):5;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	maeci	4	2	8	1	True	45772	24036	0	0	0	18.4	False	chromosome:complete:5852;plasmid_1:wrong length (x0.812):39920;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	maeci	5	2	8	2	True	31023	22191	0	0	0	19.58	False	chromosome:complete:30477;plasmid_1:complete:546;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	maeci	6	3	8	2	True	14869	18356	0	0	0	21.62	False	chromosome:complete:14130;plasmid_1:complete:713;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:doubled (x1.61):26;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	metamdbg	1	8	8	2	True	1142	0	0	0	0	36.26	False	chromosome:complete:509;plasmid_1:complete:5;plasmid_2:doubled (x1.94):3;plasmid_3:doubled (x2.51):408;plasmid_4:wrong length (x1.436):0;plasmid_5:doubled (x3.32):42;plasmid_6:doubled (x3.81):32;plasmid_7:doubled (x2.77):143
+Shigella_flexneri	metamdbg	2	8	8	2	True	1803	0	0	0	0	34.28	False	chromosome:complete:632;plasmid_1:complete:7;plasmid_2:doubled (x1.95):0;plasmid_3:doubled (x2.31):490;plasmid_4:doubled (x1.76):11;plasmid_5:doubled (x3.43):658;plasmid_6:doubled (x3.26):3;plasmid_7:doubled (x2.69):2
+Shigella_flexneri	metamdbg	3	8	8	2	True	1101	0	0	0	0	36.42	False	chromosome:complete:547;plasmid_1:complete:2;plasmid_2:doubled (x1.81):1;plasmid_3:doubled (x2.56):6;plasmid_4:doubled (x1.69):80;plasmid_5:doubled (x3.60):299;plasmid_6:doubled (x3.94):126;plasmid_7:doubled (x2.81):40
+Shigella_flexneri	metamdbg	4	8	8	2	True	2697	0	0	0	0	32.53	False	chromosome:complete:492;plasmid_1:complete:10;plasmid_2:doubled (x2.01):0;plasmid_3:doubled (x2.47):772;plasmid_4:doubled (x2.09):435;plasmid_5:doubled (x3.74):272;plasmid_6:doubled (x3.61):716;plasmid_7:doubled (x2.53):0
+Shigella_flexneri	metamdbg	5	7	8	2	True	2631	2088	0	0	0	30.1	False	chromosome:complete:1997;plasmid_1:complete:12;plasmid_2:doubled (x1.95):0;plasmid_3:doubled (x2.48):399;plasmid_4:doubled (x1.99):68;plasmid_5:doubled (x3.36):155;plasmid_6:missing:0;plasmid_7:doubled (x2.91):0
+Shigella_flexneri	metamdbg	6	8	8	2	True	1741	0	0	0	0	34.43	False	chromosome:complete:1113;plasmid_1:complete:28;plasmid_2:doubled (x1.93):0;plasmid_3:doubled (x2.52):342;plasmid_4:doubled (x2.08):0;plasmid_5:doubled (x3.61):205;plasmid_6:doubled (x3.76):53;plasmid_7:doubled (x2.79):0
+Shigella_flexneri	miniasm	1	6	8	6	True	29	6297	0	0	0	28.83	False	chromosome:complete:18;plasmid_1:complete:3;plasmid_2:complete:3;plasmid_3:missing:0;plasmid_4:complete:2;plasmid_5:complete:1;plasmid_6:complete:2;plasmid_7:missing:0
+Shigella_flexneri	miniasm	2	5	8	3	True	131	10285	0	0	0	26.66	False	chromosome:complete:6;plasmid_1:complete:3;plasmid_2:doubled (x1.99):116;plasmid_3:missing:0;plasmid_4:wrong length (x1.116):4;plasmid_5:missing:0;plasmid_6:complete:2;plasmid_7:missing:0
+Shigella_flexneri	miniasm	3	5	8	4	True	17	13977	0	0	0	25.38	False	chromosome:complete:10;plasmid_1:complete:1;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:wrong length (x1.015):3;plasmid_5:complete:2;plasmid_6:complete:1;plasmid_7:missing:0
+Shigella_flexneri	miniasm	4	6	8	4	True	298	6297	0	0	0	28.65	False	chromosome:complete:25;plasmid_1:complete:2;plasmid_2:doubled (x1.99):6;plasmid_3:missing:0;plasmid_4:wrong length (x0.959):263;plasmid_5:complete:1;plasmid_6:complete:1;plasmid_7:missing:0
+Shigella_flexneri	miniasm	5	5	8	3	True	890	9642	0	0	1	26.61	False	chromosome:complete:884;plasmid_1:complete:1;plasmid_2:doubled (x1.87):0;plasmid_3:missing:0;plasmid_4:wrong length (x1.097):2;plasmid_5:complete:3;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	miniasm	6	6	8	6	True	72	6297	0	0	0	28.8	False	chromosome:complete:13;plasmid_1:complete:0;plasmid_2:complete:3;plasmid_3:missing:0;plasmid_4:complete:53;plasmid_5:complete:1;plasmid_6:complete:2;plasmid_7:missing:0
+Shigella_flexneri	myloasm	1	15	8	4	True	16876	0	1	4489	3	24.57	False	chromosome:complete:15811;plasmid_1:complete:1;plasmid_2:doubled (x2.93):937;plasmid_3:complete:0;plasmid_4:doubled (x1.81):18;plasmid_5:doubled (x1.54):109;plasmid_6:doubled (x2.73):0;plasmid_7:complete:0
+Shigella_flexneri	myloasm	2	20	8	4	True	24207	2618	7	37767	0	22.55	False	chromosome:complete:23302;plasmid_1:wrong length (x1.000):279;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:fragmented (4 contigs):584;plasmid_5:doubled (x1.88):3;plasmid_6:doubled (x2.00):39;plasmid_7:complete:0
+Shigella_flexneri	myloasm	3	16	8	2	True	10882	298	1	5036	1	26.35	False	chromosome:complete:10427;plasmid_1:complete:0;plasmid_2:doubled (x3.00):191;plasmid_3:doubled (x2.00):0;plasmid_4:fragmented (3 contigs):23;plasmid_5:doubled (x2.67):235;plasmid_6:doubled (x2.00):6;plasmid_7:doubled (x1.99):0
+Shigella_flexneri	myloasm	4	14	8	5	True	15556	0	4	16097	0	24.92	False	chromosome:complete:15273;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:doubled (x2.00):0;plasmid_5:fragmented (3 contigs):283;plasmid_6:doubled (x2.00):0;plasmid_7:complete:0
+Shigella_flexneri	myloasm	5	14	8	4	True	21110	1240	5	24951	0	23.35	False	chromosome:complete:20118;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:fragmented (3 contigs):991;plasmid_4:doubled (x3.00):0;plasmid_5:complete:1;plasmid_6:doubled (x2.98):0;plasmid_7:missing:0
+Shigella_flexneri	myloasm	6	14	8	5	True	20213	0	4	14154	1	23.78	False	chromosome:complete:20120;plasmid_1:complete:80;plasmid_2:complete:0;plasmid_3:doubled (x2.00):2;plasmid_4:fragmented (2 contigs):10;plasmid_5:complete:1;plasmid_6:doubled (x3.35):0;plasmid_7:complete:0
+Shigella_flexneri	necat	1	3	8	3	True	796	17134	0	0	0	24.3	False	chromosome:complete:401;plasmid_1:complete:358;plasmid_2:missing:0;plasmid_3:complete:37;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	necat	2	3	8	3	True	3238	17134	0	0	0	23.75	False	chromosome:complete:3236;plasmid_1:complete:1;plasmid_2:missing:0;plasmid_3:complete:1;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	necat	3	3	8	3	True	408	17134	0	0	0	24.4	False	chromosome:complete:231;plasmid_1:complete:177;plasmid_2:missing:0;plasmid_3:complete:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	necat	4	3	8	3	True	450	17134	0	0	0	24.39	False	chromosome:complete:445;plasmid_1:complete:5;plasmid_2:missing:0;plasmid_3:complete:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	necat	5	3	8	3	True	18825	17134	0	0	0	21.28	False	chromosome:complete:18821;plasmid_1:complete:4;plasmid_2:missing:0;plasmid_3:complete:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	necat	6	3	8	3	True	3616	17134	0	0	0	23.67	False	chromosome:complete:3614;plasmid_1:complete:2;plasmid_2:missing:0;plasmid_3:complete:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	nextdenovo	1	2	8	1	True	11679	22191	0	0	0	21.54	False	chromosome:complete:11666;plasmid_1:wrong length (x1.208):13;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	nextdenovo	2	2	8	1	True	19810	22191	0	0	0	20.61	False	chromosome:complete:19757;plasmid_1:wrong length (x1.093):53;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	nextdenovo	3	2	8	1	True	23229	22191	0	0	0	20.27	False	chromosome:complete:23222;plasmid_1:wrong length (x1.123):7;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	nextdenovo	4	2	8	1	True	22632	22191	0	0	0	20.32	False	chromosome:complete:22615;plasmid_1:wrong length (x1.132):17;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	nextdenovo	5	2	8	1	True	11046	22191	0	0	0	21.62	False	chromosome:complete:11031;plasmid_1:wrong length (x1.067):15;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	nextdenovo	6	2	8	1	True	20838	22191	0	0	0	20.5	False	chromosome:complete:20817;plasmid_1:wrong length (x1.122):21;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	raven	1	3	8	1	True	21613	16884	0	0	1	20.98	False	chromosome:complete:616;plasmid_1:wrong length (x1.094):20994;plasmid_2:wrong length (x0.857):3;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	raven	2	3	8	2	True	9127	16833	0	0	0	22.7	False	chromosome:complete:9110;plasmid_1:complete:12;plasmid_2:wrong length (x0.865):5;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	raven	3	3	8	2	True	1019	20692	0	0	0	23.47	False	chromosome:complete:1011;plasmid_1:complete:8;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:wrong length (x0.723):0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	raven	4	3	8	2	True	26	16313	0	0	0	24.71	False	chromosome:complete:14;plasmid_1:complete:12;plasmid_2:wrong length (x0.921):0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	raven	5	3	8	2	True	575	16884	0	0	0	24.42	False	chromosome:complete:564;plasmid_1:complete:8;plasmid_2:wrong length (x0.859):3;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	raven	6	3	8	1	True	157	17322	0	0	0	24.41	False	chromosome:complete:128;plasmid_1:wrong length (x1.098):25;plasmid_2:wrong length (x0.798):4;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	redbean	1	3	8	2	True	22583	19010	0	0	1	20.65	False	chromosome:complete:20894;plasmid_1:complete:1638;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:doubled (x1.84):51;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	redbean	2	3	8	2	True	8999	18356	0	0	0	22.47	False	chromosome:complete:8674;plasmid_1:complete:292;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:wrong length (x1.470):33;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	redbean	3	3	8	2	True	5452	18356	0	0	0	23.07	False	chromosome:complete:3818;plasmid_1:complete:1622;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:wrong length (x1.337):12;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	redbean	4	2	8	0	False	39377	70195	0	0	1	16.44	False	chromosome:wrong length (x0.990):67;plasmid_1:wrong length (x0.822):39310;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:missing:0;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	redbean	5	3	8	2	True	36658	18356	0	0	1	19.43	False	chromosome:complete:35212;plasmid_1:complete:1438;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:doubled (x2.17):8;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	redbean	6	3	8	2	True	7758	18375	0	0	0	22.67	False	chromosome:complete:6038;plasmid_1:complete:1589;plasmid_2:missing:0;plasmid_3:missing:0;plasmid_4:doubled (x2.17):131;plasmid_5:missing:0;plasmid_6:missing:0;plasmid_7:missing:0
+Enterobacter_hormaechei	autocycler_medaka	1	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler_medaka	2	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler_medaka	3	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler_medaka	4	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler_medaka	5	3	4	3	True	1	2495	0	0	0	33.34	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	autocycler_medaka	6	4	4	4	True	0	0	0	0	0	67.31	True	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0
+Enterobacter_hormaechei	flye_medaka	1	3	4	3	True	2	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	flye_medaka	2	4	4	2	True	1	2662	0	0	0	33.06	False	chromosome:complete:1;plasmid_1:fragmented (2 contigs):0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	flye_medaka	3	3	4	3	True	1	2495	0	0	0	33.34	False	chromosome:complete:1;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	flye_medaka	4	3	4	3	True	0	2495	0	0	0	33.34	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:missing:0
+Enterobacter_hormaechei	flye_medaka	5	3	4	3	True	4	2495	0	0	0	33.33	False	chromosome:complete:2;plasmid_1:complete:1;plasmid_2:complete:1;plasmid_3:missing:0
+Enterobacter_hormaechei	flye_medaka	6	4	4	3	True	0	0	0	0	0	67.31	False	chromosome:complete:0;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0
+Klebsiella_pneumoniae	autocycler_medaka	1	5	5	5	True	3	0	0	0	0	63.0	False	chromosome:complete:3;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_medaka	2	5	5	5	True	3	0	0	0	0	63.0	False	chromosome:complete:3;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_medaka	3	5	5	5	True	9	0	0	0	0	58.23	False	chromosome:complete:8;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_medaka	4	5	5	5	True	8	0	0	0	0	58.74	False	chromosome:complete:8;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_medaka	5	5	5	5	True	5	0	0	0	0	60.78	False	chromosome:complete:5;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	autocycler_medaka	6	5	5	5	True	8	0	0	0	0	58.74	False	chromosome:complete:7;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0
+Klebsiella_pneumoniae	flye_medaka	1	4	5	3	True	4	1240	0	0	0	36.83	False	chromosome:complete:3;plasmid_1:complete:0;plasmid_2:complete:1;plasmid_3:wrong length (x1.460):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye_medaka	2	4	5	4	True	9	1240	0	0	0	36.81	False	chromosome:complete:8;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye_medaka	3	4	5	3	True	9	1240	0	0	0	36.81	False	chromosome:complete:8;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye_medaka	4	4	5	4	True	8	1240	0	0	0	36.81	False	chromosome:complete:7;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye_medaka	5	4	5	4	True	11	1240	0	0	0	36.8	False	chromosome:complete:6;plasmid_1:complete:5;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:missing:0
+Klebsiella_pneumoniae	flye_medaka	6	4	5	3	True	11	1240	0	0	0	36.8	False	chromosome:complete:8;plasmid_1:complete:3;plasmid_2:complete:0;plasmid_3:doubled (x2.00):0;plasmid_4:missing:0
+Listeria_innocua	autocycler_medaka	1	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	autocycler_medaka	2	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	autocycler_medaka	3	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	autocycler_medaka	4	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	autocycler_medaka	5	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	autocycler_medaka	6	2	2	2	True	0	0	0	0	0	64.73	True	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	flye_medaka	1	3	2	2	True	1	0	1	6017	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	flye_medaka	2	3	2	2	True	0	0	1	5999	0	64.73	False	chromosome:complete:0;plasmid:complete:0
+Listeria_innocua	flye_medaka	3	3	2	2	True	1	0	1	6023	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	flye_medaka	4	2	2	2	True	1	0	0	0	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Listeria_innocua	flye_medaka	5	3	2	2	True	2	0	1	6040	0	61.72	False	chromosome:complete:1;plasmid:complete:1
+Listeria_innocua	flye_medaka	6	3	2	2	True	1	0	1	6021	0	64.73	False	chromosome:complete:1;plasmid:complete:0
+Providencia_rettgeri	autocycler_medaka	1	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler_medaka	2	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler_medaka	3	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler_medaka	4	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	autocycler_medaka	5	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	autocycler_medaka	6	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	flye_medaka	1	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	flye_medaka	2	2	2	2	True	2	0	0	0	0	63.49	False	chromosome:complete:2;plasmid:complete:0
+Providencia_rettgeri	flye_medaka	3	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	flye_medaka	4	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	flye_medaka	5	3	2	2	True	3	0	1	8891	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Providencia_rettgeri	flye_medaka	6	2	2	2	True	3	0	0	0	0	61.73	False	chromosome:complete:3;plasmid:complete:0
+Shigella_flexneri	autocycler_medaka	1	8	8	8	True	4	0	0	0	0	60.82	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_medaka	2	8	8	8	True	3	0	0	0	0	62.07	False	chromosome:complete:3;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_medaka	3	8	8	8	True	4	0	0	0	0	60.82	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_medaka	4	8	8	8	True	5	0	0	0	0	59.85	False	chromosome:complete:4;plasmid_1:complete:1;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_medaka	5	8	8	8	True	4	0	0	0	0	60.82	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	autocycler_medaka	6	8	8	8	True	5	0	0	0	0	59.85	False	chromosome:complete:5;plasmid_1:complete:0;plasmid_2:complete:0;plasmid_3:complete:0;plasmid_4:complete:0;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:complete:0
+Shigella_flexneri	flye_medaka	1	7	8	4	True	6	1240	0	0	0	35.88	False	chromosome:complete:4;plasmid_1:complete:0;plasmid_2:doubled (x3.00):1;plasmid_3:doubled (x2.00):0;plasmid_4:doubled (x3.00):1;plasmid_5:complete:0;plasmid_6:complete:0;plasmid_7:missing:0
+Shigella_flexneri	flye_medaka	2	8	8	3	True	8	1240	0	0	0	35.88	False	chromosome:complete:4;plasmid_1:fragmented (2 contigs):0;plasmid_2:complete:4;plasmid_3:wrong length (x1.909):0;plasmid_4:complete:0;plasmid_5:doubled (x2.00):0;plasmid_6:doubled (x1.99):0;plasmid_7:missing:0
+Shigella_flexneri	flye_medaka	3	7	8	2	True	1839	1240	0	0	0	31.95	False	chromosome:complete:1826;plasmid_1:complete:1;plasmid_2:wrong length (x1.011):0;plasmid_3:doubled (x2.00):0;plasmid_4:doubled (x5.00):11;plasmid_5:doubled (x2.00):1;plasmid_6:wrong length (x1.070):0;plasmid_7:missing:0
+Shigella_flexneri	flye_medaka	4	7	8	3	True	2312	3711	0	0	0	29.04	False	chromosome:complete:2229;plasmid_1:complete:0;plasmid_2:fragmented (2 contigs):0;plasmid_3:doubled (x3.97):83;plasmid_4:doubled (x2.00):0;plasmid_5:complete:0;plasmid_6:missing:0;plasmid_7:missing:0
+Shigella_flexneri	flye_medaka	5	7	8	3	True	106	1240	0	0	0	35.55	False	chromosome:complete:5;plasmid_1:complete:1;plasmid_2:doubled (x3.92):97;plasmid_3:wrong length (x1.868):0;plasmid_4:doubled (x2.00):0;plasmid_5:complete:3;plasmid_6:doubled (x2.00):0;plasmid_7:missing:0
+Shigella_flexneri	flye_medaka	6	9	8	4	True	5	1240	2	4220	0	35.89	False	chromosome:complete:5;plasmid_1:complete:0;plasmid_2:doubled (x2.00):0;plasmid_3:complete:0;plasmid_4:doubled (x2.00):0;plasmid_5:complete:0;plasmid_6:wrong length (x1.037):0;plasmid_7:missing:0

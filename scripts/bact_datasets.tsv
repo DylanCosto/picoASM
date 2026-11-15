@@ -1,0 +1,13 @@
+# Development datasets for scripts/bact_bench.py (the README gives each source).
+# Autocycler paper (Wick, Howden & Stinear 2025): R10.4.1, Dorado sup v5, read subset 1 of 6 (~50x each).
+# Hall et al. 2024 (PRJNA1087001): R10.4.1 sup v4.3 simplex, curated Trycycler + Illumina references.
+# PacBio 2021-11-Microbial-96plex HiFi (barcode bc2024, 35x) against the Hall et al. reference.
+# name	ONT reads	HiFi reads	reference (first record the chromosome)
+sflex_1	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/1.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+kpneu_1	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/1.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+ehorm_1	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/1.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+linno_1	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/1.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+prett_1	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/1.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+mtb	data/bacteria/mtb/ont.sup43.fastq.gz		data/bacteria/mtb/reference.fasta
+kpc2	data/bacteria/kpc2/ont.sup.fastq.gz		data/bacteria/kpc2/reference.fasta
+vpara		data/bacteria/vpara/hifi.bc2024.fastq.gz	data/bacteria/vpara/reference.fasta

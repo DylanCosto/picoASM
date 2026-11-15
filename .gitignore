@@ -1,0 +1,4 @@
+/target
+# Downloaded reads, references and assembly outputs; the README says where they come from.
+/data
+__pycache__/

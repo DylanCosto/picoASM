@@ -1,0 +1,10 @@
+# Hall et al. 2024 isolates (PRJNA1087001), held out from development: the first ~60x of an R10.4.1
+# run (hac or sup v4.3) and the curated reference.
+# name	ONT reads	HiFi reads	reference
+ecoli	data/bacteria/heldout/ecoli/reads.fastq		data/bacteria/heldout/ecoli/reference.fasta
+senterica	data/bacteria/heldout/senterica/reads.fastq		data/bacteria/heldout/senterica/reference.fasta
+saureus	data/bacteria/heldout/saureus/reads.fastq		data/bacteria/heldout/saureus/reference.fasta
+spyogenes	data/bacteria/heldout/spyogenes/reads.fastq		data/bacteria/heldout/spyogenes/reference.fasta
+cjejuni	data/bacteria/heldout/cjejuni/reads.fastq		data/bacteria/heldout/cjejuni/reference.fasta
+lmono	data/bacteria/heldout/lmono/reads.fastq		data/bacteria/heldout/lmono/reference.fasta
+kvari	data/bacteria/heldout/kvari/reads.fastq		data/bacteria/heldout/kvari/reference.fasta

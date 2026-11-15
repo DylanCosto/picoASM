@@ -1,0 +1,7 @@
+# Half of read subset 1 (every other read, ~25x) of the Autocycler paper's five genomes.
+# name	ONT reads	HiFi reads	reference
+sflex_half	data/bacteria/autocycler/reads_lowdepth/Shigella_flexneri_half.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+kpneu_half	data/bacteria/autocycler/reads_lowdepth/Klebsiella_pneumoniae_half.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+ehorm_half	data/bacteria/autocycler/reads_lowdepth/Enterobacter_hormaechei_half.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+linno_half	data/bacteria/autocycler/reads_lowdepth/Listeria_innocua_half.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+prett_half	data/bacteria/autocycler/reads_lowdepth/Providencia_rettgeri_half.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta

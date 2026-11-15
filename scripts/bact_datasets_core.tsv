@@ -1,0 +1,31 @@
+# Regression set (scripts/bact_core.sh): 17 datasets from the lists named, about 10 minutes with 3
+# runs at once, each chosen for a behaviour a change could break. All are development data: they
+# guard against regressions and say nothing about unseen data.
+# - bburg_gmt0122: B. burgdorferi (R10.4.1 sup v5.2.0), hairpin-ended linear replicons and the cp32
+#   plasmid family; scored against its reference plus the 5 plasmids it lacks
+# - cdiff_nctc12727: a 34.5 kb repeat no read spans [fresh]
+# - kpneu_1, sflex_1, linno_1, prett_1: Autocycler-paper subsets, small and high-copy plasmids, motifs, homopolymers [subsets]
+# - mrsa252: small modern genome [wide]
+# - tbrockianus: dimer plasmid in the reference; mrhizoxinica, dsonorensis_kr87: recent R10 isolates, 2 and 6 replicons [more]
+# - atenax_tsd302: reads of 1.3 kb N50, tandem plasmid copies [more]
+# - psia_lmg24279, sone_mr1: genomes where Flye + Medaka is ahead [fresh]
+# - HiFi: bcereus_971_hifi, ecoli_h10407_hifi (6 replicons), saureus_usa300_hifi (shallow plasmids),
+#   tdenticola_a_hifi (54 kb element both integrated and excised) [more]
+# name	ONT reads	HiFi reads	reference
+bburg_gmt0122	data/bacteria/gmt0122/reads.fastq.gz		data/bacteria/gmt0122/ref19.fasta
+cdiff_nctc12727	data/bacteria/fresh/cdiff_nctc12727/reads.fastq		data/bacteria/fresh/cdiff_nctc12727/reference.fasta
+kpneu_1	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/1.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+sflex_1	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/1.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+linno_1	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/1.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+prett_1	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/1.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+mrsa252	data/bacteria/wide/mrsa252/reads.fastq		data/bacteria/wide/mrsa252/reference.fasta
+tbrockianus	data/bacteria/more/tbrockianus/reads.fastq		data/bacteria/more/tbrockianus/reference.fasta
+mrhizoxinica	data/bacteria/more/mrhizoxinica/reads.fastq		data/bacteria/more/mrhizoxinica/reference.fasta
+dsonorensis_kr87	data/bacteria/more/dsonorensis_kr87/reads.fastq.gz		data/bacteria/more/dsonorensis_kr87/reference.fasta
+atenax_tsd302	data/bacteria/more/atenax_tsd302/reads.fastq.gz		data/bacteria/more/atenax_tsd302/reference.fasta
+psia_lmg24279	data/bacteria/fresh/psia_lmg24279/reads.fastq		data/bacteria/fresh/psia_lmg24279/reference.fasta
+sone_mr1	data/bacteria/fresh/sone_mr1/reads.fastq		data/bacteria/fresh/sone_mr1/reference.fasta
+bcereus_971_hifi		data/bacteria/more/bcereus_971/reads.fastq	data/bacteria/more/bcereus_971/reference.fasta
+ecoli_h10407_hifi		data/bacteria/more/ecoli_h10407/reads.fastq	data/bacteria/more/ecoli_h10407/reference.fasta
+saureus_usa300_hifi		data/bacteria/more/saureus_usa300/reads.fastq	data/bacteria/more/saureus_usa300/reference.fasta
+tdenticola_a_hifi		data/bacteria/more/tdenticola_a/reads.fastq	data/bacteria/more/tdenticola_a/reference.fasta

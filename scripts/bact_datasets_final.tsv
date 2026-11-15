@@ -1,0 +1,23 @@
+# Final validation set, never tuned on: 10 ONT R10.4.1 and 10 PacBio HiFi isolates, each of a genus
+# used nowhere else here, against a complete reference of the same isolate; the first ~100x of each run.
+# name	ONT reads	HiFi reads	reference
+seon_abd4340	data/bacteria/final/seon_abd4340/reads.fastq		data/bacteria/final/seon_abd4340/reference.fasta
+lsal_11254	data/bacteria/final/lsal_11254/reads.fastq		data/bacteria/final/lsal_11254/reference.fasta
+llac_s11599	data/bacteria/final/llac_s11599/reads.fastq		data/bacteria/final/llac_s11599/reference.fasta
+ppsy_bc2	data/bacteria/final/ppsy_bc2/reads.fastq		data/bacteria/final/ppsy_bc2/reference.fasta
+ypes_80	data/bacteria/final/ypes_80/reads.fastq		data/bacteria/final/ypes_80/reference.fasta
+cpor_mei2o223	data/bacteria/final/cpor_mei2o223/reads.fastq		data/bacteria/final/cpor_mei2o223/reference.fasta
+psep_tb5p01a	data/bacteria/final/psep_tb5p01a/reads.fastq		data/bacteria/final/psep_tb5p01a/reference.fasta
+parth_whri8279	data/bacteria/final/parth_whri8279/reads.fastq		data/bacteria/final/parth_whri8279/reference.fasta
+csph_dsm158	data/bacteria/final/csph_dsm158/reads.fastq		data/bacteria/final/csph_dsm158/reference.fasta
+ader_km1812	data/bacteria/final/ader_km1812/reads.fastq		data/bacteria/final/ader_km1812/reference.fasta
+anae_jcm17239_hifi		data/bacteria/final/anae_jcm17239/reads.fastq	data/bacteria/final/anae_jcm17239/reference.fasta
+pmeg_imgn6_hifi		data/bacteria/final/pmeg_imgn6/reads.fastq	data/bacteria/final/pmeg_imgn6/reference.fasta
+fcer_lth5742_hifi		data/bacteria/final/fcer_lth5742/reads.fastq	data/bacteria/final/fcer_lth5742/reference.fasta
+athe_ccm8960_hifi		data/bacteria/final/athe_ccm8960/reads.fastq	data/bacteria/final/athe_ccm8960/reference.fasta
+psyc_ch211_hifi		data/bacteria/final/psyc_ch211/reads.fastq	data/bacteria/final/psyc_ch211/reference.fasta
+kbal_lth7215_hifi		data/bacteria/final/kbal_lth7215/reads.fastq	data/bacteria/final/kbal_lth7215/reference.fasta
+tcar_atcc25418_hifi		data/bacteria/final/tcar_atcc25418/reads.fastq	data/bacteria/final/tcar_atcc25418/reference.fasta
+rrub_dsm467_hifi		data/bacteria/final/rrub_dsm467/reads.fastq	data/bacteria/final/rrub_dsm467/reference.fasta
+cthe_dsm15264_hifi		data/bacteria/final/cthe_dsm15264/reads.fastq	data/bacteria/final/cthe_dsm15264/reference.fasta
+msol_sl370_hifi		data/bacteria/final/msol_sl370/reads.fastq	data/bacteria/final/msol_sl370/reference.fasta

@@ -1,0 +1,6 @@
+# Hall et al. 2024 isolates (PRJNA1087001), not tuned on: ~60x R10.4.1 sup v4.3 and the curated reference.
+# name	ONT reads	HiFi reads	reference
+livanovii	data/bacteria/unseen/livanovii/reads.fastq		data/bacteria/unseen/livanovii/reference.fasta
+lwelshimeri	data/bacteria/unseen/lwelshimeri/reads.fastq		data/bacteria/unseen/lwelshimeri/reference.fasta
+clari	data/bacteria/unseen/clari/reads.fastq		data/bacteria/unseen/clari/reference.fasta
+sdysgalactiae	data/bacteria/unseen/sdysgalactiae/reads.fastq		data/bacteria/unseen/sdysgalactiae/reference.fasta

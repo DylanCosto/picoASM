@@ -1,0 +1,19 @@
+# Isolates with R10.4.1 ONT, PacBio HiFi and Illumina reads of the same strain. Each reference was
+# built from two independent HiFi assemblies (hifiasm and Flye; never picoasm), every site where the
+# Illumina or HiFi reads disagree decided by a fixed rule and reviewed by hand. The HiFi column is
+# empty on purpose: the references were assembled from those reads.
+# - Xanthomonas oryzae pv. oryzae (PRJNA1124925), ~5 Mb, one chromosome: a3842i5, a3857i10, m24, m10.
+#   m24, m10 and a3857i10 carry a ~227 kb element between two copies of a direct repeat that is excised
+#   as its own circle in 21-42% of the reads; the reference is the integrated form.
+# - Helicobacter pylori DSM1 and DSM2452 (PRJNA1344618), 1.65 Mb chromosome + 10,031 bp high-copy
+#   plasmid, two cultures each. Heavily methylated.
+# xoo_a3842i5, xoo_a3857i10, hpyl_dsm2452_a and hpyl_dsm2452_b were held out from development.
+# name	ONT reads	HiFi reads	reference
+xoo_a3842i5	data/bacteria/truth/xoo_a3842i5/ont_1.fastq.gz		data/bacteria/truth/xoo_a3842i5/truth/truth.fasta
+xoo_a3857i10	data/bacteria/truth/xoo_a3857i10/ont_1.fastq.gz		data/bacteria/truth/xoo_a3857i10/truth/truth.fasta
+xoo_m24	data/bacteria/truth/xoo_m24/ont_1.fastq.gz		data/bacteria/truth/xoo_m24/truth/truth.fasta
+xoo_m10	data/bacteria/truth/xoo_m10/ont_1.fastq.gz		data/bacteria/truth/xoo_m10/truth/truth.fasta
+hpyl_dsm1_a	data/bacteria/truth/hpyl_dsm1_a/ont_1.fastq.gz		data/bacteria/truth/hpyl_dsm1_a/truth/truth.fasta
+hpyl_dsm1_b	data/bacteria/truth/hpyl_dsm1_b/ont_1.fastq.gz		data/bacteria/truth/hpyl_dsm1_b/truth/truth.fasta
+hpyl_dsm2452_a	data/bacteria/truth/hpyl_dsm2452_a/ont_1.fastq.gz		data/bacteria/truth/hpyl_dsm2452_a/truth/truth.fasta
+hpyl_dsm2452_b	data/bacteria/truth/hpyl_dsm2452_b/ont_1.fastq.gz		data/bacteria/truth/hpyl_dsm2452_b/truth/truth.fasta

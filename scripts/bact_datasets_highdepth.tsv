@@ -1,0 +1,4 @@
+# ~200x: four of the six disjoint ~50x subsets of two Autocycler paper genomes, joined.
+# name	ONT reads	HiFi reads	reference
+kpneu_x4	data/bacteria/autocycler/reads_highdepth/Klebsiella_pneumoniae_x4.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+sflex_x4	data/bacteria/autocycler/reads_highdepth/Shigella_flexneri_x4.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta

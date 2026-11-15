@@ -1,0 +1,5 @@
+# Two deep Aerococcus runs (whole runs from ENA), used in development for speed: very short reads
+# (A. loyolae, read N50 652 bp) and noisy deep reads (A. mictus, 7% divergence, 288x).
+# name	ONT reads	HiFi reads	reference
+aloy_tsd300	data/bacteria/aerococcus/aloy_tsd300/reads.fastq		data/bacteria/aerococcus/aloy_tsd300/reference.fasta
+amic_tsd301	data/bacteria/aerococcus/amic_tsd301/reads.fastq		data/bacteria/aerococcus/amic_tsd301/reference.fasta

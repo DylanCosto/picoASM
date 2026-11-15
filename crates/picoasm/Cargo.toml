@@ -1,0 +1,18 @@
+[package]
+name = "picoasm"
+description = "Bacterial genome assembly from Oxford Nanopore or PacBio HiFi reads"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+log.workspace = true
+picoasm-consensus.workspace = true
+picoasm-overlap.workspace = true
+picoasm-seq.workspace = true
+rayon.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true

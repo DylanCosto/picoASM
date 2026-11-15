@@ -1,0 +1,7 @@
+# 12-20x: the first reads of subset 6 of the Autocycler paper's five genomes.
+# name	ONT reads	HiFi reads	reference
+kpneu_20x	data/bacteria/autocycler/reads_verylow/Klebsiella_pneumoniae_20x.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+sflex_20x	data/bacteria/autocycler/reads_verylow/Shigella_flexneri_20x.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+ehorm_15x	data/bacteria/autocycler/reads_verylow/Enterobacter_hormaechei_15x.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+linno_12x	data/bacteria/autocycler/reads_verylow/Listeria_innocua_12x.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+prett_12x	data/bacteria/autocycler/reads_verylow/Providencia_rettgeri_12x.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta

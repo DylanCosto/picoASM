@@ -1,0 +1,17 @@
+# Wider validation, not tuned on: reference and type strains covering high GC, 2-3 chromosomes, linear
+# chromosomes, IS-rich genomes, R9.4.1 and ligation kits; the first ~60x of each run.
+# name	ONT reads	HiFi reads	reference
+paeru	data/bacteria/wide/paeru/reads.fastq		data/bacteria/wide/paeru/reference.fasta
+ecoli_cft073	data/bacteria/wide/ecoli_cft073/reads.fastq		data/bacteria/wide/ecoli_cft073/reference.fasta
+kpneu_mgh	data/bacteria/wide/kpneu_mgh/reads.fastq		data/bacteria/wide/kpneu_mgh/reference.fasta
+mrsa252	data/bacteria/wide/mrsa252/reads.fastq		data/bacteria/wide/mrsa252/reference.fasta
+paeru_r9	data/bacteria/wide/paeru_r9/reads.fastq		data/bacteria/wide/paeru_r9/reference.fasta
+paeru_lig	data/bacteria/wide/paeru_lig/reads.fastq		data/bacteria/wide/paeru_lig/reference.fasta
+vpara	data/bacteria/wide/vpara/reads.fastq		data/bacteria/wide/vpara/reference.fasta
+barboris	data/bacteria/wide/barboris/reads.fastq		data/bacteria/wide/barboris/reference.fasta
+bsp33096	data/bacteria/wide/bsp33096/reads.fastq		data/bacteria/wide/bsp33096/reference.fasta
+bmallei	data/bacteria/wide/bmallei/reads.fastq		data/bacteria/wide/bmallei/reference.fasta
+sturgid	data/bacteria/wide/sturgid/reads.fastq		data/bacteria/wide/sturgid/reference.fasta
+seuropae	data/bacteria/wide/seuropae/reads.fastq		data/bacteria/wide/seuropae/reference.fasta
+efaecalis	data/bacteria/wide/efaecalis/reads.fastq		data/bacteria/wide/efaecalis/reference.fasta
+abaum	data/bacteria/wide/abaum/reads.fastq		data/bacteria/wide/abaum/reference.fasta

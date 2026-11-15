@@ -1,0 +1,6 @@
+# Lab strains (PRJNA1119015, a methylation study), not tuned on: the first ~60x of a MinION R10 run
+# and the strain's Sanger-finished RefSeq genome, which the culture may have drifted from (count only
+# what other tools do not share). psph is scored for structure only.
+# name	ONT reads	HiFi reads	reference	flags
+psph	data/bacteria/extra/psph/reads.fastq		data/bacteria/extra/psph/reference.fasta	structure-only
+pst	data/bacteria/extra/pst/reads.fastq		data/bacteria/extra/pst/reference.fasta

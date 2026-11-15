@@ -1,0 +1,33 @@
+# All six ~50x read subsets of the Autocycler paper's five genomes (development data), for medians
+# comparable with the paper's: BACT_DATASETS=scripts/bact_datasets_subsets.tsv.
+# name	ONT reads	HiFi reads	reference
+sflex_1	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/1.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+sflex_2	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/2.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+sflex_3	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/3.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+sflex_4	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/4.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+sflex_5	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/5.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+sflex_6	data/bacteria/autocycler/reads_subsampled/Shigella_flexneri/6.fastq		data/bacteria/autocycler/assemblies/Shigella_flexneri/reference.fasta
+kpneu_1	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/1.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+kpneu_2	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/2.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+kpneu_3	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/3.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+kpneu_4	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/4.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+kpneu_5	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/5.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+kpneu_6	data/bacteria/autocycler/reads_subsampled/Klebsiella_pneumoniae/6.fastq		data/bacteria/autocycler/assemblies/Klebsiella_pneumoniae/reference.fasta
+ehorm_1	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/1.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+ehorm_2	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/2.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+ehorm_3	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/3.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+ehorm_4	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/4.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+ehorm_5	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/5.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+ehorm_6	data/bacteria/autocycler/reads_subsampled/Enterobacter_hormaechei/6.fastq		data/bacteria/autocycler/assemblies/Enterobacter_hormaechei/reference.fasta
+linno_1	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/1.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+linno_2	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/2.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+linno_3	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/3.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+linno_4	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/4.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+linno_5	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/5.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+linno_6	data/bacteria/autocycler/reads_subsampled/Listeria_innocua/6.fastq		data/bacteria/autocycler/assemblies/Listeria_innocua/reference.fasta
+prett_1	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/1.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+prett_2	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/2.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+prett_3	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/3.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+prett_4	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/4.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+prett_5	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/5.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta
+prett_6	data/bacteria/autocycler/reads_subsampled/Providencia_rettgeri/6.fastq		data/bacteria/autocycler/assemblies/Providencia_rettgeri/reference.fasta

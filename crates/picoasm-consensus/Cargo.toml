@@ -1,0 +1,15 @@
+[package]
+name = "picoasm-consensus"
+description = "Per-window base-level consensus for the picoasm bacterial assembler"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+log.workspace = true
+rayon.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,50 @@
+# 44 more isolates: 10 ONT runs and 10 PacBio 96-plex HiFi barcodes from a collaborator's batch
+# (whole runs from ENA), 14 recent ONT isolate runs with complete NCBI genomes (first 100x), and the
+# other 10 species of the 96-plex (HiFi). References: NCBI complete genomes, and for the 96-plex
+# PacBio's own per-barcode assemblies (from the same reads: not independent). atenax_tsd302,
+# aloyolae_tsd300 and bcereus_971_hifi were used in development; the rest were not tuned on.
+# name	ONT reads	HiFi reads	reference
+rsoli_dsd51w	data/bacteria/more/rsoli_dsd51w/reads.fastq.gz		data/bacteria/more/rsoli_dsd51w/reference.fasta
+aloyolae_tsd300	data/bacteria/more/aloyolae_tsd300/reads.fastq.gz		data/bacteria/more/aloyolae_tsd300/reference.fasta
+amictus_tsd301	data/bacteria/more/amictus_tsd301/reads.fastq.gz		data/bacteria/more/amictus_tsd301/reference.fasta
+atenax_tsd302	data/bacteria/more/atenax_tsd302/reads.fastq.gz		data/bacteria/more/atenax_tsd302/reference.fasta
+blongum_bl020	data/bacteria/more/blongum_bl020/reads.fastq.gz		data/bacteria/more/blongum_bl020/reference.fasta
+smarcescens_d1_6	data/bacteria/more/smarcescens_d1_6/reads.fastq.gz		data/bacteria/more/smarcescens_d1_6/reference.fasta
+phisticola_t0504	data/bacteria/more/phisticola_t0504/reads.fastq.gz		data/bacteria/more/phisticola_t0504/reference.fasta
+dsonorensis_kr87	data/bacteria/more/dsonorensis_kr87/reads.fastq.gz		data/bacteria/more/dsonorensis_kr87/reference.fasta
+pkielensis_ze23	data/bacteria/more/pkielensis_ze23/reads.fastq.gz		data/bacteria/more/pkielensis_ze23/reference.fasta
+vibrio16_vdt1	data/bacteria/more/vibrio16_vdt1/reads.fastq.gz		data/bacteria/more/vibrio16_vdt1/reference.fasta
+smuris	data/bacteria/more/smuris/reads.fastq		data/bacteria/more/smuris/reference.fasta
+mresinovorans	data/bacteria/more/mresinovorans/reads.fastq		data/bacteria/more/mresinovorans/reference.fasta
+smicroflavus	data/bacteria/more/smicroflavus/reads.fastq		data/bacteria/more/smicroflavus/reference.fasta
+mglycogenes	data/bacteria/more/mglycogenes/reads.fastq		data/bacteria/more/mglycogenes/reference.fasta
+tbrockianus	data/bacteria/more/tbrockianus/reads.fastq		data/bacteria/more/tbrockianus/reference.fasta
+pmarchantiae	data/bacteria/more/pmarchantiae/reads.fastq		data/bacteria/more/pmarchantiae/reference.fasta
+rpseudosolanacearum	data/bacteria/more/rpseudosolanacearum/reads.fastq		data/bacteria/more/rpseudosolanacearum/reference.fasta
+xoryzae_ird	data/bacteria/more/xoryzae_ird/reads.fastq		data/bacteria/more/xoryzae_ird/reference.fasta
+symbiont_lampromicra	data/bacteria/more/symbiont_lampromicra/reads.fastq		data/bacteria/more/symbiont_lampromicra/reference.fasta
+kcowanii	data/bacteria/more/kcowanii/reads.fastq		data/bacteria/more/kcowanii/reference.fasta
+mrhizoxinica	data/bacteria/more/mrhizoxinica/reads.fastq		data/bacteria/more/mrhizoxinica/reference.fasta
+chitinophagaceae_r92579	data/bacteria/more/chitinophagaceae_r92579/reads.fastq		data/bacteria/more/chitinophagaceae_r92579/reference.fasta
+vboronicumulans	data/bacteria/more/vboronicumulans/reads.fastq		data/bacteria/more/vboronicumulans/reference.fasta
+bpumilus	data/bacteria/more/bpumilus/reads.fastq		data/bacteria/more/bpumilus/reference.fasta
+abaumannii_aye_hifi		data/bacteria/more/abaumannii_aye/reads.fastq	data/bacteria/more/abaumannii_aye/reference.fasta
+bcereus_971_hifi		data/bacteria/more/bcereus_971/reads.fastq	data/bacteria/more/bcereus_971/reference.fasta
+bsubtilis_w23_hifi		data/bacteria/more/bsubtilis_w23/reads.fastq	data/bacteria/more/bsubtilis_w23/reference.fasta
+bcepacia_ucb717_hifi		data/bacteria/more/bcepacia_ucb717/reads.fastq	data/bacteria/more/bcepacia_ucb717/reference.fasta
+efaecalis_og1rf_hifi		data/bacteria/more/efaecalis_og1rf/reads.fastq	data/bacteria/more/efaecalis_og1rf/reference.fasta
+ecoli_h10407_hifi		data/bacteria/more/ecoli_h10407/reads.fastq	data/bacteria/more/ecoli_h10407/reference.fasta
+hpylori_j99_hifi		data/bacteria/more/hpylori_j99/reads.fastq	data/bacteria/more/hpylori_j99/reference.fasta
+kpneu_baa2146_hifi		data/bacteria/more/kpneu_baa2146/reads.fastq	data/bacteria/more/kpneu_baa2146/reference.fasta
+tacid_dsm6589_hifi		data/bacteria/more/tacid_dsm6589/reads.fastq	data/bacteria/more/tacid_dsm6589/reference.fasta
+tdenticola_a_hifi		data/bacteria/more/tdenticola_a/reads.fastq	data/bacteria/more/tdenticola_a/reference.fasta
+ecoli_k12_hifi		data/bacteria/more/ecoli_k12/reads.fastq	data/bacteria/more/ecoli_k12/reference.fasta
+lmono_li2_hifi		data/bacteria/more/lmono_li2/reads.fastq	data/bacteria/more/lmono_li2/reference.fasta
+lmono_li23_hifi		data/bacteria/more/lmono_li23/reads.fastq	data/bacteria/more/lmono_li23/reference.fasta
+mlabreanum_hifi		data/bacteria/more/mlabreanum/reads.fastq	data/bacteria/more/mlabreanum/reference.fasta
+nmen_b_hifi		data/bacteria/more/nmen_b/reads.fastq	data/bacteria/more/nmen_b/reference.fasta
+senterica_lt2_hifi		data/bacteria/more/senterica_lt2/reads.fastq	data/bacteria/more/senterica_lt2/reference.fasta
+senterica_ty2_hifi		data/bacteria/more/senterica_ty2/reads.fastq	data/bacteria/more/senterica_ty2/reference.fasta
+saureus_seattle_hifi		data/bacteria/more/saureus_seattle/reads.fastq	data/bacteria/more/saureus_seattle/reference.fasta
+saureus_usa300_hifi		data/bacteria/more/saureus_usa300/reads.fastq	data/bacteria/more/saureus_usa300/reference.fasta
+spyogenes_bruno_hifi		data/bacteria/more/spyogenes_bruno/reads.fastq	data/bacteria/more/spyogenes_bruno/reference.fasta
