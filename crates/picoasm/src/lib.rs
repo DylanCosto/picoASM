@@ -46,7 +46,7 @@ pub use assemble::{
     AssembleError, Assembly, Contig, MAX_EXCISED_DEPTH_SHARE, MIN_DEPTH_SHARE,
     MIN_LINEAR_DEPTH_SHARE, MIN_WINDOW_LEN, assemble,
 };
-pub use check::{BIN as CHECK_BIN, Check};
+pub use check::{BIN as CHECK_BIN, Check, Flag, FlaggedBin};
 pub use homopolymer::{Evidence, Run};
 pub use params::{BactParams, ReadKind};
 pub use short::{ShortParams, ShortStats, polish_short};

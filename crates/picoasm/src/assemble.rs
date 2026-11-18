@@ -463,12 +463,12 @@ pub fn assemble(reads: &Reads, params: &BactParams) -> Result<Assembly, Assemble
         mappings = map_reads(&targets, reads, &params.map)?;
     }
     let mappings = mappings;
-    let checks = {
+    let mut checks = {
         let seqs: Vec<&[u8]> = drafts.iter().map(|d| d.seq.as_slice()).collect();
         check::check(&seqs, reads, &mappings)
     };
     report_read_divergence(&mappings, params.kind == ReadKind::Ont && !found_noisy);
-    let homopolymers = call_bases(&mut drafts, reads, &mappings, params)?;
+    let homopolymers = call_bases(&mut drafts, &mut checks, reads, &mappings, params)?;
 
     let mut contigs: Vec<Contig> = drafts
         .into_iter()
@@ -653,12 +653,26 @@ fn report_read_divergence(mappings: &[Option<Overlap>], raw_ont: bool) {
     }
 }
 
+/// Applies `changes` (per draft, sorted by start) to `drafts` and moves the places their
+/// `checks` flag with the bases; returns how many changes were applied.
+fn apply(drafts: &mut [Draft], checks: &mut [Check], changes: &[Vec<vote::Change>]) -> usize {
+    let applied = vote::apply(drafts, changes);
+    for (check, applied) in checks.iter_mut().zip(&applied) {
+        if !applied.is_empty() && !check.flagged.is_empty() {
+            let moves = vote::Moves::new(applied);
+            check.lift(|at| moves.at(at));
+        }
+    }
+    applied.iter().map(Vec::len).sum()
+}
+
 /// Calls the drafts' bases again from the reads (`mappings` onto them): homopolymer lengths and
 /// per-strand votes, then versions by how the reads read each context (each round on a fresh
 /// mapping). Returns the reads' lengths at the homopolymer runs if
 /// [`BactParams::keep_layout`].
 fn call_bases(
     drafts: &mut [Draft],
+    checks: &mut [Check],
     reads: &Reads,
     mappings: &[Option<Overlap>],
     params: &BactParams,
@@ -693,7 +707,7 @@ fn call_bases(
             c.sort_by_key(|c| c.start);
         }
         let total: usize = changes.iter().map(Vec::len).sum();
-        let applied = vote::apply(drafts, &changes);
+        let applied = apply(drafts, checks, &changes);
         log::info!(
             "bacteria: {} homopolymer runs measured; {motifs} misread motifs learned; {voted} \
              bases voted on, {} runs called again; {applied} changes, {:.1} s",
@@ -721,7 +735,7 @@ fn call_bases(
                 min_gain,
                 params.composition,
             );
-            let applied = vote::apply(drafts, &changes);
+            let applied = apply(drafts, checks, &changes);
             log::info!(
                 "bacteria: context round {}: {applied} bases given the version the reads favour, \
                  {:.1} s",

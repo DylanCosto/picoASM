@@ -68,10 +68,40 @@ Each contig header gives the contig's length, whether it is a closed circular re
 of the contig against the reads:
 - `check=ok`;
 - or what is wrong: `linear`, `shallow:N` (N 1 kb bins under a quarter of the median
-  depth), `stops:N` (N bins where 20% or more of the reads stop aligning).
+  depth), `stops:N` (N bins where 20% or more of the reads stop aligning). `--suspect`
+  (below) gives where they are.
 
 Any problem is also logged as a warning. `--shallow FILE` writes the contigs left out for low
 depth (typically barcode bleed-through or chimeras).
+
+**Where to look.** `--suspect FILE.bed` writes where the reads show a contig may be wrong, to
+open beside the assembly in IGV or intersect with an annotation (`bedtools intersect`):
+
+```
+#contig    start    end      reason
+contig_1   5094000  5095000  stops:reads=14,depth=27.2
+contig_1   5096000  5097000  stops:reads=18,depth=28.4
+contig_2   0        403967   linear
+contig_2   222130   224130   shallow:depth=24.3,median=151.8
+contig_2   395203   403967   shallow:depth=5.4,median=151.8
+```
+
+- `shallow`: under a quarter of the contig's median depth (a gap bridged on thin evidence, or
+  another replicon run in), with its lowest depth and the median.
+- `stops`: 20% or more of the reads stop aligning (a join not in the genome, a locus in two
+  versions, a collapsed repeat), with the bin where most stop and its depth.
+- `linear`: a contig not closed into a whole replicon.
+
+Regions are 1 kb bins (the last takes the rest of the contig, 1-2 kb), merged where adjacent,
+in the coordinates of the final contigs. A contig with `check=ok` has no line. In the example,
+the first two lines (*E. coli* H10407, HiFi) bracket a 1.9 kb segment the reference has the
+other way round: an invertible segment the reads hold both ways. The rest are from
+*A. tenax* TSD-302 (ONT).
+
+**Graph.** `--gfa FILE.gfa` writes the contigs as GFA 1 with their lengths and depths (`dp:f`),
+for Bandage and other graph tools. A circular contig links its end to its start; a hairpin end
+links the contig to its own reverse complement. Contigs are not linked to each other, since
+picoASM resolves repeats itself.
 
 **Illumina polishing.** `--short-reads R1 --short-reads R2` polishes the contigs at the end with
 short reads of the same isolate. `picoasm polish-short ASSEMBLY R1 R2` does the same for an
@@ -101,7 +131,7 @@ number, size and topology of the replicons in the result, with any assembler:
 | **Short fragments** (harsh extraction, old or degraded DNA; read N50 around 1-2 kb) | Repeats longer than the reads (rRNA operons, IS elements) cannot be crossed, so chromosomes come out in pieces and stay linear. | Use gentle extraction; aim for a read N50 well above the genome's longest repeats (more than 10 kb is comfortable). |
 | **Whole-genome amplification** (MDA and similar) | Amplification joins unrelated molecules into chimeric reads. Every assembler tested fails: on one amplified *E. coli* K-12 library, picoASM made 76 misassemblies and Flye 95. | Sequence native DNA. |
 | **Plasmid multimers** | Cells can carry a plasmid as a monomer, a dimer or a mix. Only reads longer than one copy can show which. picoASM gives the monomer; other assemblers often double small plasmids. | Read a reported plasmid length as one copy, not proof of the molecule's form. |
-| **Mixed populations** (excised elements, invertible segments, subclones) | Part of the cells can carry another arrangement: an element excised as its own circle, or a segment inverted. These appear as extra low-depth contigs, or as `check=stops:N` / `shallow:N` on the contig. | Read the `check=` field; an extra circle at low depth can be real biology. |
+| **Mixed populations** (excised elements, invertible segments, subclones) | Part of the cells can carry another arrangement: an element excised as its own circle, or a segment inverted. These appear as extra low-depth contigs, or as `check=stops:N` / `shallow:N` on the contig. | Read the `check=` field, and `--suspect` for where; an extra circle at low depth can be real biology. |
 | **Barcode bleed-through** in multiplexed runs | Reads from other samples on the flow cell form low-depth contigs. | picoASM leaves contigs below 10% of the chromosome's depth out (25% if linear); `--shallow` writes them. |
 | **Native DNA (all ONT kits without PCR)** | Base modifications (methylation motifs) cause systematic basecalling errors at their sites. picoASM learns and corrects most of them. | For the last few errors on heavily methylated genomes, use `dorado polish --bacteria` or short reads. |
 

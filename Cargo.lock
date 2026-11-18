@@ -603,7 +603,9 @@ dependencies = [
  "picoasm",
  "picoasm-io",
  "picoasm-overlap",
+ "picoasm-seq",
  "rayon",
+ "tempfile",
 ]
 
 [[package]]

@@ -18,7 +18,11 @@ log.workspace = true
 picoasm.workspace = true
 picoasm-io.workspace = true
 picoasm-overlap.workspace = true
+picoasm-seq.workspace = true
 rayon.workspace = true
 
 [lints]
 workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

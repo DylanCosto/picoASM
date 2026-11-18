@@ -512,7 +512,16 @@ pub fn polish_short(contigs: &mut [Contig], reads: &Reads, params: &ShortParams)
             extra.entry(pos).or_default().push((token, n));
         }
         let mut seq = Vec::with_capacity(contig.seq.len());
+        // Where each place of the contig (each base, and the end) is in the new bases: kept
+        // only for a contig with places flagged, to move them.
+        let follow = !contig.check.flagged.is_empty();
+        let mut moved: Vec<u32> = Vec::with_capacity(if follow { contig.seq.len() + 1 } else { 0 });
+        let place =
+            |seq: &Vec<u8>| u32::try_from(seq.len()).expect("contigs are shorter than 4 Gb");
         for (pos, &have) in contig.seq.iter().enumerate() {
+            if follow {
+                moved.push(place(&seq));
+            }
             let plain: Vec<u32> = votes.plain[pos]
                 .iter()
                 .map(|a| a.load(Ordering::Relaxed))
@@ -548,6 +557,13 @@ pub fn polish_short(contigs: &mut [Contig], reads: &Reads, params: &ShortParams)
             } else {
                 seq.push(have);
             }
+        }
+        if follow {
+            moved.push(place(&seq));
+            let end = place(&seq);
+            contig
+                .check
+                .lift(|at| moved.get(at as usize).copied().unwrap_or(end));
         }
         contig.seq = seq;
     }
@@ -611,6 +627,40 @@ mod tests {
         let stats = polish_short(&mut contigs, &reads(&genome, 7, false), &ShortParams::new());
         assert_eq!(contigs[0].seq, genome);
         assert_eq!(stats.changed, 1);
+    }
+
+    #[test]
+    fn flagged_places_move_with_the_bases_put_back() {
+        let mut genome = random(20_000, 1);
+        genome.splice(10_000..10_000, *b"AAAAAAAA");
+        let mut draft = genome.clone();
+        draft.remove(10_003);
+        let len = u32::try_from(draft.len()).expect("short");
+        let bin = |start, end| crate::check::FlaggedBin {
+            start,
+            end,
+            flag: crate::check::Flag::Shallow,
+            depth: 1.0,
+            stops: 0,
+        };
+        let mut contigs = vec![Contig {
+            check: Check {
+                flagged: vec![bin(2_000, 3_000), bin(9_000, 10_003), bin(15_000, len)],
+                ..Check::default()
+            },
+            ..contig(draft, false)
+        }];
+        polish_short(&mut contigs, &reads(&genome, 7, false), &ShortParams::new());
+        assert_eq!(contigs[0].seq, genome);
+        let at: Vec<(u32, u32)> = contigs[0]
+            .check
+            .flagged
+            .iter()
+            .map(|b| (b.start, b.end))
+            .collect();
+        // Before the base put back, unmoved; at it and after, one on; the end, the new end.
+        let end = u32::try_from(genome.len()).expect("short");
+        assert_eq!(at, [(2_000, 3_000), (9_000, 10_004), (15_001, end)]);
     }
 
     #[test]

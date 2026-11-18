@@ -7,9 +7,16 @@ use std::path::{Path, PathBuf};
 
 use anyhow::{Context, Result};
 use clap::{Args, ValueEnum};
-use picoasm::{Assembly, BactParams, Check, Contig, ReadKind, ShortParams, assemble, polish_short};
-use picoasm_io::{FastaWriter, ReadRecord, ReadSource};
+use picoasm::{
+    Assembly, BactParams, Check, Contig, Flag, FlaggedBin, ReadKind, ShortParams, assemble,
+    polish_short,
+};
+use picoasm_io::{
+    FastaWriter, GfaLink, GfaSegment, GfaTag, GfaWriter, OrientedSegment, Overlap as GfaOverlap,
+    ReadRecord, ReadSource,
+};
 use picoasm_overlap::Reads;
+use picoasm_seq::Strand;
 
 #[derive(Debug, Args)]
 pub(crate) struct AssembleArgs {
@@ -37,6 +44,17 @@ pub(crate) struct AssembleArgs {
     /// depth, or 25% if not circular: another sample's reads, or a chimera's) to this FASTA.
     #[arg(long, value_name = "FASTA")]
     shallow: Option<PathBuf>,
+
+    /// Also write the places the reads show the contigs may be wrong to this BED file: stretches
+    /// few reads cover (`shallow`), places many reads stop aligning (`stops`), and contigs not
+    /// closed into a whole replicon (`linear`).
+    #[arg(long, value_name = "BED")]
+    suspect: Option<PathBuf>,
+
+    /// Also write the contigs as a GFA graph (for Bandage and other graph tools): circular
+    /// contigs link end to start, and hairpin ends link a contig to its reverse complement.
+    #[arg(long, value_name = "GFA")]
+    gfa: Option<PathBuf>,
 
     /// Short reads (Illumina) of the same isolate to polish the contigs with at the end; give
     /// the option once per file (both files of a pair, in any order).
@@ -200,13 +218,141 @@ fn check_tag(contig: &Contig) -> String {
     if !contig.is_whole() {
         tags.push("linear".to_owned());
     }
-    if check.shallow_bins > 0 {
-        tags.push(format!("shallow:{}", check.shallow_bins));
+    if check.shallow_bins() > 0 {
+        tags.push(format!("shallow:{}", check.shallow_bins()));
     }
-    if check.stop_bins > 0 {
-        tags.push(format!("stops:{}", check.stop_bins));
+    if check.stop_bins() > 0 {
+        tags.push(format!("stops:{}", check.stop_bins()));
     }
     tags.join(",")
+}
+
+/// One region of [`suspect_regions`]: a run of adjacent flagged bins of one kind.
+#[derive(Clone, Debug, PartialEq)]
+struct Suspect {
+    start: u32,
+    end: u32,
+    reason: String,
+}
+
+/// The places the reads show `contig` may be wrong, in order: adjacent bins of one kind
+/// merged, a shallow stretch with its lowest depth, a place reads stop with its bin where most
+/// reads stop (and that bin's depth); and the whole contig if it is not whole. A bin the last
+/// base calls took every base out of has no place, and is left out.
+fn suspect_regions(contig: &Contig) -> Vec<Suspect> {
+    let len = u32::try_from(contig.seq.len()).expect("contigs are shorter than 4 Gb");
+    let median = contig.check.median_depth;
+    let mut out = Vec::new();
+    if !contig.is_whole() {
+        out.push(Suspect {
+            start: 0,
+            end: len,
+            reason: "linear".to_owned(),
+        });
+    }
+    for flag in [Flag::Shallow, Flag::Stop] {
+        // Runs of adjacent bins, each with its shallowest bin and its bin where most reads stop.
+        let mut runs: Vec<(u32, u32, FlaggedBin, FlaggedBin)> = Vec::new();
+        for &bin in contig.check.flagged.iter().filter(|b| b.flag == flag) {
+            match runs.last_mut() {
+                Some(run) if run.1 == bin.start => {
+                    run.1 = bin.end;
+                    if bin.depth < run.2.depth {
+                        run.2 = bin;
+                    }
+                    if bin.stops > run.3.stops {
+                        run.3 = bin;
+                    }
+                }
+                _ => runs.push((bin.start, bin.end, bin, bin)),
+            }
+        }
+        for (start, end, shallowest, most_stops) in runs {
+            let (start, end) = (start.min(len), end.min(len));
+            if start >= end {
+                continue;
+            }
+            let reason = match flag {
+                Flag::Shallow => {
+                    format!("shallow:depth={:.1},median={median:.1}", shallowest.depth)
+                }
+                Flag::Stop => format!(
+                    "stops:reads={},depth={:.1}",
+                    most_stops.stops, most_stops.depth
+                ),
+                _ => format!("{flag:?}"),
+            };
+            out.push(Suspect { start, end, reason });
+        }
+    }
+    out.sort_by_key(|s| (s.start, s.end));
+    out
+}
+
+/// Writes the places the reads show `contigs` may be wrong (see [`suspect_regions`]) as BED,
+/// contigs named as in [`write_contigs`].
+fn write_suspect(path: &Path, prefix: &str, contigs: &[Contig]) -> Result<()> {
+    let write = || -> std::io::Result<()> {
+        let mut out = BufWriter::new(File::create(path)?);
+        writeln!(out, "#contig\tstart\tend\treason")?;
+        for (i, contig) in contigs.iter().enumerate() {
+            for s in suspect_regions(contig) {
+                writeln!(
+                    out,
+                    "{prefix}_{}\t{}\t{}\t{}",
+                    i + 1,
+                    s.start,
+                    s.end,
+                    s.reason
+                )?;
+            }
+        }
+        out.flush()
+    };
+    write().with_context(|| format!("writing {}", path.display()))
+}
+
+/// Writes `contigs` as GFA 1, named as in [`write_contigs`], each with its length and depth: a
+/// circular contig links its end to its start, and a hairpin end links the contig to its own
+/// reverse complement there.
+fn write_gfa(path: &Path, prefix: &str, contigs: &[Contig]) -> Result<()> {
+    let names: Vec<String> = (1..=contigs.len())
+        .map(|i| format!("{prefix}_{i}"))
+        .collect();
+    let write = || -> Result<(), picoasm_io::WriteError> {
+        let mut gfa = GfaWriter::create(path)?;
+        gfa.write_header(&[])?;
+        for (name, contig) in names.iter().zip(contigs) {
+            let tags = [
+                GfaTag::length(contig.seq.len() as u64),
+                GfaTag::depth(contig.depth),
+            ];
+            gfa.write_segment(
+                &GfaSegment::new(name)
+                    .with_sequence(&contig.seq)
+                    .with_tags(&tags),
+            )?;
+        }
+        for (name, contig) in names.iter().zip(contigs) {
+            let side = |strand| OrientedSegment::new(name, strand);
+            let mut links = Vec::new();
+            if contig.circular {
+                links.push((Strand::Forward, Strand::Forward));
+            }
+            if contig.hairpins[1] {
+                links.push((Strand::Forward, Strand::Reverse));
+            }
+            if contig.hairpins[0] {
+                links.push((Strand::Reverse, Strand::Forward));
+            }
+            for (from, to) in links {
+                gfa.write_link(&GfaLink::new(side(from), side(to), GfaOverlap::Matches(0)))?;
+            }
+        }
+        gfa.finish()?;
+        Ok(())
+    };
+    write().with_context(|| format!("writing {}", path.display()))
 }
 
 /// Writes `contigs` to a FASTA file at `path`, named `{prefix}_1` and on, with each one's
@@ -515,6 +661,12 @@ pub(crate) fn run(args: &AssembleArgs) -> Result<()> {
     if let Some(path) = &args.shallow {
         write_contigs(path, "shallow", &assembly.shallow)?;
     }
+    if let Some(path) = &args.suspect {
+        write_suspect(path, "contig", &assembly.contigs)?;
+    }
+    if let Some(path) = &args.gfa {
+        write_gfa(path, "contig", &assembly.contigs)?;
+    }
     for (i, contig) in assembly.contigs.iter().enumerate() {
         if !contig.check.is_clean(contig.is_whole()) {
             log::warn!(
@@ -533,4 +685,151 @@ pub(crate) fn run(args: &AssembleArgs) -> Result<()> {
         assembly.contigs.iter().map(|c| c.seq.len()).sum::<usize>()
     );
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn bin(start: u32, flag: Flag, depth: f64, stops: u64) -> FlaggedBin {
+        FlaggedBin {
+            start,
+            end: start + picoasm::CHECK_BIN,
+            flag,
+            depth,
+            stops,
+        }
+    }
+
+    fn contig(len: usize, circular: bool, hairpins: [bool; 2], flagged: Vec<FlaggedBin>) -> Contig {
+        Contig {
+            seq: vec![b'A'; len],
+            circular,
+            hairpins,
+            depth: 40.0,
+            check: Check {
+                min_depth: 2.0,
+                median_depth: 40.0,
+                flagged,
+            },
+        }
+    }
+
+    #[test]
+    fn adjacent_flagged_bins_are_one_region_clipped_to_the_contig() {
+        // Shallow over 2-4 kb, stops over 3-5 kb (most at 4 kb), and a shallow last bin past
+        // the contig's 9,990 bases.
+        let c = contig(
+            9_990,
+            true,
+            [false; 2],
+            vec![
+                bin(2_000, Flag::Shallow, 6.0, 0),
+                bin(3_000, Flag::Shallow, 2.5, 1),
+                bin(3_000, Flag::Stop, 2.5, 7),
+                bin(4_000, Flag::Stop, 30.0, 12),
+                bin(9_000, Flag::Shallow, 9.0, 0),
+            ],
+        );
+        let got: Vec<(u32, u32, String)> = suspect_regions(&c)
+            .into_iter()
+            .map(|s| (s.start, s.end, s.reason))
+            .collect();
+        assert_eq!(
+            got,
+            [
+                (2_000, 4_000, "shallow:depth=2.5,median=40.0".to_owned()),
+                (3_000, 5_000, "stops:reads=12,depth=30.0".to_owned()),
+                (9_000, 9_990, "shallow:depth=9.0,median=40.0".to_owned()),
+            ]
+        );
+    }
+
+    #[test]
+    fn a_contig_not_closed_is_suspect_over_its_length() {
+        let regions = suspect_regions(&contig(5_000, false, [true, false], Vec::new()));
+        assert_eq!(
+            regions,
+            [Suspect {
+                start: 0,
+                end: 5_000,
+                reason: "linear".to_owned()
+            }]
+        );
+        assert!(suspect_regions(&contig(5_000, true, [false; 2], Vec::new())).is_empty());
+    }
+
+    #[test]
+    fn the_graph_links_circles_end_to_start_and_hairpins_to_their_reverse() {
+        let dir = tempfile::tempdir().expect("a temporary directory");
+        let path = dir.path().join("asm.gfa");
+        let contigs = [
+            contig(8, true, [false; 2], Vec::new()),
+            contig(6, false, [true, true], Vec::new()),
+            contig(4, false, [false; 2], Vec::new()),
+        ];
+        write_gfa(&path, "contig", &contigs).expect("the graph is written");
+        let text = std::fs::read_to_string(&path).expect("the graph is read back");
+        assert_eq!(
+            text,
+            "H\tVN:Z:1.0\n\
+             S\tcontig_1\tAAAAAAAA\tLN:i:8\tdp:f:40\n\
+             S\tcontig_2\tAAAAAA\tLN:i:6\tdp:f:40\n\
+             S\tcontig_3\tAAAA\tLN:i:4\tdp:f:40\n\
+             L\tcontig_1\t+\tcontig_1\t+\t0M\n\
+             L\tcontig_2\t+\tcontig_2\t-\t0M\n\
+             L\tcontig_2\t-\tcontig_2\t+\t0M\n"
+        );
+    }
+
+    #[test]
+    fn a_bin_with_no_bases_left_has_no_region() {
+        let mut gone = bin(1_000, Flag::Shallow, 1.0, 0);
+        gone.end = gone.start;
+        let c = contig(5_000, true, [false; 2], vec![gone]);
+        assert!(suspect_regions(&c).is_empty());
+    }
+
+    #[test]
+    fn a_line_with_hairpins_at_both_ends_is_whole_and_one_hairpin_is_not() {
+        let both = contig(5_000, false, [true, true], Vec::new());
+        assert!(suspect_regions(&both).is_empty());
+        let start = contig(5_000, false, [true, false], Vec::new());
+        assert_eq!(suspect_regions(&start)[0].reason, "linear");
+    }
+
+    #[test]
+    fn the_bed_names_contigs_as_the_fasta_does_and_has_a_header() {
+        let dir = tempfile::tempdir().expect("a temporary directory");
+        let path = dir.path().join("suspect.bed");
+        let contigs = [
+            contig(3_000, true, [false; 2], Vec::new()),
+            contig(
+                2_500,
+                false,
+                [false; 2],
+                vec![bin(1_000, Flag::Stop, 20.0, 6)],
+            ),
+        ];
+        write_suspect(&path, "contig", &contigs).expect("the BED is written");
+        let text = std::fs::read_to_string(&path).expect("the BED is read back");
+        assert_eq!(
+            text,
+            "#contig\tstart\tend\treason\n\
+             contig_2\t0\t2500\tlinear\n\
+             contig_2\t1000\t2000\tstops:reads=6,depth=20.0\n"
+        );
+        write_suspect(&path, "contig", &[]).expect("an empty BED is written");
+        let text = std::fs::read_to_string(&path).expect("the BED is read back");
+        assert_eq!(text, "#contig\tstart\tend\treason\n");
+    }
+
+    #[test]
+    fn an_empty_assembly_is_a_graph_with_only_its_header() {
+        let dir = tempfile::tempdir().expect("a temporary directory");
+        let path = dir.path().join("asm.gfa");
+        write_gfa(&path, "contig", &[]).expect("the graph is written");
+        let text = std::fs::read_to_string(&path).expect("the graph is read back");
+        assert_eq!(text, "H\tVN:Z:1.0\n");
+    }
 }
