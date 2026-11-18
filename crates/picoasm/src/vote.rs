@@ -261,12 +261,14 @@ fn strand_share(column: &Column, count: impl Fn(usize) -> f64) -> Option<f64> {
     (strands > 0).then(|| sum / f64::from(strands))
 }
 
-/// Applies `changes` (per draft, sorted by start) to `drafts`; returns how many were applied.
+/// Applies `changes` (per draft, sorted by start) to `drafts`; returns those applied, per draft.
 /// A change that starts inside the one before is skipped.
-pub(crate) fn apply(drafts: &mut [Draft], changes: &[Vec<Change>]) -> usize {
-    let mut applied = 0;
+pub(crate) fn apply(drafts: &mut [Draft], changes: &[Vec<Change>]) -> Vec<Vec<Applied>> {
+    let mut applied = Vec::with_capacity(drafts.len());
     for (draft, changes) in drafts.iter_mut().zip(changes) {
+        let mut made = Vec::new();
         if changes.is_empty() {
+            applied.push(made);
             continue;
         }
         let mut seq = Vec::with_capacity(draft.seq.len() + changes.len());
@@ -279,12 +281,66 @@ pub(crate) fn apply(drafts: &mut [Draft], changes: &[Vec<Change>]) -> usize {
             seq.extend_from_slice(&draft.seq[at..start]);
             seq.extend_from_slice(&c.bases);
             at = start + pos(c.len);
-            applied += 1;
+            made.push(Applied {
+                start: c.start,
+                len: c.len,
+                new_len: u32::try_from(c.bases.len()).expect("a change is shorter than 4 Gb"),
+            });
         }
         seq.extend_from_slice(&draft.seq[at..]);
         draft.seq = seq;
+        applied.push(made);
     }
     applied
+}
+
+/// A change [`apply`] made: `len` bases from `start` became `new_len` bases.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub(crate) struct Applied {
+    pub(crate) start: u32,
+    pub(crate) len: u32,
+    pub(crate) new_len: u32,
+}
+
+/// Where the places of a draft (its bases, and its end) are after the changes [`apply`] made to
+/// it: bases inserted at or before a place move it on, and a place inside a changed stretch
+/// keeps its offset into the new bases, up to their end.
+pub(crate) struct Moves<'a> {
+    /// The changes, in order (as [`apply`] returns them: none overlaps another, and at one
+    /// start an insertion comes before a change of bases).
+    applied: &'a [Applied],
+    /// Per change, how many bases the changes before it added (less those they took out); then
+    /// all of them.
+    shift: Vec<i64>,
+}
+
+impl<'a> Moves<'a> {
+    pub(crate) fn new(applied: &'a [Applied]) -> Self {
+        let mut shift = Vec::with_capacity(applied.len() + 1);
+        let mut sum = 0_i64;
+        shift.push(sum);
+        for a in applied {
+            sum += i64::from(a.new_len) - i64::from(a.len);
+            shift.push(sum);
+        }
+        Self { applied, shift }
+    }
+
+    /// Where place `at` (a base, or the end) is now.
+    pub(crate) fn at(&self, at: u32) -> u32 {
+        let place = |x: i64| u32::try_from(x).expect("a place on a draft is under 4 Gb");
+        // The changes before `at`: those starting before it, and insertions just before it.
+        let before = self
+            .applied
+            .partition_point(|a| a.start < at || (a.start == at && a.len == 0));
+        if let Some(a) = before.checked_sub(1).map(|i| self.applied[i])
+            && at < a.start + a.len
+        {
+            let into = i64::from((at - a.start).min(a.new_len));
+            return place(i64::from(a.start) + self.shift[before - 1] + into);
+        }
+        place(i64::from(at) + self.shift[before])
+    }
 }
 
 pub(crate) const BASES: [u8; 4] = *b"ACGT";
@@ -511,7 +567,83 @@ mod tests {
             ]
         );
         let mut drafts = vec![Draft::new(seq.to_vec(), false)];
-        assert_eq!(apply(&mut drafts, &[c]), 2);
+        let applied = apply(&mut drafts, &[c]);
+        assert_eq!(applied[0].len(), 2);
         assert_eq!(drafts[0].seq, b"ACTCA");
+        // ACGTA became ACTCA: G deleted, C inserted before the last A.
+        let moves = Moves::new(&applied[0]);
+        let now: Vec<u32> = (0..=5).map(|at| moves.at(at)).collect();
+        assert_eq!(now, [0, 1, 2, 2, 4, 5]);
+    }
+
+    /// Applies `changes` (start, bases taken out, bases put in) to `seq` and checks that every
+    /// base no change touched is found where [`Moves`] says it went.
+    fn moves_follow(seq: &[u8], changes: &[(u32, u32, &[u8])]) -> (Vec<u8>, Vec<u32>) {
+        let changes: Vec<Change> = changes
+            .iter()
+            .map(|&(start, len, bases)| Change {
+                start,
+                len,
+                bases: bases.to_vec(),
+            })
+            .collect();
+        let mut drafts = vec![Draft::new(seq.to_vec(), false)];
+        let applied = apply(&mut drafts, &[changes]);
+        let moves = Moves::new(&applied[0]);
+        let now: Vec<u32> = (0..=u32::try_from(seq.len()).expect("short"))
+            .map(|at| moves.at(at))
+            .collect();
+        let touched = |at: u32| {
+            applied[0]
+                .iter()
+                .any(|a| a.start <= at && at < a.start + a.len)
+        };
+        for (at, &to) in now.iter().enumerate().take(seq.len()) {
+            let at32 = u32::try_from(at).expect("short");
+            if !touched(at32) {
+                assert_eq!(
+                    drafts[0].seq[to as usize], seq[at],
+                    "base {at} moved to {to}"
+                );
+            }
+        }
+        assert_eq!(
+            *now.last().expect("the end"),
+            u32::try_from(drafts[0].seq.len()).expect("short"),
+            "the end moves to the new end"
+        );
+        assert!(
+            now.windows(2).all(|w| w[0] <= w[1]),
+            "places keep their order: {now:?}"
+        );
+        (drafts[0].seq.clone(), now)
+    }
+
+    #[test]
+    fn places_move_with_every_kind_of_change() {
+        let seq = b"ACGTACGTAC";
+        // At the first base, a base made three, three made one, an insertion at the end.
+        let (new, now) = moves_follow(
+            seq,
+            &[(0, 1, b"TT"), (3, 1, b"GGG"), (5, 3, b"A"), (10, 0, b"CC")],
+        );
+        assert_eq!(new, b"TTCGGGGAAACCC");
+        assert_eq!(now, [0, 2, 3, 4, 7, 8, 9, 9, 9, 10, 13]);
+        // A place inside a stretch made shorter stops at its new end; one inside a stretch
+        // made longer keeps its offset.
+        assert_eq!(now[6], 9);
+    }
+
+    #[test]
+    fn an_insertion_before_a_change_at_one_place_moves_it_past_the_insertion() {
+        let (new, now) = moves_follow(b"AAAA", &[(2, 0, b"G"), (2, 1, b"T")]);
+        assert_eq!(new, b"AAGTA");
+        assert_eq!(now, [0, 1, 3, 4, 5]);
+    }
+
+    #[test]
+    fn no_changes_move_nothing() {
+        let (_, now) = moves_follow(b"ACGT", &[]);
+        assert_eq!(now, [0, 1, 2, 3, 4]);
     }
 }
