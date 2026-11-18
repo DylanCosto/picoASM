@@ -31,9 +31,9 @@ times less CPU time.
 for Linux (x86-64) and macOS (Apple silicon):
 
 ```bash
-curl -LO https://github.com/DylanCosto/picoASM/releases/download/v0.5.0/picoasm-v0.5.0-x86_64-unknown-linux-gnu.tar.gz
-tar -xzf picoasm-v0.5.0-x86_64-unknown-linux-gnu.tar.gz
-./picoasm-v0.5.0-x86_64-unknown-linux-gnu/picoasm --version
+curl -LO https://github.com/DylanCosto/picoASM/releases/download/v0.6.0/picoasm-v0.6.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf picoasm-v0.6.0-x86_64-unknown-linux-gnu.tar.gz
+./picoasm-v0.6.0-x86_64-unknown-linux-gnu/picoasm --version
 ```
 
 **From source.** picoASM is written in Rust and needs a Rust toolchain, 1.91 or later
@@ -203,7 +203,7 @@ threads. Wall times are therefore indicative; CPU times are comparable.
 
 Cells give complete replicons / reference replicons, then errors. Where there are any, they
 then give missing bases and, after a slash, misassemblies. All picoASM results are from version
-0.5.0 with default settings.
+0.5.0 with default settings; 0.6.0 gives the same contigs.
 
 ### Autocycler benchmark (30 read subsets; development data)
 
@@ -450,7 +450,7 @@ that changed.
 
 ## Citation
 
-If you use picoASM, please cite this repository (version 0.5.0). Please also cite the data used
+If you use picoASM, please cite this repository (version 0.6.0). Please also cite the data used
 here:
 - R. R. Wick, B. P. Howden, T. P. Stinear (2025). Autocycler: long-read consensus assembly for
   bacterial genomes. *Bioinformatics*, btaf474.
