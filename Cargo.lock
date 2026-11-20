@@ -559,9 +559,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 
 [[package]]
-name = "pasta"
+name = "pasta-hts"
 version = "0.9.1"
-source = "git+https://github.com/DylanCosto/pasta.git?rev=4ccbbb42d664acf7b5cc19495f95d0a3261dc13e#4ccbbb42d664acf7b5cc19495f95d0a3261dc13e"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2541f038e6ae5fabccaea1288cfac3854ab3dbd7c9deaf018d3cfd4a57d266b8"
 dependencies = [
  "bit-vec",
  "bitflags 2.13.2",
@@ -582,7 +583,7 @@ dependencies = [
 
 [[package]]
 name = "picoasm"
-version = "0.6.0"
+version = "0.6.1"
 dependencies = [
  "log",
  "picoasm-consensus",
@@ -594,7 +595,7 @@ dependencies = [
 
 [[package]]
 name = "picoasm-cli"
-version = "0.6.0"
+version = "0.6.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -610,7 +611,7 @@ dependencies = [
 
 [[package]]
 name = "picoasm-consensus"
-version = "0.6.0"
+version = "0.6.1"
 dependencies = [
  "log",
  "rayon",
@@ -619,12 +620,12 @@ dependencies = [
 
 [[package]]
 name = "picoasm-io"
-version = "0.6.0"
+version = "0.6.1"
 dependencies = [
  "flate2",
  "log",
  "memchr",
- "pasta",
+ "pasta-hts",
  "picoasm-seq",
  "tempfile",
  "thiserror",
@@ -632,7 +633,7 @@ dependencies = [
 
 [[package]]
 name = "picoasm-overlap"
-version = "0.6.0"
+version = "0.6.1"
 dependencies = [
  "log",
  "picoasm-seq",
@@ -642,7 +643,7 @@ dependencies = [
 
 [[package]]
 name = "picoasm-seq"
-version = "0.6.0"
+version = "0.6.1"
 dependencies = [
  "thiserror",
 ]
