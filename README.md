@@ -40,7 +40,7 @@ tar -xzf picoasm-v0.6.0-x86_64-unknown-linux-gnu.tar.gz
 `picoasm` command:
 
 ```bash
-cargo install --locked picoasm-cli
+cargo install --locked picoasm
 ```
 
 **From source.** picoASM is written in Rust and needs a Rust toolchain, 1.91 or later

@@ -583,68 +583,17 @@ dependencies = [
 
 [[package]]
 name = "picoasm"
-version = "0.6.1"
-dependencies = [
- "log",
- "picoasm-consensus",
- "picoasm-overlap",
- "picoasm-seq",
- "rayon",
- "thiserror",
-]
-
-[[package]]
-name = "picoasm-cli"
-version = "0.6.1"
+version = "0.6.2"
 dependencies = [
  "anyhow",
  "clap",
  "env_logger",
- "log",
- "picoasm",
- "picoasm-io",
- "picoasm-overlap",
- "picoasm-seq",
- "rayon",
- "tempfile",
-]
-
-[[package]]
-name = "picoasm-consensus"
-version = "0.6.1"
-dependencies = [
- "log",
- "rayon",
- "thiserror",
-]
-
-[[package]]
-name = "picoasm-io"
-version = "0.6.1"
-dependencies = [
  "flate2",
  "log",
  "memchr",
  "pasta-hts",
- "picoasm-seq",
- "tempfile",
- "thiserror",
-]
-
-[[package]]
-name = "picoasm-overlap"
-version = "0.6.1"
-dependencies = [
- "log",
- "picoasm-seq",
  "rayon",
- "thiserror",
-]
-
-[[package]]
-name = "picoasm-seq"
-version = "0.6.1"
-dependencies = [
+ "tempfile",
  "thiserror",
 ]
 
